@@ -117,3 +117,9 @@ A curated list of awesome open-source, self-hosted projects that can be easily d
 | [Wallabag](https://github.com/wallabag/wallabag) | Save and classify articles |
 | [Tandoor Recipes](https://github.com/vabene1111/recipes) | Recipe manager |
 | [Shiori](https://github.com/go-shiori/shiori) | Simple bookmark manager |
+
+
+# This project is in early development
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=hotheadhacker/awesome-selfhost-docker&type=Date)](https://star-history.com/#hotheadhacker/awesome-selfhost-docker&Date)
