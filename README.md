@@ -1,10 +1,7 @@
-# awesome-selfhost-docker
+# Awesome Self-Host Docker
 🚀 Curated list of open-source, self-hosted projects deployable with Docker and docker-compose. Your go-to resource for amazing self-hostable software.
 
-![Asesome selfhost docker](https://raw.githubusercontent.com/hotheadhacker/awesome-selfhost-docker/main/assets/imgs/docker%2Boss.png)
-# Awesome Self-Hosted Docker Projects
-
-A curated list of awesome open-source, self-hosted projects that can be easily deployed using Docker and docker-compose.
+![Awesome selfhost docker](https://raw.githubusercontent.com/hotheadhacker/awesome-selfhost-docker/main/assets/imgs/docker%2Boss.png)
 
 ## Table of Contents
 - [Productivity](#productivity)
@@ -27,6 +24,8 @@ A curated list of awesome open-source, self-hosted projects that can be easily d
 | [Paperless-ng](https://github.com/jonaswinkler/paperless-ng) | Document management system |
 | [Bookstack](https://github.com/BookStackApp/BookStack) | Platform for organizing and storing information |
 | [Trilium](https://github.com/zadam/trilium) | Hierarchical note-taking application |
+| [HedgeDoc](https://github.com/hedgedoc/hedgedoc) | Collaborative markdown editor |
+| [Wekan](https://github.com/wekan/wekan) | Open-source Trello-like kanban board |
 
 ## Development
 
@@ -37,6 +36,8 @@ A curated list of awesome open-source, self-hosted projects that can be easily d
 | [Drone](https://github.com/drone/drone) | Continuous Integration platform |
 | [Jenkins](https://github.com/jenkinsci/docker) | Automation server for CI/CD |
 | [Gogs](https://github.com/gogs/gogs) | Painless self-hosted Git service |
+| [Portainer](https://github.com/portainer/portainer) | Lightweight management UI for Docker |
+| [SonarQube](https://github.com/SonarSource/docker-sonarqube) | Continuous inspection of code quality |
 
 ## Media
 
@@ -47,6 +48,8 @@ A curated list of awesome open-source, self-hosted projects that can be easily d
 | [Airsonic](https://github.com/airsonic/airsonic) | Music streaming server |
 | [Photoprism](https://github.com/photoprism/photoprism) | Personal photo management |
 | [Navidrome](https://github.com/navidrome/navidrome) | Music server and streamer |
+| [Emby](https://github.com/MediaBrowser/Emby) | Media server for personal streaming |
+| [Karaoke Eternal](https://github.com/matthuisman/karaoke-forever) | Host your own karaoke party |
 
 ## Communication
 
@@ -57,6 +60,8 @@ A curated list of awesome open-source, self-hosted projects that can be easily d
 | [Jitsi Meet](https://github.com/jitsi/docker-jitsi-meet) | Video conferencing solution |
 | [Zulip](https://github.com/zulip/zulip) | Team chat |
 | [Mumble](https://github.com/mumble-voip/mumble) | Low-latency voice chat |
+| [Mattermost](https://github.com/mattermost/mattermost-server) | Open-source, self-hostable online chat service |
+| [Element](https://github.com/vector-im/element-web) | A glossy Matrix collaboration client |
 
 ## Security
 
@@ -67,6 +72,8 @@ A curated list of awesome open-source, self-hosted projects that can be easily d
 | [Keycloak](https://github.com/keycloak/keycloak) | Identity and access management |
 | [Vault](https://github.com/hashicorp/vault) | Secrets management |
 | [Vaultwarden](https://github.com/dani-garcia/vaultwarden) | Unofficial Bitwarden server |
+| [Fail2ban](https://github.com/fail2ban/fail2ban) | Intrusion prevention software framework |
+| [OSSEC](https://github.com/ossec/ossec-hids) | Open Source Host-based Intrusion Detection System |
 
 ## Monitoring
 
@@ -77,6 +84,8 @@ A curated list of awesome open-source, self-hosted projects that can be easily d
 | [Netdata](https://github.com/netdata/netdata) | Real-time performance monitoring |
 | [Uptime Kuma](https://github.com/louislam/uptime-kuma) | Uptime monitoring tool |
 | [Zabbix](https://github.com/zabbix/zabbix) | Enterprise-class monitoring solution |
+| [InfluxDB](https://github.com/influxdata/influxdb) | Time series database |
+| [Telegraf](https://github.com/influxdata/telegraf) | Server agent for collecting and reporting metrics |
 
 ## File Sharing
 
@@ -87,6 +96,8 @@ A curated list of awesome open-source, self-hosted projects that can be easily d
 | [ownCloud](https://github.com/owncloud/core) | File hosting software |
 | [FileBrowser](https://github.com/filebrowser/filebrowser) | Web File Browser |
 | [Pydio Cells](https://github.com/pydio/cells) | Content collaboration platform |
+| [Minio](https://github.com/minio/minio) | High-performance object storage |
+| [Nextcloud](https://github.com/nextcloud/docker) | Productivity platform for file hosting and collaboration |
 
 ## Home Automation
 
@@ -97,6 +108,8 @@ A curated list of awesome open-source, self-hosted projects that can be easily d
 | [Domoticz](https://github.com/domoticz/domoticz) | Home Automation System |
 | [Node-RED](https://github.com/node-red/node-red) | Flow-based programming for the Internet of Things |
 | [ESPHome](https://github.com/esphome/esphome) | System to control your ESP8266/ESP32 |
+| [Homebridge](https://github.com/homebridge/homebridge) | HomeKit support for the impatient |
+| [ioBroker](https://github.com/ioBroker/ioBroker) | Integration platform for the Internet of Things |
 
 ## Analytics
 
@@ -107,6 +120,8 @@ A curated list of awesome open-source, self-hosted projects that can be easily d
 | [Umami](https://github.com/mikecao/umami) | Simple, fast, privacy-focused alternative to Google Analytics |
 | [Ackee](https://github.com/electerious/Ackee) | Self-hosted analytics tool |
 | [GoAccess](https://github.com/allinurl/goaccess) | Real-time web log analyzer |
+| [Metabase](https://github.com/metabase/metabase) | Business intelligence and analytics |
+| [Redash](https://github.com/getredash/redash) | Make sense of your data |
 
 ## Miscellaneous
 
@@ -117,7 +132,8 @@ A curated list of awesome open-source, self-hosted projects that can be easily d
 | [Wallabag](https://github.com/wallabag/wallabag) | Save and classify articles |
 | [Tandoor Recipes](https://github.com/vabene1111/recipes) | Recipe manager |
 | [Shiori](https://github.com/go-shiori/shiori) | Simple bookmark manager |
-
+| [Speedtest](https://github.com/librespeed/speedtest) | Self-hosted speed test |
+| [Papermerge](https://github.com/ciur/papermerge) | Document management system |
 
 # This project is in early development
 ## Star History
