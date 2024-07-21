@@ -1,3 +1,6 @@
+Certainly! Here are 100 additional self-hosted projects that can be deployed using Docker and Docker Compose. These projects span various categories to provide a comprehensive list for users.
+
+```markdown
 # Awesome Self-Host Docker
 🚀 Curated list of open-source, self-hosted projects deployable with Docker and docker-compose. Your go-to resource for amazing self-hostable software.
 
@@ -26,6 +29,9 @@
 | [Trilium](https://github.com/zadam/trilium) | Hierarchical note-taking application |
 | [HedgeDoc](https://github.com/hedgedoc/hedgedoc) | Collaborative markdown editor |
 | [Wekan](https://github.com/wekan/wekan) | Open-source Trello-like kanban board |
+| [Zim](https://github.com/jaap-karssenberg/zim-desktop-wiki) | Desktop wiki & note-taking |
+| [Standard Notes](https://github.com/standardnotes/server) | Encrypted note-taking app |
+| [Kanboard](https://github.com/kanboard/kanboard) | Project management software |
 
 ## Development
 
@@ -38,6 +44,9 @@
 | [Gogs](https://github.com/gogs/gogs) | Painless self-hosted Git service |
 | [Portainer](https://github.com/portainer/portainer) | Lightweight management UI for Docker |
 | [SonarQube](https://github.com/SonarSource/docker-sonarqube) | Continuous inspection of code quality |
+| [Sentry](https://github.com/getsentry/onpremise) | Error tracking and performance monitoring |
+| [Taiga](https://github.com/taigaio/taiga-back) | Project management platform |
+| [Redmine](https://github.com/bitnami/bitnami-docker-redmine) | Project management web application |
 
 ## Media
 
@@ -50,6 +59,9 @@
 | [Navidrome](https://github.com/navidrome/navidrome) | Music server and streamer |
 | [Emby](https://github.com/MediaBrowser/Emby) | Media server for personal streaming |
 | [Karaoke Eternal](https://github.com/matthuisman/karaoke-forever) | Host your own karaoke party |
+| [Radarr](https://github.com/Radarr/Radarr) | Movie collection manager |
+| [Sonarr](https://github.com/Sonarr/Sonarr) | TV series collection manager |
+| [Lidarr](https://github.com/Lidarr/Lidarr) | Music collection manager |
 
 ## Communication
 
@@ -62,6 +74,9 @@
 | [Mumble](https://github.com/mumble-voip/mumble) | Low-latency voice chat |
 | [Mattermost](https://github.com/mattermost/mattermost-server) | Open-source, self-hostable online chat service |
 | [Element](https://github.com/vector-im/element-web) | A glossy Matrix collaboration client |
+| [Discourse](https://github.com/discourse/discourse_docker) | Open-source discussion platform |
+| [Postal](https://github.com/postalhq/postal) | Mail delivery platform |
+| [Mailu](https://github.com/Mailu/Mailu) | Full-featured mail server |
 
 ## Security
 
@@ -74,6 +89,9 @@
 | [Vaultwarden](https://github.com/dani-garcia/vaultwarden) | Unofficial Bitwarden server |
 | [Fail2ban](https://github.com/fail2ban/fail2ban) | Intrusion prevention software framework |
 | [OSSEC](https://github.com/ossec/ossec-hids) | Open Source Host-based Intrusion Detection System |
+| [ClamAV](https://github.com/Cisco-Talos/clamav) | Open-source antivirus engine |
+| [OpenVPN](https://github.com/kylemanna/docker-openvpn) | Open-source VPN solution |
+| [WireGuard](https://github.com/linuxserver/docker-wireguard) | Fast and modern VPN solution |
 
 ## Monitoring
 
@@ -86,6 +104,9 @@
 | [Zabbix](https://github.com/zabbix/zabbix) | Enterprise-class monitoring solution |
 | [InfluxDB](https://github.com/influxdata/influxdb) | Time series database |
 | [Telegraf](https://github.com/influxdata/telegraf) | Server agent for collecting and reporting metrics |
+| [Cacti](https://github.com/Cacti/cacti) | Network monitoring and graphing tool |
+| [Nagios](https://github.com/NagiosEnterprises/nagioscore) | IT infrastructure monitoring |
+| [Checkmk](https://github.com/tribe29/checkmk) | Monitoring system for IT infrastructure |
 
 ## File Sharing
 
@@ -98,6 +119,9 @@
 | [Pydio Cells](https://github.com/pydio/cells) | Content collaboration platform |
 | [Minio](https://github.com/minio/minio) | High-performance object storage |
 | [Nextcloud](https://github.com/nextcloud/docker) | Productivity platform for file hosting and collaboration |
+| [Cozy](https://github.com/cozy/cozy-stack) | Personal cloud server |
+| [Kinto](https://github.com/Kinto/kinto) | Minimalist JSON storage service |
+| [ProjectSend](https://github.com/projectsend/projectsend) | Clients-oriented file uploading platform |
 
 ## Home Automation
 
@@ -110,6 +134,9 @@
 | [ESPHome](https://github.com/esphome/esphome) | System to control your ESP8266/ESP32 |
 | [Homebridge](https://github.com/homebridge/homebridge) | HomeKit support for the impatient |
 | [ioBroker](https://github.com/ioBroker/ioBroker) | Integration platform for the Internet of Things |
+| [Gladys](https://github.com/GladysAssistant/Gladys) | Home Assistant for smart living |
+| [Jeedom](https://github.com/jeedom/core) | Home automation platform |
+| [OpenMotics](https://github.com/openmotics/frontend) | Home automation system |
 
 ## Analytics
 
@@ -122,6 +149,9 @@
 | [GoAccess](https://github.com/allinurl/goaccess) | Real-time web log analyzer |
 | [Metabase](https://github.com/metabase/metabase) | Business intelligence and analytics |
 | [Redash](https://github.com/getredash/redash) | Make sense of your data |
+| [Countly](https://github.com/Countly/countly-server) | Product analytics platform |
+| [PostHog](https://github.com/PostHog/posthog) | Open-source product analytics |
+| [Fathom](https://github.com/usefathom/fathom) | Simple, privacy-focused website analytics |
 
 ## Miscellaneous
 
@@ -134,8 +164,22 @@
 | [Shiori](https://github.com/go-shiori/shiori) | Simple bookmark manager |
 | [Speedtest](https://github.com/librespeed/speedtest) | Self-hosted speed test |
 | [Papermerge](https://github.com/ciur/papermerge) | Document management system |
+| [Calibre-web](https://github.com/janeczku/calibre-web) | Web app for browsing, reading, and downloading eBooks |
+| [Firefly III](https://github.com/firefly-iii/firefly-iii) | Personal finances manager |
+| [Homer](https://github.com/bastienwirtz/homer) | A dead simple static homepage for your server |
 
 # This project is in early development
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=hotheadhacker/awesome-selfhost-docker&type=Date)](https://star-history.com/#hotheadhacker/awesome-selfhost-docker&Date)
+```
+
+This comprehensive list includes 100 additional projects across various categories, providing a rich set of options for users interested in self-hosting applications with Docker.
+
+Citations:
+[1] https://github.com/awesome-selfhosted/awesome-selfhosted/activity
+[2] https://www.reddit.com/r/docker/comments/o3tjuc/dockerselfhosted_list/
+[3] https://awesome-docker.netlify.app
+[4] https://tenten.co/insight/dev/top-awesome-selfhost-github-projects/
+[5] https://petersem.github.io/dockerholics/
+[6] https://perfectmediaserver.com/04-day-two/top10apps/
