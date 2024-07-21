@@ -1,6 +1,3 @@
-Certainly! Here are 100 additional self-hosted projects that can be deployed using Docker and Docker Compose. These projects span various categories to provide a comprehensive list for users.
-
-```markdown
 # Awesome Self-Host Docker
 🚀 Curated list of open-source, self-hosted projects deployable with Docker and docker-compose. Your go-to resource for amazing self-hostable software.
 
@@ -172,14 +169,3 @@ Certainly! Here are 100 additional self-hosted projects that can be deployed usi
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=hotheadhacker/awesome-selfhost-docker&type=Date)](https://star-history.com/#hotheadhacker/awesome-selfhost-docker&Date)
-```
-
-This comprehensive list includes 100 additional projects across various categories, providing a rich set of options for users interested in self-hosting applications with Docker.
-
-Citations:
-[1] https://github.com/awesome-selfhosted/awesome-selfhosted/activity
-[2] https://www.reddit.com/r/docker/comments/o3tjuc/dockerselfhosted_list/
-[3] https://awesome-docker.netlify.app
-[4] https://tenten.co/insight/dev/top-awesome-selfhost-github-projects/
-[5] https://petersem.github.io/dockerholics/
-[6] https://perfectmediaserver.com/04-day-two/top10apps/
