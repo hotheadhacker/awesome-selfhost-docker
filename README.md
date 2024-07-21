@@ -29,6 +29,16 @@
 | [Zim](https://github.com/jaap-karssenberg/zim-desktop-wiki) | Desktop wiki & note-taking |
 | [Standard Notes](https://github.com/standardnotes/server) | Encrypted note-taking app |
 | [Kanboard](https://github.com/kanboard/kanboard) | Project management software |
+| [Etherpad](https://github.com/ether/etherpad-lite) | Real-time collaborative document editing |
+| [OnlyOffice](https://github.com/ONLYOFFICE/Docker-DocumentServer) | Office suite that enables you to manage documents, projects, team, and customer relations in one place |
+| [CryptPad](https://github.com/xwiki-labs/cryptpad) | Collaboration suite that is end-to-end encrypted |
+| [Outline](https://github.com/outline/outline) | A modern team knowledge base |
+| [WeeWX](https://github.com/weewx/weewx) | Weather station software |
+| [Kimai](https://github.com/kevinpapst/kimai2) | Time-tracking application |
+| [Wekan](https://github.com/wekan/wekan) | Open-source Trello-like kanban board |
+| [Restyaboard](https://github.com/RestyaPlatform/board) | Open-source Trello-like kanban board |
+| [Taskcafe](https://github.com/JordanKnott/taskcafe) | Open-source project management tool |
+| [Focalboard](https://github.com/mattermost/focalboard) | Open-source project management tool |
 
 ## Development
 
@@ -44,6 +54,16 @@
 | [Sentry](https://github.com/getsentry/onpremise) | Error tracking and performance monitoring |
 | [Taiga](https://github.com/taigaio/taiga-back) | Project management platform |
 | [Redmine](https://github.com/bitnami/bitnami-docker-redmine) | Project management web application |
+| [Phabricator](https://github.com/phacility/phabricator) | Suite of open-source tools for peer code review, task management, and project communication |
+| [Code-Server](https://github.com/cdr/code-server) | Run VS Code on any machine anywhere |
+| [Theia](https://github.com/eclipse-theia/theia) | Cloud & desktop IDE framework implemented in TypeScript |
+| [JupyterHub](https://github.com/jupyterhub/jupyterhub) | Multi-user server for Jupyter notebooks |
+| [GitBucket](https://github.com/gitbucket/gitbucket) | Git platform powered by Scala |
+| [Gerrit](https://github.com/GerritCodeReview/gerrit) | Web-based code review system |
+| [Fossil](https://github.com/fossil-scm/fossil) | Distributed version control system |
+| [Sourcegraph](https://github.com/sourcegraph/sourcegraph) | Code search and navigation tool |
+| [CodiMD](https://github.com/hackmdio/codimd) | Real-time collaborative markdown notes |
+| [Leantime](https://github.com/Leantime/leantime) | Open-source project management system |
 
 ## Media
 
@@ -59,6 +79,16 @@
 | [Radarr](https://github.com/Radarr/Radarr) | Movie collection manager |
 | [Sonarr](https://github.com/Sonarr/Sonarr) | TV series collection manager |
 | [Lidarr](https://github.com/Lidarr/Lidarr) | Music collection manager |
+| [SickChill](https://github.com/SickChill/SickChill) | Automatic Video Library Manager for TV Shows |
+| [MyMediaForAlexa](https://github.com/mikebrady/shairport-sync) | Stream your own music to Alexa devices |
+| [Koel](https://github.com/koel/koel) | Personal music streaming server |
+| [Subsonic](https://github.com/ejurgensen/forked-daapd) | Music server and streamer |
+| [Ampache](https://github.com/ampache/ampache) | Web-based audio/video streaming application |
+| [LibreTime](https://github.com/LibreTime/libretime) | Open-source radio management software |
+| [Headphones](https://github.com/rembo10/headphones) | Automated music downloader for NZB and Torrent |
+| [Beets](https://github.com/beetbox/beets) | Music library manager and MusicBrainz tagger |
+| [Mopidy](https://github.com/mopidy/mopidy) | Extensible music server |
+| [Piwigo](https://github.com/Piwigo/Piwigo) | Photo gallery software for the web |
 
 ## Communication
 
@@ -74,6 +104,16 @@
 | [Discourse](https://github.com/discourse/discourse_docker) | Open-source discussion platform |
 | [Postal](https://github.com/postalhq/postal) | Mail delivery platform |
 | [Mailu](https://github.com/Mailu/Mailu) | Full-featured mail server |
+| [Matterbridge](https://github.com/42wim/matterbridge) | Bridge between various chat protocols |
+| [Misskey](https://github.com/syuilo/misskey) | Decentralized social media platform |
+| [Friendica](https://github.com/friendica/friendica) | Decentralized social network |
+| [Hubzilla](https://github.com/redmatrix/hubzilla) | Decentralized publishing platform |
+| [GNU social](https://github.com/gnusocial/gnusocial) | Decentralized social network |
+| [Diaspora](https://github.com/diaspora/diaspora) | Distributed social networking service |
+| [Pleroma](https://github.com/pleroma/pleroma) | Lightweight social networking server |
+| [Movim](https://github.com/movim/movim) | Decentralized social platform |
+| [Scuttlebutt](https://github.com/ssbc/patchwork) | Decentralized social network |
+| [Threema Web](https://github.com/threema-ch/threema-web) | Secure messaging app |
 
 ## Security
 
@@ -89,6 +129,15 @@
 | [ClamAV](https://github.com/Cisco-Talos/clamav) | Open-source antivirus engine |
 | [OpenVPN](https://github.com/kylemanna/docker-openvpn) | Open-source VPN solution |
 | [WireGuard](https://github.com/linuxserver/docker-wireguard) | Fast and modern VPN solution |
+| [CrowdSec](https://github.com/crowdsecurity/crowdsec) | Collaborative security engine |
+| [ModSecurity](https://github.com/SpiderLabs/ModSecurity) | Open-source web application firewall |
+| [Suricata](https://github.com/OISF/suricata) | Network threat detection engine |
+| [Snort](https://github.com/snort3/snort3) | Network intrusion detection system |
+| [Wazuh](https://github.com/wazuh/wazuh) | Security monitoring and SIEM |
+| [OpenSCAP](https://github.com/OpenSCAP/openscap) | Security compliance solutions |
+| [Rspamd](https://github.com/rspamd/rspamd) | Fast, free and open-source spam filtering system |
+| [SpamAssassin](https://github.com/apache/spamassassin) | Open-source anti-spam platform |
+| [Graylog](https://github.com/Graylog2/graylog2-server) | Log management platform |
 
 ## Monitoring
 
@@ -104,6 +153,16 @@
 | [Cacti](https://github.com/Cacti/cacti) | Network monitoring and graphing tool |
 | [Nagios](https://github.com/NagiosEnterprises/nagioscore) | IT infrastructure monitoring |
 | [Checkmk](https://github.com/tribe29/checkmk) | Monitoring system for IT infrastructure |
+| [LibreNMS](https://github.com/librenms/librenms) | Network monitoring system |
+| [Icinga](https://github.com/Icinga/icinga2) | Monitoring system for IT infrastructure |
+| [Monit](https://github.com/monit/monit) | Small Open Source utility for managing and monitoring Unix systems |
+| [Glances](https://github.com/nicolargo/glances) | Cross-platform monitoring tool |
+| [Cortex](https://github.com/cortexproject/cortex) | Horizontally scalable, highly available, multi-tenant, long term storage for Prometheus |
+| [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics) | Fast, cost-effective and scalable monitoring solution and time series database |
+| [Thanos](https://github.com/thanos-io/thanos) | Highly available Prometheus setup with long term storage capabilities |
+| [Kapacitor](https://github.com/influxdata/kapacitor) | Open-source framework for processing, monitoring, and alerting on time series data |
+| [Bosun](https://github.com/bosun-monitor/bosun) | Monitoring and alerting system by Stack Exchange |
+| [Cerebro](https://github.com/lmenezes/cerebro) | Web admin tool for Elasticsearch |
 
 ## File Sharing
 
@@ -119,6 +178,17 @@
 | [Cozy](https://github.com/cozy/cozy-stack) | Personal cloud server |
 | [Kinto](https://github.com/Kinto/kinto) | Minimalist JSON storage service |
 | [ProjectSend](https://github.com/projectsend/projectsend) | Clients-oriented file uploading platform |
+| [Caddy](https://github.com/caddyserver/caddy) | Fast, multi-platform web server with automatic HTTPS |
+| [Samba](https://github.com/samba-team/samba) | Free software re-implementation of the SMB/CIFS networking protocol |
+| [Resilio Sync](https://github.com/Resilio/sync) | Fast, reliable, and simple file sync and share solution |
+| [Zenko](https://github.com/scality/Zenko) | Open-source multi-cloud data controller |
+| [SeaweedFS](https://github.com/chrislusf/seaweedfs) | Distributed file system to store and serve billions of files fast |
+| [Ceph](https://github.com/ceph/ceph) | Distributed object, block, and file storage platform |
+| [GlusterFS](https://github.com/gluster/glusterfs) | Scale-out network-attached storage file system |
+| [OpenMediaVault](https://github.com/openmediavault/openmediavault) | Next generation network attached storage solution based on Debian Linux |
+| [XigmaNAS](https://github.com/xigmanas/xigmanas) | Open-source NAS (Network-Attached Storage) distribution based on FreeBSD |
+| [FreeNAS](https://github.com/freenas/freenas) | Open-source network-attached storage operating system based on FreeBSD |
+
 
 ## Home Automation
 
