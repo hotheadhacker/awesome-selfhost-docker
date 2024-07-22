@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/README.md" }
+    { "source": "/", "destination": "/index.html" }
   ]
 }
