@@ -219,6 +219,7 @@
 | [Countly](https://github.com/Countly/countly-server) | Product analytics platform |
 | [PostHog](https://github.com/PostHog/posthog) | Open-source product analytics |
 | [Fathom](https://github.com/usefathom/fathom) | Simple, privacy-focused website analytics |
+| [Vince](https://github.com/vinceanalytics/vince) | Self Hosted Alternative To Google Analytics |
 
 ## Miscellaneous
 
