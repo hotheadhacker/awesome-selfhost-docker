@@ -236,7 +236,7 @@
 | [Firefly III](https://github.com/firefly-iii/firefly-iii) | Personal finances manager |
 | [Homer](https://github.com/bastienwirtz/homer) | A dead simple static homepage for your server |
 | [Astuto](https://github.com/astuto/astuto) | Customer feedback tool to collect, manage and prioritize feedback from your users |
-| [Wordpress]((https://github.com/GSCloud/docker_wordpress) | Run WordPress, MariaDB and phpMyAdmin in Docker |
+| [Wordpress](https://github.com/GSCloud/docker_wordpress) | Run WordPress, MariaDB and phpMyAdmin in Docker |
 
 # This project is in early development
 ## Star History
