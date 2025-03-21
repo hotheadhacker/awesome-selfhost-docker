@@ -92,6 +92,7 @@
 | [Piwigo](https://github.com/Piwigo/Piwigo) | Photo gallery software for the web |
 | [Prowlarr](https://github.com/Prowlarr/Prowlarr) | An indexer manager/proxy built on *Arr to integrate with various media software like Sonarr, Radarr, and Lidarr. Supports multiple indexers and automation.|
 | [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | Self-hosted audiobook and podcast server with a web player and mobile apps.|
+|[ SuggestArr](https://github.com/giuseppe99barchetta/SuggestArr) | Companion tool for Overseerr and Jellyfin that provides media recommendations.|
 
 ## Communication
 
