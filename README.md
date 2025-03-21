@@ -39,6 +39,7 @@
 | [Restyaboard](https://github.com/RestyaPlatform/board) | Open-source Trello-like kanban board |
 | [Taskcafe](https://github.com/JordanKnott/taskcafe) | Open-source project management tool |
 | [Focalboard](https://github.com/mattermost/focalboard) | Open-source project management tool |
+| [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | Open-source Notion alternative with a focus on privacy and extensibility.|
 
 ## Development
 
