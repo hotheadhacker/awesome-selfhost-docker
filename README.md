@@ -35,7 +35,6 @@
 | [Outline](https://github.com/outline/outline) | A modern team knowledge base |
 | [WeeWX](https://github.com/weewx/weewx) | Weather station software |
 | [Kimai](https://github.com/kevinpapst/kimai2) | Time-tracking application |
-| [Wekan](https://github.com/wekan/wekan) | Open-source Trello-like kanban board |
 | [Restyaboard](https://github.com/RestyaPlatform/board) | Open-source Trello-like kanban board |
 | [Taskcafe](https://github.com/JordanKnott/taskcafe) | Open-source project management tool |
 | [Focalboard](https://github.com/mattermost/focalboard) | Open-source project management tool |
