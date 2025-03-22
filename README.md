@@ -206,7 +206,6 @@
 | [ioBroker](https://github.com/ioBroker/ioBroker) | Integration platform for the Internet of Things |
 | [Gladys](https://github.com/GladysAssistant/Gladys) | Home Assistant for smart living |
 | [Jeedom](https://github.com/jeedom/core) | Home automation platform |
-| [OpenMotics](https://github.com/openmotics/frontend) | Home automation system |
 
 ## Analytics
 
