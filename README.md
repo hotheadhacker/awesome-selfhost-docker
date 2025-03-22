@@ -44,7 +44,7 @@
 
 | Project | Description |
 |---------|-------------|
-| [GitLab](https://github.com/gitlab/gitlab-ce) | DevOps platform |
+| [GitLab](https://gitlab.com/gitlab-org/gitlab-foss) | DevOps platform |
 | [Gitea](https://github.com/go-gitea/gitea) | Lightweight code hosting solution |
 | [Drone](https://github.com/drone/drone) | Continuous Integration platform |
 | [Jenkins](https://github.com/jenkinsci/docker) | Automation server for CI/CD |
@@ -53,15 +53,15 @@
 | [SonarQube](https://github.com/SonarSource/docker-sonarqube) | Continuous inspection of code quality |
 | [Sentry](https://github.com/getsentry/onpremise) | Error tracking and performance monitoring |
 | [Taiga](https://github.com/taigaio/taiga-back) | Project management platform |
-| [Redmine](https://github.com/bitnami/bitnami-docker-redmine) | Project management web application |
+| [Redmine](https://github.com/bitnami/containers/tree/main/bitnami/redmine) | Project management web application |
 | [Phabricator](https://github.com/phacility/phabricator) | Suite of open-source tools for peer code review, task management, and project communication |
 | [Code-Server](https://github.com/cdr/code-server) | Run VS Code on any machine anywhere |
 | [Theia](https://github.com/eclipse-theia/theia) | Cloud & desktop IDE framework implemented in TypeScript |
 | [JupyterHub](https://github.com/jupyterhub/jupyterhub) | Multi-user server for Jupyter notebooks |
 | [GitBucket](https://github.com/gitbucket/gitbucket) | Git platform powered by Scala |
 | [Gerrit](https://github.com/GerritCodeReview/gerrit) | Web-based code review system |
-| [Fossil](https://github.com/fossil-scm/fossil) | Distributed version control system |
-| [Sourcegraph](https://github.com/sourcegraph/sourcegraph) | Code search and navigation tool |
+| [Fossil](https://www.fossil-scm.org/home/doc/trunk/www/containers.md) | Distributed version control system |
+| [Sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph-docker) | Code search and navigation tool |
 | [CodiMD](https://github.com/hackmdio/codimd) | Real-time collaborative markdown notes |
 | [Leantime](https://github.com/Leantime/leantime) | Open-source project management system |
 
@@ -111,7 +111,7 @@
 | [Misskey](https://github.com/syuilo/misskey) | Decentralized social media platform |
 | [Friendica](https://github.com/friendica/friendica) | Decentralized social network |
 | [Hubzilla](https://github.com/redmatrix/hubzilla) | Decentralized publishing platform |
-| [GNU social](https://github.com/gnusocial/gnusocial) | Decentralized social network |
+| [GNU social](https://notabug.org/diogo/gnu-social) | Decentralized social network |
 | [Diaspora](https://github.com/diaspora/diaspora) | Distributed social networking service |
 | [Pleroma](https://github.com/pleroma/pleroma) | Lightweight social networking server |
 | [Movim](https://github.com/movim/movim) | Decentralized social platform |
