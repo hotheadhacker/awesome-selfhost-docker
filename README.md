@@ -61,7 +61,7 @@
 | [GitBucket](https://github.com/gitbucket/gitbucket) | Git platform powered by Scala |
 | [Gerrit](https://github.com/GerritCodeReview/gerrit) | Web-based code review system |
 | [Fossil](https://github.com/fossil-scm/fossil) | Distributed version control system |
-| [Sourcegraph](https://github.com/sourcegraph/sourcegraph) | Code search and navigation tool |
+| [Sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph-docker) | Code search and navigation tool |
 | [CodiMD](https://github.com/hackmdio/codimd) | Real-time collaborative markdown notes |
 | [Leantime](https://github.com/Leantime/leantime) | Open-source project management system |
 
@@ -90,6 +90,7 @@
 | [Mopidy](https://github.com/mopidy/mopidy) | Extensible music server |
 | [Piwigo](https://github.com/Piwigo/Piwigo) | Photo gallery software for the web |
 | [Prowlarr](https://github.com/Prowlarr/Prowlarr) | An indexer manager/proxy built on *Arr to integrate with various media software like Sonarr, Radarr, and Lidarr. Supports multiple indexers and automation.|
+| [Cobalt](https://github.com/imputnet/cobalt) | Quick Media Downloader |
 | [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | Self-hosted audiobook and podcast server with a web player and mobile apps.|
 |[ SuggestArr](https://github.com/giuseppe99barchetta/SuggestArr) | Companion tool for Overseerr and Jellyfin that provides media recommendations.|
 
