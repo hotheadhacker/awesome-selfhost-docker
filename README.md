@@ -1,4 +1,6 @@
 # Awesome Self-Host Docker
+<a href="https://trendshift.io/repositories/13203" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13203" alt="hotheadhacker%2Fawesome-selfhost-docker | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+
 🚀 Curated list of open-source, self-hosted projects deployable with Docker and docker-compose. Your go-to resource for amazing self-hostable software.
 
 ![Awesome selfhost docker](https://raw.githubusercontent.com/hotheadhacker/awesome-selfhost-docker/main/assets/imgs/docker%2Boss.png)
@@ -39,6 +41,8 @@
 | [Taskcafe](https://github.com/JordanKnott/taskcafe) | Open-source project management tool |
 | [Focalboard](https://github.com/mattermost/focalboard) | Open-source project management tool |
 | [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | Open-source Notion alternative with a focus on privacy and extensibility.|
+| [Tillywork](https://github.com/tillywork/tillywork) | Opensource work management solution. Manage your sprints, projects, and sales pipelines in one place |
+| [Huly](https://github.com/hcengineering/platform) | All-in-One Project Management Platform |
 
 ## Development
 
@@ -64,6 +68,8 @@
 | [Sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph-docker) | Code search and navigation tool |
 | [CodiMD](https://github.com/hackmdio/codimd) | Real-time collaborative markdown notes |
 | [Leantime](https://github.com/Leantime/leantime) | Open-source project management system |
+| [Tigerbeetle](https://github.com/tigerbeetle/tigerbeetle) | The financial transactions database designed for mission critical safety and performance. |
+| [Undb](https://github.com/undb-io/undb) | No Code Database & BaaS |
 
 ## Media
 
@@ -90,6 +96,7 @@
 | [Mopidy](https://github.com/mopidy/mopidy) | Extensible music server |
 | [Piwigo](https://github.com/Piwigo/Piwigo) | Photo gallery software for the web |
 | [Prowlarr](https://github.com/Prowlarr/Prowlarr) | An indexer manager/proxy built on *Arr to integrate with various media software like Sonarr, Radarr, and Lidarr. Supports multiple indexers and automation.|
+| [Cobalt](https://github.com/imputnet/cobalt) | Quick Media Downloader |
 | [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | Self-hosted audiobook and podcast server with a web player and mobile apps.|
 |[ SuggestArr](https://github.com/giuseppe99barchetta/SuggestArr) | Companion tool for Overseerr and Jellyfin that provides media recommendations.|
 
@@ -166,6 +173,7 @@
 | [Kapacitor](https://github.com/influxdata/kapacitor) | Open-source framework for processing, monitoring, and alerting on time series data |
 | [Bosun](https://github.com/bosun-monitor/bosun) | Monitoring and alerting system by Stack Exchange |
 | [Cerebro](https://github.com/lmenezes/cerebro) | Web admin tool for Elasticsearch |
+| [Dozzle](https://github.com/amir20/dozzle) | Realtime log viewer for docker containers |
 
 ## File Sharing
 
