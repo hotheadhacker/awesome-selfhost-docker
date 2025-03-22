@@ -1,627 +1,779 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome Self-Host Docker</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {"50":"#f0f9ff","100":"#e0f2fe","200":"#bae6fd","300":"#7dd3fc","400":"#38bdf8","500":"#0ea5e9","600":"#0284c7","700":"#0369a1","800":"#075985","900":"#0c4a6e"}
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#f0f9ff",
+                100: "#e0f2fe",
+                200: "#bae6fd",
+                300: "#7dd3fc",
+                400: "#38bdf8",
+                500: "#0ea5e9",
+                600: "#0284c7",
+                700: "#0369a1",
+                800: "#075985",
+                900: "#0c4a6e",
+              },
+            },
+          },
+        },
+      };
     </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+      }
     </style>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        h2 {
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 10px;
-            font-size: 2.5em !important;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin-bottom: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .emoji {
-            font-size: 1.2em;
-        }
-        li > a, td > a {
-        	text-decoration: underline;
-  			color: #777;
-        }
-        
-        li > a:hover, td > a:hover{
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1,
+      h2 {
+        @apply text-[#2c3e50] dark:text-gray-100;
+      }
+      h2 {
+        border-bottom: 2px solid #ecf0f1;
+        padding-bottom: 10px;
+        font-size: 2.5em !important;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        @apply dark:bg-gray-900 text-[#f2f2f2];
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .emoji {
+        font-size: 1.2em;
+      }
+      li > a,
+      td > a {
+        text-decoration: underline;
+        color: #777;
+      }
+
+      li > a:hover,
+      td > a:hover {
         color: green; /* Change color on hover */
         text-decoration: none; /* Remove underline on hover */
       }
     </style>
-</head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <nav class="flex items-center justify-between py-6">
-            <div class="flex items-center flex-shrink-0">
-                <span class="font-bold text-xl tracking-tight">Awesome Self-Host Docker 🚀</span>
-            </div>
-            <div class="flex items-center">
-                <a href="https://github.com/hotheadhacker/awesome-selfhost-docker" target="_blank" rel="noopener noreferrer" class="mr-4 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
-                    </svg>
-                </a>
-                <button id="theme-toggle" class="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
-                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                </button>
-            </div>
-        </nav>
+  </head>
+  <body
+    class="bg-gray-50 container mx-auto dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300"
+  >
+    <div class="mx-auto">
+      <nav class="flex items-center justify-between py-6 sm:flex-row flex-col">
+        <div class="flex items-center flex-shrink-0">
+          <span class="font-bold text-xl tracking-tight"
+            >Awesome Self-Host Docker 🚀</span
+          >
+        </div>
+        <div class="flex items-center">
+          <a
+            href="https://github.com/hotheadhacker/awesome-selfhost-docker"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mr-4 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <button
+            id="theme-toggle"
+            class="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
+            <svg
+              id="theme-toggle-dark-icon"
+              class="hidden w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+              ></path>
+            </svg>
+            <svg
+              id="theme-toggle-light-icon"
+              class="hidden w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <main class="py-10">
+      <h1 class="text-4xl font-extrabold mb-6 dark:text-gray-100">
+        Awesome Self-Host Docker
+      </h1>
+      <p class="text-xl mb-8">
+        Curated list of open-source, self-hosted projects deployable with Docker
+        and docker-compose. Your go-to resource for amazing self-hostable
+        software.
+      </p>
 
-        <main class="py-10">
-            <h1 class="text-4xl font-extrabold mb-6">Awesome Self-Host Docker</h1>
-            <p class="text-xl mb-8">Curated list of open-source, self-hosted projects deployable with Docker and docker-compose. Your go-to resource for amazing self-hostable software.</p>
-            
-            <img src="https://raw.githubusercontent.com/hotheadhacker/awesome-selfhost-docker/main/assets/imgs/docker%2Boss.png" alt="Awesome selfhost docker" class="w-full max-w-2xl mx-auto mb-12 rounded-lg shadow-lg">
-            
+      <img
+        src="https://raw.githubusercontent.com/hotheadhacker/awesome-selfhost-docker/main/assets/imgs/docker%2Boss.png"
+        alt="Awesome selfhost docker"
+        class="w-full max-w-2xl mx-auto mb-12 rounded-lg shadow-lg"
+      />
+    </main>
     <h2>Table of Contents</h2>
     <ul>
-        <li><a href="#productivity">Productivity</a></li>
-        <li><a href="#development">Development</a></li>
-        <li><a href="#media">Media</a></li>
-        <li><a href="#communication">Communication</a></li>
-        <li><a href="#security">Security</a></li>
-        <li><a href="#monitoring">Monitoring</a></li>
-        <li><a href="#file-sharing">File Sharing</a></li>
-        <li><a href="#home-automation">Home Automation</a></li>
-        <li><a href="#analytics">Analytics</a></li>
-        <li><a href="#miscellaneous">Miscellaneous</a></li>
+      <li><a href="#productivity">Productivity</a></li>
+      <li><a href="#development">Development</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#communication">Communication</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#monitoring">Monitoring</a></li>
+      <li><a href="#file-sharing">File Sharing</a></li>
+      <li><a href="#home-automation">Home Automation</a></li>
+      <li><a href="#analytics">Analytics</a></li>
+      <li><a href="#miscellaneous">Miscellaneous</a></li>
     </ul>
 
     <h2 id="productivity">Productivity</h2>
     <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/nextcloud/docker">Nextcloud</a></td>
-            <td>Productivity platform for file hosting and collaboration</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/laurent22/joplin">Joplin</a></td>
-            <td>Note-taking and to-do application</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/jonaswinkler/paperless-ng">Paperless-ng</a></td>
-            <td>Document management system</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/BookStackApp/BookStack">Bookstack</a></td>
-            <td>Platform for organizing and storing information</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/zadam/trilium">Trilium</a></td>
-            <td>Hierarchical note-taking application</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/hedgedoc/hedgedoc">HedgeDoc</a></td>
-            <td>Collaborative markdown editor</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/wekan/wekan">Wekan</a></td>
-            <td>Open-source Trello-like kanban board</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/jaap-karssenberg/zim-desktop-wiki">Zim</a></td>
-            <td>Desktop wiki & note-taking</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/standardnotes/server">Standard Notes</a></td>
-            <td>Encrypted note-taking app</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/kanboard/kanboard">Kanboard</a></td>
-            <td>Project management software</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/ether/etherpad-lite">Etherpad</a></td>
-            <td>Real-time collaborative document editing</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/ONLYOFFICE/Docker-DocumentServer">OnlyOffice</a></td>
-            <td>Office suite that enables you to manage documents, projects, team, and customer relations in one place</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/xwiki-labs/cryptpad">CryptPad</a></td>
-            <td>Collaboration suite that is end-to-end encrypted</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/outline/outline">Outline</a></td>
-            <td>A modern team knowledge base</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/weewx/weewx">WeeWX</a></td>
-            <td>Weather station software</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/kevinpapst/kimai2">Kimai</a></td>
-            <td>Time-tracking application</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/RestyaPlatform/board">Restyaboard</a></td>
-            <td>Open-source Trello-like kanban board</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/JordanKnott/taskcafe">Taskcafe</a></td>
-            <td>Open-source project management tool</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/mattermost/focalboard">Focalboard</a></td>
-            <td>Open-source project management tool</td>
-        </tr>
+      <tr>
+        <th>Project</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/nextcloud/docker">Nextcloud</a></td>
+        <td>Productivity platform for file hosting and collaboration</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/laurent22/joplin">Joplin</a></td>
+        <td>Note-taking and to-do application</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/jonaswinkler/paperless-ng"
+            >Paperless-ng</a
+          >
+        </td>
+        <td>Document management system</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/BookStackApp/BookStack">Bookstack</a>
+        </td>
+        <td>Platform for organizing and storing information</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/zadam/trilium">Trilium</a></td>
+        <td>Hierarchical note-taking application</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/hedgedoc/hedgedoc">HedgeDoc</a></td>
+        <td>Collaborative markdown editor</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/wekan/wekan">Wekan</a></td>
+        <td>Open-source Trello-like kanban board</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/jaap-karssenberg/zim-desktop-wiki">Zim</a>
+        </td>
+        <td>Desktop wiki & note-taking</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/standardnotes/server">Standard Notes</a>
+        </td>
+        <td>Encrypted note-taking app</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/kanboard/kanboard">Kanboard</a></td>
+        <td>Project management software</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/ether/etherpad-lite">Etherpad</a></td>
+        <td>Real-time collaborative document editing</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/ONLYOFFICE/Docker-DocumentServer"
+            >OnlyOffice</a
+          >
+        </td>
+        <td>
+          Office suite that enables you to manage documents, projects, team, and
+          customer relations in one place
+        </td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/xwiki-labs/cryptpad">CryptPad</a></td>
+        <td>Collaboration suite that is end-to-end encrypted</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/outline/outline">Outline</a></td>
+        <td>A modern team knowledge base</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/weewx/weewx">WeeWX</a></td>
+        <td>Weather station software</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/kevinpapst/kimai2">Kimai</a></td>
+        <td>Time-tracking application</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/RestyaPlatform/board">Restyaboard</a>
+        </td>
+        <td>Open-source Trello-like kanban board</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/JordanKnott/taskcafe">Taskcafe</a></td>
+        <td>Open-source project management tool</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/mattermost/focalboard">Focalboard</a>
+        </td>
+        <td>Open-source project management tool</td>
+      </tr>
     </table>
 
     <h2 id="development">Development</h2>
     <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://hub.docker.com/r/gitlab/gitlab-ce">GitLab</a></td>
-            <td>DevOps platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/go-gitea/gitea">Gitea</a></td>
-            <td>Lightweight code hosting solution</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/drone/drone">Drone</a></td>
-            <td>Continuous Integration platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/jenkinsci/docker">Jenkins</a></td>
-            <td>Automation server for CI/CD</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/gogs/gogs">Gogs</a></td>
-            <td>Painless self-hosted Git service</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/portainer/portainer">Portainer</a></td>
-            <td>Lightweight management UI for Docker</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/SonarSource/docker-sonarqube">SonarQube</a></td>
-            <td>Continuous inspection of code quality</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/getsentry/onpremise">Sentry</a></td>
-            <td>Error tracking and performance monitoring</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/taigaio/taiga-back">Taiga</a></td>
-            <td>Project management platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/bitnami/bitnami-docker-redmine">Redmine</a></td>
-            <td>Project management web application</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/phacility/phabricator">Phabricator</a></td>
-            <td>Suite of open-source tools for peer code review, task management, and project communication</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/cdr/code-server">Code-Server</a></td>
-            <td>Run VS Code on any machine anywhere</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/eclipse-theia/theia">Theia</a></td>
-            <td>Cloud & desktop IDE framework implemented in TypeScript</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/jupyterhub/jupyterhub">JupyterHub</a></td>
-            <td>Multi-user server for Jupyter notebooks</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/gitbucket/gitbucket">GitBucket</a></td>
-            <td>Git platform powered by Scala</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/GerritCodeReview/gerrit">Gerrit</a></td>
-            <td>Web-based code review system</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/fossil-scm/fossil">Fossil</a></td>
-            <td>Distributed version control system</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/sourcegraph/sourcegraph">Sourcegraph</a></td>
-            <td>Code search and navigation tool</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/hackmdio/codimd">CodiMD</a></td>
-            <td>Real-time collaborative markdown notes</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/Leantime/leantime">Leantime</a></td>
-            <td>Open-source project management system</td>
-        </tr>
+      <tr>
+        <th>Project</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><a href="https://hub.docker.com/r/gitlab/gitlab-ce">GitLab</a></td>
+        <td>DevOps platform</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/go-gitea/gitea">Gitea</a></td>
+        <td>Lightweight code hosting solution</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/drone/drone">Drone</a></td>
+        <td>Continuous Integration platform</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/jenkinsci/docker">Jenkins</a></td>
+        <td>Automation server for CI/CD</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/gogs/gogs">Gogs</a></td>
+        <td>Painless self-hosted Git service</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/portainer/portainer">Portainer</a></td>
+        <td>Lightweight management UI for Docker</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/SonarSource/docker-sonarqube"
+            >SonarQube</a
+          >
+        </td>
+        <td>Continuous inspection of code quality</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/getsentry/onpremise">Sentry</a></td>
+        <td>Error tracking and performance monitoring</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/taigaio/taiga-back">Taiga</a></td>
+        <td>Project management platform</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/bitnami/bitnami-docker-redmine"
+            >Redmine</a
+          >
+        </td>
+        <td>Project management web application</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/phacility/phabricator">Phabricator</a>
+        </td>
+        <td>
+          Suite of open-source tools for peer code review, task management, and
+          project communication
+        </td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/cdr/code-server">Code-Server</a></td>
+        <td>Run VS Code on any machine anywhere</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/eclipse-theia/theia">Theia</a></td>
+        <td>Cloud & desktop IDE framework implemented in TypeScript</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/jupyterhub/jupyterhub">JupyterHub</a>
+        </td>
+        <td>Multi-user server for Jupyter notebooks</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/gitbucket/gitbucket">GitBucket</a></td>
+        <td>Git platform powered by Scala</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/GerritCodeReview/gerrit">Gerrit</a></td>
+        <td>Web-based code review system</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/fossil-scm/fossil">Fossil</a></td>
+        <td>Distributed version control system</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/sourcegraph/sourcegraph">Sourcegraph</a>
+        </td>
+        <td>Code search and navigation tool</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/hackmdio/codimd">CodiMD</a></td>
+        <td>Real-time collaborative markdown notes</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/Leantime/leantime">Leantime</a></td>
+        <td>Open-source project management system</td>
+      </tr>
     </table>
 
     <h2 id="media">Media</h2>
     <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/plexinc/pms-docker">Plex</a></td>
-            <td>Media server</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/jellyfin/jellyfin">Jellyfin</a></td>
-            <td>Media system</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/airsonic/airsonic">Airsonic</a></td>
-            <td>Music streaming server</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/photoprism/photoprism">Photoprism</a></td>
-            <td>Personal photo management</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/navidrome/navidrome">Navidrome</a></td>
-            <td>Music server and streamer</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/MediaBrowser/Emby">Emby</a></td>
-            <td>Media server for personal streaming</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/matthuisman/karaoke-forever">Karaoke Eternal</a></td>
-            <td>Host your own karaoke party</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/Radarr/Radarr">Radarr</a></td>
-            <td>Movie collection manager</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/Sonarr/Sonarr">Sonarr</a></td>
-            <td>TV series collection manager</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/Lidarr/Lidarr">Lidarr</a></td>
-            <td>Music collection manager</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/SickChill/SickChill">SickChill</a></td>
-            <td>Automatic Video Library Manager for TV Shows</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/mikebrady/shairport-sync">MyMediaForAlexa</a></td>
-            <td>Stream your own music to Alexa devices</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/koel/koel">Koel</a></td>
-            <td>Personal music streaming server</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/ejurgensen/forked-daapd">Subsonic</a></td>
-            <td>Music server and streamer</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/ampache/ampache">Ampache</a></td>
-            <td>Web-based audio/video streaming application</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/LibreTime/libretime">LibreTime</a></td>
-            <td>Open-source radio management software</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/rembo10/headphones">Headphones</a></td>
-            <td>Automated music downloader for NZB and Torrent</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/beetbox/beets">Beets</a></td>
-            <td>Music library manager and MusicBrainz tagger</td>
-        </tr>
-        
-            </table>
+      <tr>
+        <th>Project</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/plexinc/pms-docker">Plex</a></td>
+        <td>Media server</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/jellyfin/jellyfin">Jellyfin</a></td>
+        <td>Media system</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/airsonic/airsonic">Airsonic</a></td>
+        <td>Music streaming server</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/photoprism/photoprism">Photoprism</a>
+        </td>
+        <td>Personal photo management</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/navidrome/navidrome">Navidrome</a></td>
+        <td>Music server and streamer</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/MediaBrowser/Emby">Emby</a></td>
+        <td>Media server for personal streaming</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/matthuisman/karaoke-forever"
+            >Karaoke Eternal</a
+          >
+        </td>
+        <td>Host your own karaoke party</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/Radarr/Radarr">Radarr</a></td>
+        <td>Movie collection manager</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/Sonarr/Sonarr">Sonarr</a></td>
+        <td>TV series collection manager</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/Lidarr/Lidarr">Lidarr</a></td>
+        <td>Music collection manager</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/SickChill/SickChill">SickChill</a></td>
+        <td>Automatic Video Library Manager for TV Shows</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/mikebrady/shairport-sync"
+            >MyMediaForAlexa</a
+          >
+        </td>
+        <td>Stream your own music to Alexa devices</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/koel/koel">Koel</a></td>
+        <td>Personal music streaming server</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/ejurgensen/forked-daapd">Subsonic</a>
+        </td>
+        <td>Music server and streamer</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/ampache/ampache">Ampache</a></td>
+        <td>Web-based audio/video streaming application</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/LibreTime/libretime">LibreTime</a></td>
+        <td>Open-source radio management software</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/rembo10/headphones">Headphones</a></td>
+        <td>Automated music downloader for NZB and Torrent</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/beetbox/beets">Beets</a></td>
+        <td>Music library manager and MusicBrainz tagger</td>
+      </tr>
+    </table>
 
     <h2 id="communication">Communication</h2>
     <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/RocketChat/Rocket.Chat">Rocket.Chat</a></td>
-            <td>Communication platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/matrix-org/synapse">Matrix Synapse</a></td>
-            <td>Matrix reference homeserver</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/jitsi/docker-jitsi-meet">Jitsi Meet</a></td>
-            <td>Video conferencing solution</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/zulip/zulip">Zulip</a></td>
-            <td>Team chat</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/mumble-voip/mumble">Mumble</a></td>
-            <td>Low-latency voice chat</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/mattermost/mattermost-server">Mattermost</a></td>
-            <td>Open-source, self-hostable online chat service</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/vector-im/element-web">Element</a></td>
-            <td>A glossy Matrix collaboration client</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/discourse/discourse_docker">Discourse</a></td>
-            <td>Open-source discussion platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/postalhq/postal">Postal</a></td>
-            <td>Mail delivery platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/Mailu/Mailu">Mailu</a></td>
-            <td>Full-featured mail server</td>
-        </tr>
+      <tr>
+        <th>Project</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/RocketChat/Rocket.Chat">Rocket.Chat</a>
+        </td>
+        <td>Communication platform</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/matrix-org/synapse">Matrix Synapse</a>
+        </td>
+        <td>Matrix reference homeserver</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/jitsi/docker-jitsi-meet">Jitsi Meet</a>
+        </td>
+        <td>Video conferencing solution</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/zulip/zulip">Zulip</a></td>
+        <td>Team chat</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/mumble-voip/mumble">Mumble</a></td>
+        <td>Low-latency voice chat</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/mattermost/mattermost-server"
+            >Mattermost</a
+          >
+        </td>
+        <td>Open-source, self-hostable online chat service</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/vector-im/element-web">Element</a></td>
+        <td>A glossy Matrix collaboration client</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/discourse/discourse_docker">Discourse</a>
+        </td>
+        <td>Open-source discussion platform</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/postalhq/postal">Postal</a></td>
+        <td>Mail delivery platform</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/Mailu/Mailu">Mailu</a></td>
+        <td>Full-featured mail server</td>
+      </tr>
     </table>
 
     <h2 id="security">Security</h2>
     <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/bitwarden/server">Bitwarden</a></td>
-            <td>Password manager</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/authelia/authelia">Authelia</a></td>
-            <td>Authentication and authorization server</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/keycloak/keycloak">Keycloak</a></td>
-            <td>Identity and access management</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/hashicorp/vault">Vault</a></td>
-            <td>Secrets management</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a></td>
-            <td>Unofficial Bitwarden server</td>
-        </tr>
+      <tr>
+        <th>Project</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/bitwarden/server">Bitwarden</a></td>
+        <td>Password manager</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/authelia/authelia">Authelia</a></td>
+        <td>Authentication and authorization server</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/keycloak/keycloak">Keycloak</a></td>
+        <td>Identity and access management</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/hashicorp/vault">Vault</a></td>
+        <td>Secrets management</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a>
+        </td>
+        <td>Unofficial Bitwarden server</td>
+      </tr>
     </table>
 
     <h2 id="monitoring">Monitoring</h2>
     <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/grafana/grafana">Grafana</a></td>
-            <td>Analytics and monitoring solution</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/prometheus/prometheus">Prometheus</a></td>
-            <td>Monitoring system and time series database</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/netdata/netdata">Netdata</a></td>
-            <td>Real-time performance monitoring</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/louislam/uptime-kuma">Uptime Kuma</a></td>
-            <td>Uptime monitoring tool</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/zabbix/zabbix">Zabbix</a></td>
-            <td>Enterprise-class monitoring solution</td>
-        </tr>
+      <tr>
+        <th>Project</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/grafana/grafana">Grafana</a></td>
+        <td>Analytics and monitoring solution</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/prometheus/prometheus">Prometheus</a>
+        </td>
+        <td>Monitoring system and time series database</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/netdata/netdata">Netdata</a></td>
+        <td>Real-time performance monitoring</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/louislam/uptime-kuma">Uptime Kuma</a>
+        </td>
+        <td>Uptime monitoring tool</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/zabbix/zabbix">Zabbix</a></td>
+        <td>Enterprise-class monitoring solution</td>
+      </tr>
     </table>
 
     <h2 id="file-sharing">File Sharing</h2>
     <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/haiwen/seafile">Seafile</a></td>
-            <td>File hosting and collaboration platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/syncthing/syncthing">Syncthing</a></td>
-            <td>Continuous file synchronization</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/owncloud/core">ownCloud</a></td>
-            <td>File hosting software</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/filebrowser/filebrowser">FileBrowser</a></td>
-            <td>Web File Browser</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/pydio/cells">Pydio Cells</a></td>
-            <td>Content collaboration platform</td>
-        </tr>
+      <tr>
+        <th>Project</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/haiwen/seafile">Seafile</a></td>
+        <td>File hosting and collaboration platform</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/syncthing/syncthing">Syncthing</a></td>
+        <td>Continuous file synchronization</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/owncloud/core">ownCloud</a></td>
+        <td>File hosting software</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/filebrowser/filebrowser">FileBrowser</a>
+        </td>
+        <td>Web File Browser</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/pydio/cells">Pydio Cells</a></td>
+        <td>Content collaboration platform</td>
+      </tr>
     </table>
 
     <h2 id="home-automation">Home Automation</h2>
     <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/home-assistant/core">Home Assistant</a></td>
-            <td>Open source home automation</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/openhab/openhab-core">OpenHAB</a></td>
-            <td>Vendor and technology agnostic open source automation software</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/domoticz/domoticz">Domoticz</a></td>
-            <td>Home Automation System</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/node-red/node-red">Node-RED</a></td>
-            <td>Flow-based programming for the Internet of Things</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/esphome/esphome">ESPHome</a></td>
-            <td>System to control your ESP8266/ESP32</td>
-        </tr>
+      <tr>
+        <th>Project</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/home-assistant/core">Home Assistant</a>
+        </td>
+        <td>Open source home automation</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/openhab/openhab-core">OpenHAB</a></td>
+        <td>Vendor and technology agnostic open source automation software</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/domoticz/domoticz">Domoticz</a></td>
+        <td>Home Automation System</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/node-red/node-red">Node-RED</a></td>
+        <td>Flow-based programming for the Internet of Things</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/esphome/esphome">ESPHome</a></td>
+        <td>System to control your ESP8266/ESP32</td>
+      </tr>
     </table>
 
     <h2 id="analytics">Analytics</h2>
     <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/matomo-org/matomo">Matomo</a></td>
-            <td>Web analytics platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/plausible/analytics">Plausible</a></td>
-            <td>Lightweight and privacy-friendly web analytics</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/mikecao/umami">Umami</a></td>
-            <td>Simple, fast, privacy-focused alternative to Google Analytics</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/electerious/Ackee">Ackee</a></td>
-            <td>Self-hosted analytics tool</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/allinurl/goaccess">GoAccess</a></td>
-            <td>Real-time web log analyzer</td>
-        </tr>
+      <tr>
+        <th>Project</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/matomo-org/matomo">Matomo</a></td>
+        <td>Web analytics platform</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/plausible/analytics">Plausible</a></td>
+        <td>Lightweight and privacy-friendly web analytics</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/mikecao/umami">Umami</a></td>
+        <td>Simple, fast, privacy-focused alternative to Google Analytics</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/electerious/Ackee">Ackee</a></td>
+        <td>Self-hosted analytics tool</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/allinurl/goaccess">GoAccess</a></td>
+        <td>Real-time web log analyzer</td>
+      </tr>
     </table>
 
     <h2 id="miscellaneous">Miscellaneous</h2>
     <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/pi-hole/docker-pi-hole">Pi-hole</a></td>
-            <td>Network-wide ad blocking</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/FreshRSS/FreshRSS">FreshRSS</a></td>
-            <td>Self-hosted RSS feed aggregator</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/wallabag/wallabag">Wallabag</a></td>
-            <td>Save and classify articles</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/vabene1111/recipes">Tandoor Recipes</a></td>
-            <td>Recipe manager</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/go-shiori/shiori">Shiori</a></td>
-            <td>Simple bookmark manager</td>
-        </tr>
+      <tr>
+        <th>Project</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/pi-hole/docker-pi-hole">Pi-hole</a></td>
+        <td>Network-wide ad blocking</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/FreshRSS/FreshRSS">FreshRSS</a></td>
+        <td>Self-hosted RSS feed aggregator</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/wallabag/wallabag">Wallabag</a></td>
+        <td>Save and classify articles</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/vabene1111/recipes">Tandoor Recipes</a>
+        </td>
+        <td>Recipe manager</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/go-shiori/shiori">Shiori</a></td>
+        <td>Simple bookmark manager</td>
+      </tr>
     </table>
 
     <h2>This project is in early development</h2>
 
     <h2>Star History</h2>
-    <a href="https://star-history.com/#hotheadhacker/awesome-selfhost-docker&Date">
-        <img src="https://api.star-history.com/svg?repos=hotheadhacker/awesome-selfhost-docker&type=Date" alt="Star History Chart">
+    <a
+      href="https://star-history.com/#hotheadhacker/awesome-selfhost-docker&Date"
+    >
+      <img
+        src="https://api.star-history.com/svg?repos=hotheadhacker/awesome-selfhost-docker&type=Date"
+        alt="Star History Chart"
+      />
     </a>
 
     <script>
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+      const themeToggleBtn = document.getElementById("theme-toggle");
+      const themeToggleDarkIcon = document.getElementById(
+        "theme-toggle-dark-icon"
+      );
+      const themeToggleLightIcon = document.getElementById(
+        "theme-toggle-light-icon"
+      );
 
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-            themeToggleLightIcon.classList.remove('hidden');
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+        themeToggleLightIcon.classList.remove("hidden");
+      } else {
+        themeToggleDarkIcon.classList.remove("hidden");
+      }
+
+      themeToggleBtn.addEventListener("click", function () {
+        themeToggleDarkIcon.classList.toggle("hidden");
+        themeToggleLightIcon.classList.toggle("hidden");
+
+        if (localStorage.getItem("color-theme")) {
+          if (localStorage.getItem("color-theme") === "light") {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("color-theme", "dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("color-theme", "light");
+          }
         } else {
-            themeToggleDarkIcon.classList.remove('hidden');
+          if (document.documentElement.classList.contains("dark")) {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("color-theme", "light");
+          } else {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("color-theme", "dark");
+          }
         }
-
-        themeToggleBtn.addEventListener('click', function() {
-            themeToggleDarkIcon.classList.toggle('hidden');
-            themeToggleLightIcon.classList.toggle('hidden');
-
-            if (localStorage.getItem('color-theme')) {
-                if (localStorage.getItem('color-theme') === 'light') {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                } else {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                }
-            } else {
-                if (document.documentElement.classList.contains('dark')) {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                } else {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                }
-            }
-        });
+      });
     </script>
-    
-</body>
+  </body>
 </html>
-
