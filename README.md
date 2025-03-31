@@ -43,6 +43,7 @@
 | [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | Open-source Notion alternative with a focus on privacy and extensibility.|
 | [Tillywork](https://github.com/tillywork/tillywork) | Opensource work management solution. Manage your sprints, projects, and sales pipelines in one place |
 | [Huly](https://github.com/hcengineering/platform) | All-in-One Project Management Platform |
+| [OmniTools](https://github.com/iib0011/omni-tools)                | Self-hosted web-based Swiss army knife for everyday tasks. |
 
 ## Development
 
