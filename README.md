@@ -3,6 +3,10 @@
 <!-- GitAds-Verify: QDXQYZT29WRGP65KYKMLNUHA46R4Y6S2 -->
 🚀 Curated list of open-source, self-hosted projects deployable with Docker and docker-compose. Your go-to resource for amazing self-hostable software.
 
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=hotheadhacker/awesome-selfhost-docker@github)](https://gitads.dev/v1/ad-track?source=hotheadhacker/awesome-selfhost-docker@github)
+
+
 ![Awesome selfhost docker](https://raw.githubusercontent.com/hotheadhacker/awesome-selfhost-docker/main/assets/imgs/docker%2Boss.png)
 
 ## Table of Contents
