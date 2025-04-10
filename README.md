@@ -1,6 +1,6 @@
 # Awesome Self-Host Docker
 <a href="https://trendshift.io/repositories/13203" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13203" alt="hotheadhacker%2Fawesome-selfhost-docker | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-
+<!-- GitAds-Verify: QDXQYZT29WRGP65KYKMLNUHA46R4Y6S2 -->
 🚀 Curated list of open-source, self-hosted projects deployable with Docker and docker-compose. Your go-to resource for amazing self-hostable software.
 
 ![Awesome selfhost docker](https://raw.githubusercontent.com/hotheadhacker/awesome-selfhost-docker/main/assets/imgs/docker%2Boss.png)
