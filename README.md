@@ -29,7 +29,7 @@
 | [Joplin](https://github.com/laurent22/joplin) | Note-taking and to-do application |
 | [Paperless-ng](https://github.com/jonaswinkler/paperless-ng) | Document management system |
 | [Bookstack](https://github.com/BookStackApp/BookStack) | Platform for organizing and storing information |
-| [Trilium](https://github.com/zadam/trilium) | Hierarchical note-taking application |
+| [TriliumNext](https://github.com/TriliumNext/Notes) | Hierarchical note-taking application |
 | [HedgeDoc](https://github.com/hedgedoc/hedgedoc) | Collaborative markdown editor |
 | [Wekan](https://github.com/wekan/wekan) | Open-source Trello-like kanban board |
 | [Zim](https://github.com/jaap-karssenberg/zim-desktop-wiki) | Desktop wiki & note-taking |
