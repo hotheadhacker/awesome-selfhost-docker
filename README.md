@@ -129,6 +129,8 @@
 | [Movim](https://github.com/movim/movim) | Decentralized social platform |
 | [Scuttlebutt](https://github.com/ssbc/patchwork) | Decentralized social network |
 | [Threema Web](https://github.com/threema-ch/threema-web) | Secure messaging app |
+| [Peersuite](https://github.com/openconstruct/Peersuite) | Decentralized p2p workspace |
+
 
 ## Security
 
