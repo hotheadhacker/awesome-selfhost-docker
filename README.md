@@ -6,6 +6,7 @@
 ## GitAds Sponsored
 [![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=hotheadhacker/awesome-selfhost-docker@github)](https://gitads.dev/v1/ad-track?source=hotheadhacker/awesome-selfhost-docker@github)
 
+--
 
 ![Awesome selfhost docker](https://raw.githubusercontent.com/hotheadhacker/awesome-selfhost-docker/main/assets/imgs/docker%2Boss.png)
 
