@@ -8,10 +8,6 @@
 
 ---
 
-***
-
-___
-
 ![Awesome selfhost docker](https://raw.githubusercontent.com/hotheadhacker/awesome-selfhost-docker/main/assets/imgs/docker%2Boss.png)
 
 ## Table of Contents
