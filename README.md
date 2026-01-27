@@ -128,6 +128,7 @@
 | [Pleroma](https://github.com/pleroma/pleroma) | Lightweight social networking server |
 | [Movim](https://github.com/movim/movim) | Decentralized social platform |
 | [Scuttlebutt](https://github.com/ssbc/patchwork) | Decentralized social network |
+| [Telegram Media Downloader](https://github.com/rfsbraz/telegram-downloader) | Self-hosted daemon that automatically downloads media from Telegram channels, groups, and forum topics. Docker-native with multi-arch support. |
 | [Threema Web](https://github.com/threema-ch/threema-web) | Secure messaging app |
 
 ## Security
