@@ -134,6 +134,7 @@
 
 | Project | Description |
 |---------|-------------|
+| [BunkerWeb](https://github.com/bunkerity/bunkerweb) | Next-generation, open-source Web Application Firewall (WAF) |
 | [Bitwarden](https://github.com/bitwarden/server) | Password manager |
 | [Authelia](https://github.com/authelia/authelia) | Authentication and authorization server |
 | [Keycloak](https://github.com/keycloak/keycloak) | Identity and access management |
