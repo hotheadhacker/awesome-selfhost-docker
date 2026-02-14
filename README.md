@@ -59,6 +59,7 @@
 | [Jenkins](https://github.com/jenkinsci/docker) | Automation server for CI/CD |
 | [Gogs](https://github.com/gogs/gogs) | Painless self-hosted Git service |
 | [Portainer](https://github.com/portainer/portainer) | Lightweight management UI for Docker |
+| [Yantra](https://github.com/besoeasy/yantra) | Self-hosted homelab app store - turn any server into your own app store with 50+ pre-configured containers |
 | [SonarQube](https://github.com/SonarSource/docker-sonarqube) | Continuous inspection of code quality |
 | [Sentry](https://github.com/getsentry/onpremise) | Error tracking and performance monitoring |
 | [Taiga](https://github.com/taigaio/taiga-back) | Project management platform |
