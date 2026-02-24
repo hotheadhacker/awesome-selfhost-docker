@@ -75,6 +75,7 @@
 | [Leantime](https://github.com/Leantime/leantime) | Open-source project management system |
 | [Tigerbeetle](https://github.com/tigerbeetle/tigerbeetle) | The financial transactions database designed for mission critical safety and performance. |
 | [Undb](https://github.com/undb-io/undb) | No Code Database & BaaS |
+| [SnapForge](https://github.com/adrian-vega-research/snapforge) | Screenshot, PDF & OG image generation API with Puppeteer |
 
 ## Media
 
