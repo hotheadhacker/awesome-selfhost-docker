@@ -48,6 +48,7 @@
 | [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | Open-source Notion alternative with a focus on privacy and extensibility.|
 | [Tillywork](https://github.com/tillywork/tillywork) | Opensource work management solution. Manage your sprints, projects, and sales pipelines in one place |
 | [Huly](https://github.com/hcengineering/platform) | All-in-One Project Management Platform |
+| [Paperless Telegram Bot](https://github.com/GeiserX/paperless-telegram-bot) | Manage Paperless-NGX documents through Telegram |
 
 ## Development
 
@@ -104,6 +105,8 @@
 | [Cobalt](https://github.com/imputnet/cobalt) | Quick Media Downloader |
 | [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | Self-hosted audiobook and podcast server with a web player and mobile apps.|
 |[ SuggestArr](https://github.com/giuseppe99barchetta/SuggestArr) | Companion tool for Overseerr and Jellyfin that provides media recommendations.|
+| [Jellyfin Telegram Channel Sync](https://github.com/GeiserX/jellyfin-telegram-channel-sync) | Syncs Jellyfin user access with Telegram channel membership |
+| [JellySubtitles](https://github.com/GeiserX/JellySubtitles) | Auto-download subtitles for Jellyfin media |
 
 ## Communication
 
@@ -179,6 +182,7 @@
 | [Bosun](https://github.com/bosun-monitor/bosun) | Monitoring and alerting system by Stack Exchange |
 | [Cerebro](https://github.com/lmenezes/cerebro) | Web admin tool for Elasticsearch |
 | [Dozzle](https://github.com/amir20/dozzle) | Realtime log viewer for docker containers |
+| [Duplicacy Exporter](https://github.com/GeiserX/duplicacy-exporter) | Prometheus exporter for Duplicacy backup stats |
 
 ## File Sharing
 
