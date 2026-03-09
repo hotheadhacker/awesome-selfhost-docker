@@ -253,6 +253,7 @@
 | [Homer](https://github.com/bastienwirtz/homer) | A dead simple static homepage for your server |
 | [Astuto](https://github.com/astuto/astuto) | Customer feedback tool to collect, manage and prioritize feedback from your users |
 | [Wordpress](https://github.com/GSCloud/docker_wordpress) | Run WordPress, MariaDB and phpMyAdmin in Docker |
+| [AskePub](https://github.com/GeiserX/AskePub) | Telegram bot that uses GPT-4o to generate AI study notes from ePub books |
 
 # This project is in early development
 ## Star History
