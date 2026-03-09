@@ -249,6 +249,7 @@
 | [Speedtest](https://github.com/librespeed/speedtest) | Self-hosted speed test |
 | [Papermerge](https://github.com/ciur/papermerge) | Document management system |
 | [Calibre-web](https://github.com/janeczku/calibre-web) | Web app for browsing, reading, and downloading eBooks |
+| [ePubLangMerger](https://github.com/GeiserX/ePubLangMerger) | Merges two ePub files in different languages into a single bilingual ebook for parallel reading |
 | [Firefly III](https://github.com/firefly-iii/firefly-iii) | Personal finances manager |
 | [Homer](https://github.com/bastienwirtz/homer) | A dead simple static homepage for your server |
 | [Astuto](https://github.com/astuto/astuto) | Customer feedback tool to collect, manage and prioritize feedback from your users |
