@@ -253,6 +253,7 @@
 | [Homer](https://github.com/bastienwirtz/homer) | A dead simple static homepage for your server |
 | [Astuto](https://github.com/astuto/astuto) | Customer feedback tool to collect, manage and prioritize feedback from your users |
 | [Wordpress](https://github.com/GSCloud/docker_wordpress) | Run WordPress, MariaDB and phpMyAdmin in Docker |
+| [FoJin](https://github.com/xr843/fojin) | Buddhist text platform with multilingual search, knowledge graph, AI Q&A (Docker Compose) |
 
 # This project is in early development
 ## Star History
