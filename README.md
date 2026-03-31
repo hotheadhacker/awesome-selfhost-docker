@@ -106,7 +106,7 @@
 | [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | Self-hosted audiobook and podcast server with a web player and mobile apps.|
 |[ SuggestArr](https://github.com/giuseppe99barchetta/SuggestArr) | Companion tool for Overseerr and Jellyfin that provides media recommendations.|
 | [jellyfin-telegram-channel-sync](https://github.com/GeiserX/jellyfin-telegram-channel-sync) | Sync Jellyfin user access with Telegram channel membership - auto-disable accounts when members leave |
-| [jelly-subtitles](https://github.com/GeiserX/jelly-subtitles) | Jellyfin plugin for local AI-powered subtitle generation using Whisper |
+| [whisper-subs](https://github.com/GeiserX/whisper-subs) | Jellyfin plugin for local AI-powered subtitle generation using Whisper |
 
 ## Communication
 
