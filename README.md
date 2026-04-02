@@ -19,6 +19,7 @@
 - [Monitoring](#monitoring)
 - [File Sharing](#file-sharing)
 - [Home Automation](#home-automation)
+- [AI & Machine Learning](#ai--machine-learning)
 - [Analytics](#analytics)
 - [Miscellaneous](#miscellaneous)
 
@@ -236,6 +237,12 @@
 | [PostHog](https://github.com/PostHog/posthog) | Open-source product analytics |
 | [Fathom](https://github.com/usefathom/fathom) | Simple, privacy-focused website analytics |
 | [Vince](https://github.com/vinceanalytics/vince) | Self Hosted Alternative To Google Analytics |
+
+## AI & Machine Learning
+
+| Project | Description |
+|---------|-------------|
+| [Open WebUI Ultimate Stack](https://github.com/BitWise-0x/open-webui-ultimate-stack) | Production-ready Docker stack for Open WebUI with 35+ pre-built tools, RAG (pgvector), private search (SearXNG), OCR, TTS, and ComfyUI workflows |
 
 ## Miscellaneous
 
