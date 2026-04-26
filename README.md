@@ -180,6 +180,7 @@
 | [Cerebro](https://github.com/lmenezes/cerebro) | Web admin tool for Elasticsearch |
 | [Dozzle](https://github.com/amir20/dozzle) | Realtime log viewer for docker containers |
 
+| [KubeStellar Console](https://github.com/kubestellar/console) | Multi-cluster Kubernetes dashboard with real-time observability |
 ## File Sharing
 
 | Project | Description |
