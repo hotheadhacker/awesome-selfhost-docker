@@ -4,6 +4,18 @@
 🚀 Curated list of open-source, self-hosted projects deployable with Docker and docker-compose. Your go-to resource for amazing self-hostable software.
 
 ## GitAds Sponsored
+
+## OpenClaw Monitor
+
+| | |
+|---|---|
+| **Project** | [flik2002/openclaw-monitor](https://github.com/flik2002/openclaw-monitor) |
+| **Description** | Real-time AI agent monitoring dashboard — tracks Gateway status, sessions, token usage & trends |
+| **Stars** | ⭐ 1.3k+ |
+
+![Dashboard](https://raw.githubusercontent.com/flik2002/openclaw-monitor/main/Openclaw%20Monitor.jpg)
+
+
 [![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=hotheadhacker/awesome-selfhost-docker@github)](https://gitads.dev/v1/ad-track?source=hotheadhacker/awesome-selfhost-docker@github)
 
 ---
