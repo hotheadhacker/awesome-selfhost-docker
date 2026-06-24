@@ -253,6 +253,7 @@
 | [Homer](https://github.com/bastienwirtz/homer) | A dead simple static homepage for your server |
 | [Astuto](https://github.com/astuto/astuto) | Customer feedback tool to collect, manage and prioritize feedback from your users |
 | [Wordpress](https://github.com/GSCloud/docker_wordpress) | Run WordPress, MariaDB and phpMyAdmin in Docker |
+| [UnfoldCMS](https://github.com/hpakdaman/unfoldcms) | Self-hosted CMS on Laravel 12 + React 19 with REST API, headless mode, and one-time pricing — runs on any VPS with Docker |
 
 # This project is in early development
 ## Star History
