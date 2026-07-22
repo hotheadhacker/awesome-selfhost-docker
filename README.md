@@ -148,6 +148,7 @@
 | [ModSecurity](https://github.com/SpiderLabs/ModSecurity) | Open-source web application firewall |
 | [Suricata](https://github.com/OISF/suricata) | Network threat detection engine |
 | [Snort](https://github.com/snort3/snort3) | Network intrusion detection system |
+| [Darkmoon](https://github.com/ASCIT31/Dark-Moon)  Autonomous AI pentest (GPL-3.0) |
 | [Wazuh](https://github.com/wazuh/wazuh) | Security monitoring and SIEM |
 | [OpenSCAP](https://github.com/OpenSCAP/openscap) | Security compliance solutions |
 | [Rspamd](https://github.com/rspamd/rspamd) | Fast, free and open-source spam filtering system |
