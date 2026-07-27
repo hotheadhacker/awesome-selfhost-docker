@@ -104,6 +104,8 @@
 | [Cobalt](https://github.com/imputnet/cobalt) | Quick Media Downloader |
 | [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | Self-hosted audiobook and podcast server with a web player and mobile apps.|
 |[ SuggestArr](https://github.com/giuseppe99barchetta/SuggestArr) | Companion tool for Overseerr and Jellyfin that provides media recommendations.|
+| [VideoDownloaderBot](https://github.com/Avazbek22/VideoDownloaderBot) | Telegram media downloader with one-command Docker installation, automatic deployment from main, nightly yt-dlp updates, preflight validation, persistent data, and rollback. |
+| [LinkDownloaderBotForGroups](https://github.com/Avazbek22/LinkDownloaderBotForGroups) | Telegram group bot that turns shared video links into native posts with media reuse, automatic updates, and rollback. |
 
 ## Communication
 
