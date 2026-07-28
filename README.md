@@ -251,6 +251,7 @@
 | [Calibre-web](https://github.com/janeczku/calibre-web) | Web app for browsing, reading, and downloading eBooks |
 | [Firefly III](https://github.com/firefly-iii/firefly-iii) | Personal finances manager |
 | [Homer](https://github.com/bastienwirtz/homer) | A dead simple static homepage for your server |
+| [LinkBreeze](https://github.com/Manak-hash/LinkBreeze) | Self-hosted link-in-bio platform with analytics and themes |
 | [Astuto](https://github.com/astuto/astuto) | Customer feedback tool to collect, manage and prioritize feedback from your users |
 | [Wordpress](https://github.com/GSCloud/docker_wordpress) | Run WordPress, MariaDB and phpMyAdmin in Docker |
 
