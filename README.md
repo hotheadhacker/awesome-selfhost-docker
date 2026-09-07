@@ -67,6 +67,7 @@
 | [Code-Server](https://github.com/cdr/code-server) | Run VS Code on any machine anywhere |
 | [Theia](https://github.com/eclipse-theia/theia) | Cloud & desktop IDE framework implemented in TypeScript |
 | [JupyterHub](https://github.com/jupyterhub/jupyterhub) | Multi-user server for Jupyter notebooks |
+| [Artifact Relay](https://github.com/eloktev/artifact-relay) | Private-by-default gateway for publishing Markdown and HTML artifacts from AI agents |
 | [GitBucket](https://github.com/gitbucket/gitbucket) | Git platform powered by Scala |
 | [Gerrit](https://github.com/GerritCodeReview/gerrit) | Web-based code review system |
 | [Fossil](https://github.com/fossil-scm/fossil) | Distributed version control system |
