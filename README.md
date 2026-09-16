@@ -44,6 +44,7 @@
 | [Kimai](https://github.com/kevinpapst/kimai2) | Time-tracking application |
 | [Restyaboard](https://github.com/RestyaPlatform/board) | Open-source Trello-like kanban board |
 | [Taskcafe](https://github.com/JordanKnott/taskcafe) | Open-source project management tool |
+| [SixSentences](https://github.com/SixSentences/sixsentences) | Research workspace for literature search, screening, data analysis and writing |
 | [Focalboard](https://github.com/mattermost/focalboard) | Open-source project management tool |
 | [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | Open-source Notion alternative with a focus on privacy and extensibility.|
 | [Tillywork](https://github.com/tillywork/tillywork) | Opensource work management solution. Manage your sprints, projects, and sales pipelines in one place |
