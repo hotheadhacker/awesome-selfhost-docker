@@ -250,6 +250,7 @@
 | [Papermerge](https://github.com/ciur/papermerge) | Document management system |
 | [Calibre-web](https://github.com/janeczku/calibre-web) | Web app for browsing, reading, and downloading eBooks |
 | [Firefly III](https://github.com/firefly-iii/firefly-iii) | Personal finances manager |
+| [Open-Finance](https://github.com/openfinance-app/open-finance) | Local-first, self-hosted personal finance manager with Docker, assets, budgets, QIF/OFX import and AI assistant |
 | [Homer](https://github.com/bastienwirtz/homer) | A dead simple static homepage for your server |
 | [Astuto](https://github.com/astuto/astuto) | Customer feedback tool to collect, manage and prioritize feedback from your users |
 | [Wordpress](https://github.com/GSCloud/docker_wordpress) | Run WordPress, MariaDB and phpMyAdmin in Docker |
