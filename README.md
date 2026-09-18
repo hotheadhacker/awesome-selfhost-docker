@@ -58,6 +58,7 @@
 | [Drone](https://github.com/drone/drone) | Continuous Integration platform |
 | [Jenkins](https://github.com/jenkinsci/docker) | Automation server for CI/CD |
 | [Gogs](https://github.com/gogs/gogs) | Painless self-hosted Git service |
+| [Peon](https://github.com/Peon-sh/Peon) | Open-source self-hostable Docker PaaS. Deploy Git apps, Compose stacks, databases, and static sites |
 | [Portainer](https://github.com/portainer/portainer) | Lightweight management UI for Docker |
 | [SonarQube](https://github.com/SonarSource/docker-sonarqube) | Continuous inspection of code quality |
 | [Sentry](https://github.com/getsentry/onpremise) | Error tracking and performance monitoring |
