@@ -75,6 +75,7 @@
 | [Leantime](https://github.com/Leantime/leantime) | Open-source project management system |
 | [Tigerbeetle](https://github.com/tigerbeetle/tigerbeetle) | The financial transactions database designed for mission critical safety and performance. |
 | [Undb](https://github.com/undb-io/undb) | No Code Database & BaaS |
+| [LibreDB Studio](https://github.com/libredb/libredb-studio) | Web-based SQL IDE for PostgreSQL, MySQL, MongoDB, Redis and more, with AI query assistance |
 
 ## Media
 
