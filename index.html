@@ -1,655 +1,1542 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Self-Host Docker</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {"50":"#f0f9ff","100":"#e0f2fe","200":"#bae6fd","300":"#7dd3fc","400":"#38bdf8","500":"#0ea5e9","600":"#0284c7","700":"#0369a1","800":"#075985","900":"#0c4a6e"}
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        h2 {
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 10px;
-            font-size: 2.5em !important;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin-bottom: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .emoji {
-            font-size: 1.2em;
-        }
-        li > a, td > a {
-        	text-decoration: underline;
-  			color: #777;
-        }
-        
-        li > a:hover, td > a:hover{
-        color: green; /* Change color on hover */
-        text-decoration: none; /* Remove underline on hover */
-      }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awesome Self-Host Docker – 195+ Open-Source Self-Hosted Apps for Docker</title>
+<meta name="description" content="Discover 195+ open-source, self-hosted apps you can deploy with Docker and docker-compose: media servers, password managers, monitoring, dev tools, home automation and more.">
+<meta name="keywords" content="self-hosted, selfhosted, docker, docker-compose, open source, homelab, awesome list, self-hosting, alternatives">
+<link rel="canonical" href="https://awesome-selfhost-docker.vercel.app/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f7f8fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0f17" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Awesome Self-Host Docker">
+<meta property="og:title" content="Awesome Self-Host Docker – 195+ open-source apps you can self-host">
+<meta property="og:description" content="Discover 195+ open-source, self-hosted apps you can deploy with Docker and docker-compose: media servers, password managers, monitoring, dev tools, home automation and more.">
+<meta property="og:url" content="https://awesome-selfhost-docker.vercel.app/">
+<meta property="og:image" content="https://awesome-selfhost-docker.vercel.app/assets/imgs/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="600">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Awesome Self-Host Docker">
+<meta name="twitter:description" content="Discover 195+ open-source, self-hosted apps you can deploy with Docker and docker-compose: media servers, password managers, monitoring, dev tools, home automation and more.">
+<meta name="twitter:image" content="https://awesome-selfhost-docker.vercel.app/assets/imgs/og.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231d63ed'/%3E%3Cpath fill='%23fff' d='M7 17h18a8 8 0 0 1-8 7h-3a7 7 0 0 1-7-7Zm2-5h3v3H9zm4 0h3v3h-3zm4 0h3v3h-3zm-4-4h3v3h-3z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://avatars.githubusercontent.com" crossorigin>
+<link rel="dns-prefetch" href="https://github.com">
+<script>
+  try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://awesome-selfhost-docker.vercel.app/#website", "url": "https://awesome-selfhost-docker.vercel.app/", "name": "Awesome Self-Host Docker", "potentialAction": {"@type": "SearchAction", "target": "https://awesome-selfhost-docker.vercel.app/?q={search_term_string}", "query-input": "required name=search_term_string"}}, {"@type": "CollectionPage", "url": "https://awesome-selfhost-docker.vercel.app/", "name": "Awesome Self-Host Docker", "dateModified": "2026-10-12", "isPartOf": {"@id": "https://awesome-selfhost-docker.vercel.app/#website"}, "mainEntity": {"@type": "ItemList", "numberOfItems": 195, "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nextcloud", "url": "https://github.com/nextcloud/docker"}, {"@type": "ListItem", "position": 2, "name": "Joplin", "url": "https://github.com/laurent22/joplin"}, {"@type": "ListItem", "position": 3, "name": "Paperless-ngx", "url": "https://github.com/paperless-ngx/paperless-ngx"}, {"@type": "ListItem", "position": 4, "name": "Bookstack", "url": "https://github.com/BookStackApp/BookStack"}, {"@type": "ListItem", "position": 5, "name": "Trilium Notes", "url": "https://github.com/TriliumNext/Trilium"}, {"@type": "ListItem", "position": 6, "name": "HedgeDoc", "url": "https://github.com/hedgedoc/hedgedoc"}, {"@type": "ListItem", "position": 7, "name": "Wekan", "url": "https://github.com/wekan/wekan"}, {"@type": "ListItem", "position": 8, "name": "Zim", "url": "https://github.com/jaap-karssenberg/zim-desktop-wiki"}, {"@type": "ListItem", "position": 9, "name": "Standard Notes", "url": "https://github.com/standardnotes/server"}, {"@type": "ListItem", "position": 10, "name": "Kanboard", "url": "https://github.com/kanboard/kanboard"}, {"@type": "ListItem", "position": 11, "name": "Etherpad", "url": "https://github.com/ether/etherpad-lite"}, {"@type": "ListItem", "position": 12, "name": "OnlyOffice", "url": "https://github.com/ONLYOFFICE/Docker-DocumentServer"}, {"@type": "ListItem", "position": 13, "name": "CryptPad", "url": "https://github.com/xwiki-labs/cryptpad"}, {"@type": "ListItem", "position": 14, "name": "Outline", "url": "https://github.com/outline/outline"}, {"@type": "ListItem", "position": 15, "name": "WeeWX", "url": "https://github.com/weewx/weewx"}, {"@type": "ListItem", "position": 16, "name": "Kimai", "url": "https://github.com/kevinpapst/kimai2"}, {"@type": "ListItem", "position": 17, "name": "Restyaboard", "url": "https://github.com/RestyaPlatform/board"}, {"@type": "ListItem", "position": 18, "name": "Taskcafe", "url": "https://github.com/JordanKnott/taskcafe"}, {"@type": "ListItem", "position": 19, "name": "Focalboard", "url": "https://github.com/mattermost/focalboard"}, {"@type": "ListItem", "position": 20, "name": "AppFlowy", "url": "https://github.com/AppFlowy-IO/AppFlowy"}, {"@type": "ListItem", "position": 21, "name": "Tillywork", "url": "https://github.com/tillywork/tillywork"}, {"@type": "ListItem", "position": 22, "name": "Huly", "url": "https://github.com/hcengineering/platform"}, {"@type": "ListItem", "position": 23, "name": "OmniTools", "url": "https://github.com/iib0011/omni-tools"}, {"@type": "ListItem", "position": 24, "name": "GitLab", "url": "https://github.com/gitlab/gitlab-ce"}, {"@type": "ListItem", "position": 25, "name": "Gitea", "url": "https://github.com/go-gitea/gitea"}, {"@type": "ListItem", "position": 26, "name": "Drone", "url": "https://github.com/drone/drone"}, {"@type": "ListItem", "position": 27, "name": "Jenkins", "url": "https://github.com/jenkinsci/docker"}, {"@type": "ListItem", "position": 28, "name": "Gogs", "url": "https://github.com/gogs/gogs"}, {"@type": "ListItem", "position": 29, "name": "Peon", "url": "https://github.com/Peon-sh/Peon"}, {"@type": "ListItem", "position": 30, "name": "Portainer", "url": "https://github.com/portainer/portainer"}, {"@type": "ListItem", "position": 31, "name": "SonarQube", "url": "https://github.com/SonarSource/docker-sonarqube"}, {"@type": "ListItem", "position": 32, "name": "Sentry", "url": "https://github.com/getsentry/onpremise"}, {"@type": "ListItem", "position": 33, "name": "Taiga", "url": "https://github.com/taigaio/taiga-back"}, {"@type": "ListItem", "position": 34, "name": "Redmine", "url": "https://github.com/bitnami/bitnami-docker-redmine"}, {"@type": "ListItem", "position": 35, "name": "Phabricator", "url": "https://github.com/phacility/phabricator"}, {"@type": "ListItem", "position": 36, "name": "Code-Server", "url": "https://github.com/cdr/code-server"}, {"@type": "ListItem", "position": 37, "name": "Theia", "url": "https://github.com/eclipse-theia/theia"}, {"@type": "ListItem", "position": 38, "name": "JupyterHub", "url": "https://github.com/jupyterhub/jupyterhub"}, {"@type": "ListItem", "position": 39, "name": "GitBucket", "url": "https://github.com/gitbucket/gitbucket"}, {"@type": "ListItem", "position": 40, "name": "Gerrit", "url": "https://github.com/GerritCodeReview/gerrit"}, {"@type": "ListItem", "position": 41, "name": "Fossil", "url": "https://github.com/fossil-scm/fossil"}, {"@type": "ListItem", "position": 42, "name": "Sourcegraph", "url": "https://github.com/sourcegraph/deploy-sourcegraph-docker"}, {"@type": "ListItem", "position": 43, "name": "CodiMD", "url": "https://github.com/hackmdio/codimd"}, {"@type": "ListItem", "position": 44, "name": "Leantime", "url": "https://github.com/Leantime/leantime"}, {"@type": "ListItem", "position": 45, "name": "Tigerbeetle", "url": "https://github.com/tigerbeetle/tigerbeetle"}, {"@type": "ListItem", "position": 46, "name": "Undb", "url": "https://github.com/undb-io/undb"}, {"@type": "ListItem", "position": 47, "name": "Webhook Debugger, Logger & API Mocking Suite", "url": "https://github.com/ar27111994/webhook-debugger-logger"}, {"@type": "ListItem", "position": 48, "name": "Laradock", "url": "https://github.com/laradock/laradock"}, {"@type": "ListItem", "position": 49, "name": "LibreDB Studio", "url": "https://github.com/libredb/libredb-studio"}, {"@type": "ListItem", "position": 50, "name": "Plex", "url": "https://github.com/plexinc/pms-docker"}, {"@type": "ListItem", "position": 51, "name": "Jellyfin", "url": "https://github.com/jellyfin/jellyfin"}, {"@type": "ListItem", "position": 52, "name": "Airsonic", "url": "https://github.com/airsonic/airsonic"}, {"@type": "ListItem", "position": 53, "name": "Photoprism", "url": "https://github.com/photoprism/photoprism"}, {"@type": "ListItem", "position": 54, "name": "Navidrome", "url": "https://github.com/navidrome/navidrome"}, {"@type": "ListItem", "position": 55, "name": "Emby", "url": "https://github.com/MediaBrowser/Emby"}, {"@type": "ListItem", "position": 56, "name": "Karaoke Eternal", "url": "https://github.com/matthuisman/karaoke-forever"}, {"@type": "ListItem", "position": 57, "name": "Radarr", "url": "https://github.com/Radarr/Radarr"}, {"@type": "ListItem", "position": 58, "name": "Sonarr", "url": "https://github.com/Sonarr/Sonarr"}, {"@type": "ListItem", "position": 59, "name": "Lidarr", "url": "https://github.com/Lidarr/Lidarr"}, {"@type": "ListItem", "position": 60, "name": "SickChill", "url": "https://github.com/SickChill/SickChill"}, {"@type": "ListItem", "position": 61, "name": "MyMediaForAlexa", "url": "https://github.com/mikebrady/shairport-sync"}, {"@type": "ListItem", "position": 62, "name": "Koel", "url": "https://github.com/koel/koel"}, {"@type": "ListItem", "position": 63, "name": "Subsonic", "url": "https://github.com/ejurgensen/forked-daapd"}, {"@type": "ListItem", "position": 64, "name": "Ampache", "url": "https://github.com/ampache/ampache"}, {"@type": "ListItem", "position": 65, "name": "LibreTime", "url": "https://github.com/LibreTime/libretime"}, {"@type": "ListItem", "position": 66, "name": "Headphones", "url": "https://github.com/rembo10/headphones"}, {"@type": "ListItem", "position": 67, "name": "Beets", "url": "https://github.com/beetbox/beets"}, {"@type": "ListItem", "position": 68, "name": "Mopidy", "url": "https://github.com/mopidy/mopidy"}, {"@type": "ListItem", "position": 69, "name": "Piwigo", "url": "https://github.com/Piwigo/Piwigo"}, {"@type": "ListItem", "position": 70, "name": "Prowlarr", "url": "https://github.com/Prowlarr/Prowlarr"}, {"@type": "ListItem", "position": 71, "name": "Cobalt", "url": "https://github.com/imputnet/cobalt"}, {"@type": "ListItem", "position": 72, "name": "Audiobookshelf", "url": "https://github.com/advplyr/audiobookshelf"}, {"@type": "ListItem", "position": 73, "name": "SuggestArr", "url": "https://github.com/giuseppe99barchetta/SuggestArr"}, {"@type": "ListItem", "position": 74, "name": "subarr", "url": "https://github.com/coaxk/subarr"}, {"@type": "ListItem", "position": 75, "name": "Telegram Media Downloader", "url": "https://github.com/rfsbraz/telegram-downloader"}, {"@type": "ListItem", "position": 76, "name": "Rocket.Chat", "url": "https://github.com/RocketChat/Rocket.Chat"}, {"@type": "ListItem", "position": 77, "name": "Matrix Synapse", "url": "https://github.com/matrix-org/synapse"}, {"@type": "ListItem", "position": 78, "name": "Jitsi Meet", "url": "https://github.com/jitsi/docker-jitsi-meet"}, {"@type": "ListItem", "position": 79, "name": "Zulip", "url": "https://github.com/zulip/zulip"}, {"@type": "ListItem", "position": 80, "name": "Mumble", "url": "https://github.com/mumble-voip/mumble"}, {"@type": "ListItem", "position": 81, "name": "Mattermost", "url": "https://github.com/mattermost/mattermost-server"}, {"@type": "ListItem", "position": 82, "name": "Element", "url": "https://github.com/vector-im/element-web"}, {"@type": "ListItem", "position": 83, "name": "Discourse", "url": "https://github.com/discourse/discourse_docker"}, {"@type": "ListItem", "position": 84, "name": "Postal", "url": "https://github.com/postalhq/postal"}, {"@type": "ListItem", "position": 85, "name": "Mailu", "url": "https://github.com/Mailu/Mailu"}, {"@type": "ListItem", "position": 86, "name": "Matterbridge", "url": "https://github.com/42wim/matterbridge"}, {"@type": "ListItem", "position": 87, "name": "Misskey", "url": "https://github.com/syuilo/misskey"}, {"@type": "ListItem", "position": 88, "name": "OpenPost", "url": "https://github.com/getopenpost/openpost"}, {"@type": "ListItem", "position": 89, "name": "Friendica", "url": "https://github.com/friendica/friendica"}, {"@type": "ListItem", "position": 90, "name": "Hubzilla", "url": "https://github.com/redmatrix/hubzilla"}, {"@type": "ListItem", "position": 91, "name": "GNU social", "url": "https://github.com/gnusocial/gnusocial"}, {"@type": "ListItem", "position": 92, "name": "Diaspora", "url": "https://github.com/diaspora/diaspora"}, {"@type": "ListItem", "position": 93, "name": "Pleroma", "url": "https://github.com/pleroma/pleroma"}, {"@type": "ListItem", "position": 94, "name": "Movim", "url": "https://github.com/movim/movim"}, {"@type": "ListItem", "position": 95, "name": "Scuttlebutt", "url": "https://github.com/ssbc/patchwork"}, {"@type": "ListItem", "position": 96, "name": "Threema Web", "url": "https://github.com/threema-ch/threema-web"}, {"@type": "ListItem", "position": 97, "name": "Peersuite", "url": "https://github.com/openconstruct/Peersuite"}, {"@type": "ListItem", "position": 98, "name": "BunkerWeb", "url": "https://github.com/bunkerity/bunkerweb"}, {"@type": "ListItem", "position": 99, "name": "Bitwarden", "url": "https://github.com/bitwarden/server"}, {"@type": "ListItem", "position": 100, "name": "Authelia", "url": "https://github.com/authelia/authelia"}, {"@type": "ListItem", "position": 101, "name": "Keycloak", "url": "https://github.com/keycloak/keycloak"}, {"@type": "ListItem", "position": 102, "name": "Vault", "url": "https://github.com/hashicorp/vault"}, {"@type": "ListItem", "position": 103, "name": "Vaultwarden", "url": "https://github.com/dani-garcia/vaultwarden"}, {"@type": "ListItem", "position": 104, "name": "Fail2ban", "url": "https://github.com/fail2ban/fail2ban"}, {"@type": "ListItem", "position": 105, "name": "OSSEC", "url": "https://github.com/ossec/ossec-hids"}, {"@type": "ListItem", "position": 106, "name": "ClamAV", "url": "https://github.com/Cisco-Talos/clamav"}, {"@type": "ListItem", "position": 107, "name": "OpenVPN", "url": "https://github.com/kylemanna/docker-openvpn"}, {"@type": "ListItem", "position": 108, "name": "WireGuard", "url": "https://github.com/linuxserver/docker-wireguard"}, {"@type": "ListItem", "position": 109, "name": "BibaVPN", "url": "https://github.com/Eljaja/BibaVPN"}, {"@type": "ListItem", "position": 110, "name": "CrowdSec", "url": "https://github.com/crowdsecurity/crowdsec"}, {"@type": "ListItem", "position": 111, "name": "ModSecurity", "url": "https://github.com/SpiderLabs/ModSecurity"}, {"@type": "ListItem", "position": 112, "name": "Suricata", "url": "https://github.com/OISF/suricata"}, {"@type": "ListItem", "position": 113, "name": "Snort", "url": "https://github.com/snort3/snort3"}, {"@type": "ListItem", "position": 114, "name": "Wazuh", "url": "https://github.com/wazuh/wazuh"}, {"@type": "ListItem", "position": 115, "name": "OpenSCAP", "url": "https://github.com/OpenSCAP/openscap"}, {"@type": "ListItem", "position": 116, "name": "Rspamd", "url": "https://github.com/rspamd/rspamd"}, {"@type": "ListItem", "position": 117, "name": "OneCLI", "url": "https://github.com/onecli/onecli"}, {"@type": "ListItem", "position": 118, "name": "SpamAssassin", "url": "https://github.com/apache/spamassassin"}, {"@type": "ListItem", "position": 119, "name": "Graylog", "url": "https://github.com/Graylog2/graylog2-server"}, {"@type": "ListItem", "position": 120, "name": "Grafana", "url": "https://github.com/grafana/grafana"}, {"@type": "ListItem", "position": 121, "name": "Prometheus", "url": "https://github.com/prometheus/prometheus"}, {"@type": "ListItem", "position": 122, "name": "Netdata", "url": "https://github.com/netdata/netdata"}, {"@type": "ListItem", "position": 123, "name": "Uptime Kuma", "url": "https://github.com/louislam/uptime-kuma"}, {"@type": "ListItem", "position": 124, "name": "Zabbix", "url": "https://github.com/zabbix/zabbix"}, {"@type": "ListItem", "position": 125, "name": "InfluxDB", "url": "https://github.com/influxdata/influxdb"}, {"@type": "ListItem", "position": 126, "name": "Telegraf", "url": "https://github.com/influxdata/telegraf"}, {"@type": "ListItem", "position": 127, "name": "Cacti", "url": "https://github.com/Cacti/cacti"}, {"@type": "ListItem", "position": 128, "name": "Nagios", "url": "https://github.com/NagiosEnterprises/nagioscore"}, {"@type": "ListItem", "position": 129, "name": "Checkmk", "url": "https://github.com/tribe29/checkmk"}, {"@type": "ListItem", "position": 130, "name": "LibreNMS", "url": "https://github.com/librenms/librenms"}, {"@type": "ListItem", "position": 131, "name": "Icinga", "url": "https://github.com/Icinga/icinga2"}, {"@type": "ListItem", "position": 132, "name": "Monit", "url": "https://github.com/monit/monit"}, {"@type": "ListItem", "position": 133, "name": "Glances", "url": "https://github.com/nicolargo/glances"}, {"@type": "ListItem", "position": 134, "name": "Cortex", "url": "https://github.com/cortexproject/cortex"}, {"@type": "ListItem", "position": 135, "name": "VictoriaMetrics", "url": "https://github.com/VictoriaMetrics/VictoriaMetrics"}, {"@type": "ListItem", "position": 136, "name": "Thanos", "url": "https://github.com/thanos-io/thanos"}, {"@type": "ListItem", "position": 137, "name": "Kapacitor", "url": "https://github.com/influxdata/kapacitor"}, {"@type": "ListItem", "position": 138, "name": "Bosun", "url": "https://github.com/bosun-monitor/bosun"}, {"@type": "ListItem", "position": 139, "name": "Cerebro", "url": "https://github.com/lmenezes/cerebro"}, {"@type": "ListItem", "position": 140, "name": "Dozzle", "url": "https://github.com/amir20/dozzle"}, {"@type": "ListItem", "position": 141, "name": "KubeStellar Console", "url": "https://github.com/kubestellar/console"}, {"@type": "ListItem", "position": 142, "name": "Seafile", "url": "https://github.com/haiwen/seafile"}, {"@type": "ListItem", "position": 143, "name": "Syncthing", "url": "https://github.com/syncthing/syncthing"}, {"@type": "ListItem", "position": 144, "name": "ownCloud", "url": "https://github.com/owncloud/core"}, {"@type": "ListItem", "position": 145, "name": "FileBrowser", "url": "https://github.com/filebrowser/filebrowser"}, {"@type": "ListItem", "position": 146, "name": "Pydio Cells", "url": "https://github.com/pydio/cells"}, {"@type": "ListItem", "position": 147, "name": "Minio", "url": "https://github.com/minio/minio"}, {"@type": "ListItem", "position": 148, "name": "Nextcloud", "url": "https://github.com/nextcloud/docker"}, {"@type": "ListItem", "position": 149, "name": "Cozy", "url": "https://github.com/cozy/cozy-stack"}, {"@type": "ListItem", "position": 150, "name": "Kinto", "url": "https://github.com/Kinto/kinto"}, {"@type": "ListItem", "position": 151, "name": "ProjectSend", "url": "https://github.com/projectsend/projectsend"}, {"@type": "ListItem", "position": 152, "name": "Caddy", "url": "https://github.com/caddyserver/caddy"}, {"@type": "ListItem", "position": 153, "name": "Samba", "url": "https://github.com/samba-team/samba"}, {"@type": "ListItem", "position": 154, "name": "Resilio Sync", "url": "https://github.com/Resilio/sync"}, {"@type": "ListItem", "position": 155, "name": "Zenko", "url": "https://github.com/scality/Zenko"}, {"@type": "ListItem", "position": 156, "name": "SeaweedFS", "url": "https://github.com/chrislusf/seaweedfs"}, {"@type": "ListItem", "position": 157, "name": "Ceph", "url": "https://github.com/ceph/ceph"}, {"@type": "ListItem", "position": 158, "name": "GlusterFS", "url": "https://github.com/gluster/glusterfs"}, {"@type": "ListItem", "position": 159, "name": "OpenMediaVault", "url": "https://github.com/openmediavault/openmediavault"}, {"@type": "ListItem", "position": 160, "name": "XigmaNAS", "url": "https://github.com/xigmanas/xigmanas"}, {"@type": "ListItem", "position": 161, "name": "FreeNAS", "url": "https://github.com/freenas/freenas"}, {"@type": "ListItem", "position": 162, "name": "Home Assistant", "url": "https://github.com/home-assistant/core"}, {"@type": "ListItem", "position": 163, "name": "OpenHAB", "url": "https://github.com/openhab/openhab-core"}, {"@type": "ListItem", "position": 164, "name": "Domoticz", "url": "https://github.com/domoticz/domoticz"}, {"@type": "ListItem", "position": 165, "name": "Node-RED", "url": "https://github.com/node-red/node-red"}, {"@type": "ListItem", "position": 166, "name": "ESPHome", "url": "https://github.com/esphome/esphome"}, {"@type": "ListItem", "position": 167, "name": "Homebridge", "url": "https://github.com/homebridge/homebridge"}, {"@type": "ListItem", "position": 168, "name": "ioBroker", "url": "https://github.com/ioBroker/ioBroker"}, {"@type": "ListItem", "position": 169, "name": "Gladys", "url": "https://github.com/GladysAssistant/Gladys"}, {"@type": "ListItem", "position": 170, "name": "Jeedom", "url": "https://github.com/jeedom/core"}, {"@type": "ListItem", "position": 171, "name": "OpenMotics", "url": "https://github.com/openmotics/frontend"}, {"@type": "ListItem", "position": 172, "name": "Matomo", "url": "https://github.com/matomo-org/matomo"}, {"@type": "ListItem", "position": 173, "name": "Plausible", "url": "https://github.com/plausible/analytics"}, {"@type": "ListItem", "position": 174, "name": "Umami", "url": "https://github.com/mikecao/umami"}, {"@type": "ListItem", "position": 175, "name": "Ackee", "url": "https://github.com/electerious/Ackee"}, {"@type": "ListItem", "position": 176, "name": "GoAccess", "url": "https://github.com/allinurl/goaccess"}, {"@type": "ListItem", "position": 177, "name": "Metabase", "url": "https://github.com/metabase/metabase"}, {"@type": "ListItem", "position": 178, "name": "Redash", "url": "https://github.com/getredash/redash"}, {"@type": "ListItem", "position": 179, "name": "Countly", "url": "https://github.com/Countly/countly-server"}, {"@type": "ListItem", "position": 180, "name": "PostHog", "url": "https://github.com/PostHog/posthog"}, {"@type": "ListItem", "position": 181, "name": "Fathom", "url": "https://github.com/usefathom/fathom"}, {"@type": "ListItem", "position": 182, "name": "Vince", "url": "https://github.com/vinceanalytics/vince"}, {"@type": "ListItem", "position": 183, "name": "Pi-hole", "url": "https://github.com/pi-hole/docker-pi-hole"}, {"@type": "ListItem", "position": 184, "name": "FreshRSS", "url": "https://github.com/FreshRSS/FreshRSS"}, {"@type": "ListItem", "position": 185, "name": "Wallabag", "url": "https://github.com/wallabag/wallabag"}, {"@type": "ListItem", "position": 186, "name": "Tandoor Recipes", "url": "https://github.com/vabene1111/recipes"}, {"@type": "ListItem", "position": 187, "name": "Shiori", "url": "https://github.com/go-shiori/shiori"}, {"@type": "ListItem", "position": 188, "name": "Speedtest", "url": "https://github.com/librespeed/speedtest"}, {"@type": "ListItem", "position": 189, "name": "Papermerge", "url": "https://github.com/ciur/papermerge"}, {"@type": "ListItem", "position": 190, "name": "Calibre-web", "url": "https://github.com/janeczku/calibre-web"}, {"@type": "ListItem", "position": 191, "name": "Firefly III", "url": "https://github.com/firefly-iii/firefly-iii"}, {"@type": "ListItem", "position": 192, "name": "Homer", "url": "https://github.com/bastienwirtz/homer"}, {"@type": "ListItem", "position": 193, "name": "Astuto", "url": "https://github.com/astuto/astuto"}, {"@type": "ListItem", "position": 194, "name": "Quackback", "url": "https://github.com/QuackbackIO/quackback"}, {"@type": "ListItem", "position": 195, "name": "Wordpress", "url": "https://github.com/GSCloud/docker_wordpress"}]}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is Awesome Self-Host Docker?", "acceptedAnswer": {"@type": "Answer", "text": "A community-curated list of 195 open-source applications you can self-host with Docker and docker-compose, organised into 10 categories."}}, {"@type": "Question", "name": "Do all of these projects run in Docker?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every project is open source and provides an official or well-maintained Docker image or docker-compose setup."}}, {"@type": "Question", "name": "How do I add a project?", "acceptedAnswer": {"@type": "Answer", "text": "Open a pull request on GitHub that adds one row to the matching table in README.md. Projects must be open source, Docker-deployable, maintained and have some community adoption."}}, {"@type": "Question", "name": "How can I sponsor the list?", "acceptedAnswer": {"@type": "Answer", "text": "Sponsor the maintainer on GitHub Sponsors, or open a sponsorship inquiry on GitHub to place your project in front of thousands of self-hosters."}}]}]}</script>
+<style>
+:root {
+  --bg: #f7f8fb; --surface: #ffffff; --surface-2: #f1f3f8; --text: #0f172a; --muted: #5b6577;
+  --border: #e3e7ef; --accent: #1d63ed; --accent-ink: #ffffff; --accent-soft: #e8f0fe;
+  --new: #0f9d58; --new-soft: #e6f6ee; --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -12px rgba(15,23,42,.12);
+  --glow: rgba(29,99,237,.16); --radius: 14px; --header-h: 60px;
+  --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b0f17; --surface: #121826; --surface-2: #182032; --text: #e7ebf3; --muted: #97a2b6;
+    --border: #232c3e; --accent: #5b93ff; --accent-ink: #0b0f17; --accent-soft: #1a2950;
+    --new: #3ccf8e; --new-soft: #12301f; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px -14px rgba(0,0,0,.6);
+    --glow: rgba(91,147,255,.18);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b0f17; --surface: #121826; --surface-2: #182032; --text: #e7ebf3; --muted: #97a2b6;
+  --border: #232c3e; --accent: #5b93ff; --accent-ink: #0b0f17; --accent-soft: #1a2950;
+  --new: #3ccf8e; --new-soft: #12301f; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px -14px rgba(0,0,0,.6);
+  --glow: rgba(91,147,255,.18);
+}
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 64px); -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 var(--font); -webkit-font-smoothing: antialiased; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+@media (min-width: 720px) { .wrap { padding: 0 28px; } }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--accent); color: var(--accent-ink); padding: 8px 14px; border-radius: 8px; z-index: 100; }
+.skip:focus { left: 8px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+
+/* Header */
+.site-header { position: sticky; top: 0; z-index: 50; height: var(--header-h); background: color-mix(in srgb, var(--bg) 82%, transparent); backdrop-filter: saturate(160%) blur(12px); -webkit-backdrop-filter: saturate(160%) blur(12px); border-bottom: 1px solid var(--border); }
+.site-header .wrap { height: 100%; display: flex; align-items: center; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text); letter-spacing: -.01em; white-space: nowrap; }
+.brand:hover { text-decoration: none; }
+.logo { width: 30px; height: 30px; flex: none; }
+.nav { display: none; gap: 4px; margin-left: 12px; }
+.nav a { color: var(--muted); font-size: 14px; font-weight: 500; padding: 6px 10px; border-radius: 8px; }
+.nav a:hover { color: var(--text); background: var(--surface-2); text-decoration: none; }
+@media (min-width: 860px) { .nav { display: flex; } }
+.header-actions { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 38px; padding: 0 14px; border-radius: 10px; font: 600 14px/1 var(--font); border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; white-space: nowrap; transition: border-color .15s, background .15s, transform .15s; }
+.btn:hover { text-decoration: none; border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); }
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn-primary:hover { background: color-mix(in srgb, var(--accent) 88%, #000); }
+.btn-lg { height: 46px; padding: 0 20px; font-size: 15px; border-radius: 12px; }
+.btn svg { width: 16px; height: 16px; flex: none; }
+.icon-btn { width: 38px; padding: 0; }
+.star-btn .count { padding-left: 8px; margin-left: 2px; border-left: 1px solid var(--border); font-variant-numeric: tabular-nums; }
+.hide-sm { display: none; }
+@media (min-width: 560px) { .hide-sm { display: inline-flex; } }
+.theme-icon-dark { display: none; }
+:root[data-theme="dark"] .theme-icon-dark { display: block; } :root[data-theme="dark"] .theme-icon-light { display: none; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .theme-icon-dark { display: block; } :root:not([data-theme="light"]) .theme-icon-light { display: none; } }
+
+/* Hero */
+.hero { position: relative; overflow: hidden; padding: 64px 0 40px; text-align: center; }
+.hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background:
+  radial-gradient(600px 300px at 50% -40px, var(--glow), transparent 70%),
+  linear-gradient(var(--border) 1px, transparent 1px) 0 0 / 40px 40px,
+  linear-gradient(90deg, var(--border) 1px, transparent 1px) 0 0 / 40px 40px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 80% at 50% 0%, #000 30%, transparent 75%); mask-image: radial-gradient(ellipse 70% 80% at 50% 0%, #000 30%, transparent 75%); opacity: .7; }
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--muted); font-size: 13px; font-weight: 500; }
+.eyebrow .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--new); box-shadow: 0 0 0 3px var(--new-soft); }
+.hero h1 { margin: 20px auto 14px; max-width: 820px; font-size: clamp(34px, 6vw, 60px); line-height: 1.06; letter-spacing: -.035em; font-weight: 800; }
+.hero h1 .grad { background: linear-gradient(100deg, var(--accent), #0db7ed 60%, #22c55e); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lead { margin: 0 auto; max-width: 640px; color: var(--muted); font-size: clamp(16px, 2.2vw, 19px); }
+.search { position: relative; max-width: 640px; margin: 30px auto 0; }
+.search svg { position: absolute; left: 16px; top: 50%; width: 20px; height: 20px; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+.search input { width: 100%; height: 56px; padding: 0 64px 0 48px; border-radius: 14px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font: 500 16px var(--font); box-shadow: var(--shadow); transition: border-color .15s, box-shadow .15s; -webkit-appearance: none; appearance: none; }
+.search input::placeholder { color: var(--muted); }
+.search input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--glow), var(--shadow); }
+.search input::-webkit-search-cancel-button { display: none; }
+kbd { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); font: 600 12px var(--mono); color: var(--muted); border: 1px solid var(--border); border-bottom-width: 2px; border-radius: 6px; padding: 2px 8px; background: var(--surface-2); }
+.hero-ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
+.stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 36px; margin: 40px 0 0; padding: 0; list-style: none; }
+.stats li { display: flex; flex-direction: column; align-items: center; }
+.stats strong { font-size: 28px; font-weight: 800; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.stats span { color: var(--muted); font-size: 13px; }
+
+/* Section headings */
+.section { padding: 48px 0; }
+.section-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+.section-head h2 { margin: 0; font-size: clamp(24px, 3.4vw, 30px); letter-spacing: -.02em; }
+.section-head p { margin: 4px 0 0; color: var(--muted); }
+.kicker { font: 600 12px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+
+/* Sponsors */
+.sponsors { display: grid; gap: 16px; }
+@media (min-width: 900px) { .sponsors { grid-template-columns: 1.35fr 1fr; } }
+.panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); }
+.panel h3 { margin: 0 0 6px; font-size: 18px; }
+.panel p { margin: 0; color: var(--muted); }
+.sponsor-slot { display: flex; flex-direction: column; gap: 14px; }
+.sponsor-tag { align-self: flex-start; font: 600 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; }
+.sponsor-ad { display: block; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); background: var(--surface-2); aspect-ratio: 728 / 131; }
+.sponsor-ad img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.become { border-style: dashed; border-width: 1.5px; background: linear-gradient(160deg, var(--accent-soft), var(--surface) 55%); display: flex; flex-direction: column; gap: 14px; }
+.perks { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; font-size: 14px; }
+.perks li { display: flex; gap: 10px; align-items: flex-start; }
+.perks li::before { content: ""; flex: none; width: 18px; height: 18px; margin-top: 2px; border-radius: 50%; background: var(--accent-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%231d63ed'%3E%3Cpath d='M8.1 13.4 4.7 10l-1.2 1.2 4.6 4.6 9.4-9.4-1.2-1.2z'/%3E%3C/svg%3E") center / 14px no-repeat; }
+.become .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; }
+.heart { color: #e5487a; }
+
+/* Browse toolbar */
+.toolbar { position: sticky; top: var(--header-h); z-index: 40; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+.toolbar .wrap { display: flex; align-items: center; gap: 12px; padding-top: 10px; padding-bottom: 10px; }
+.chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; flex: 1; padding: 2px; mask-image: linear-gradient(90deg, #000 92%, transparent); -webkit-mask-image: linear-gradient(90deg, #000 92%, transparent); }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font: 500 14px var(--font); cursor: pointer; transition: background .15s, border-color .15s, color .15s; }
+.chip span { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.chip:hover { border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); }
+.chip[aria-pressed="true"] { background: var(--text); border-color: var(--text); color: var(--bg); }
+.chip[aria-pressed="true"] span { color: inherit; opacity: .7; }
+.result-meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 22px 0 4px; color: var(--muted); font-size: 14px; }
+
+/* Categories & cards */
+.category { padding: 26px 0 10px; content-visibility: auto; contain-intrinsic-size: auto 900px; }
+.category-head h2 { display: flex; align-items: center; gap: 10px; margin: 0; font-size: 22px; letter-spacing: -.015em; }
+.category-head h2 small { font: 600 12px var(--mono); color: var(--muted); background: var(--surface-2); border: 1px solid var(--border); border-radius: 999px; padding: 2px 8px; }
+.category-head p { margin: 4px 0 16px; color: var(--muted); font-size: 15px; }
+.cat-icon { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--surface); border: 1px solid var(--border); font-size: 17px; }
+.grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+.card-link { display: flex; gap: 14px; height: 100%; padding: 16px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); color: var(--text); transition: border-color .15s, transform .15s, box-shadow .15s; }
+.card-link:hover { text-decoration: none; border-color: color-mix(in srgb, var(--accent) 55%, var(--border)); transform: translateY(-2px); box-shadow: var(--shadow); }
+.avatar { flex: none; width: 40px; height: 40px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--border); object-fit: cover; }
+.card-body { min-width: 0; flex: 1; }
+.card-title { display: flex; align-items: center; gap: 8px; }
+.card-title h3 { margin: 0; font-size: 16px; line-height: 1.3; letter-spacing: -.01em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.card-link:hover h3 { color: var(--accent); }
+.badge { flex: none; font: 700 10px var(--mono); letter-spacing: .05em; text-transform: uppercase; color: var(--new); background: var(--new-soft); border-radius: 999px; padding: 2px 7px; }
+.card-path { font: 12px var(--mono); color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: 1px; }
+.card p { margin: 8px 0 0; font-size: 14px; line-height: 1.5; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.card.pulse .card-link { animation: pulse 1.6s ease-out; border-color: var(--accent); }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 var(--glow); } 30% { box-shadow: 0 0 0 10px var(--glow); } 100% { box-shadow: 0 0 0 0 transparent; } }
+.empty { text-align: center; padding: 56px 16px; border: 1.5px dashed var(--border); border-radius: var(--radius); margin: 24px 0; }
+.empty h3 { margin: 0 0 6px; }
+.empty p { margin: 0 0 18px; color: var(--muted); }
+
+/* Community */
+.community { display: grid; gap: 16px; }
+@media (min-width: 900px) { .community { grid-template-columns: 1fr 1fr; } }
+.contrib img, .history img { display: block; width: 100%; height: auto; border-radius: 10px; margin-top: 16px; background: #fff; }
+.cta-band { margin-top: 16px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 26px; border-radius: var(--radius); background: linear-gradient(120deg, var(--accent), #0db7ed); color: #fff; }
+.cta-band h3 { margin: 0 0 4px; font-size: 22px; letter-spacing: -.02em; }
+.cta-band p { margin: 0; opacity: .9; }
+.cta-band .btn { background: #fff; color: #0f172a; border-color: #fff; }
+
+/* FAQ */
+.faq { display: grid; gap: 10px; max-width: 860px; }
+.faq details { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 0 18px; }
+.faq summary { cursor: pointer; padding: 16px 0; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--muted); font-size: 20px; line-height: 1; transition: transform .2s; }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { margin: 0 0 16px; color: var(--muted); }
+
+/* Footer */
+footer { border-top: 1px solid var(--border); margin-top: 32px; padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+footer a { color: var(--muted); } footer a:hover { color: var(--text); }
+footer nav { display: flex; flex-wrap: wrap; gap: 18px; }
+
+.to-top { position: fixed; right: 16px; bottom: 16px; z-index: 45; width: 44px; height: 44px; border-radius: 12px; box-shadow: var(--shadow); opacity: 0; pointer-events: none; transform: translateY(8px); transition: opacity .2s, transform .2s; }
+.to-top.show { opacity: 1; pointer-events: auto; transform: none; }
+</style>
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <nav class="flex items-center justify-between py-6">
-            <div class="flex items-center flex-shrink-0">
-                <span class="font-bold text-xl tracking-tight">Awesome Self-Host Docker 🚀</span>
-            </div>
-            <div class="flex items-center">
-                <a href="https://github.com/hotheadhacker/awesome-selfhost-docker" target="_blank" rel="noopener noreferrer" class="mr-4 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
-                    </svg>
-                </a>
-                <button id="theme-toggle" class="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
-                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                </button>
-            </div>
-        </nav>
+<body>
+<a class="skip" href="#browse">Skip to the list</a>
 
-        <main class="py-10">
-            <h1 class="text-4xl font-extrabold mb-6">Awesome Self-Host Docker</h1>
-            <p class="text-xl mb-8">Curated list of open-source, self-hosted projects deployable with Docker and docker-compose. Your go-to resource for amazing self-hostable software.</p>
-            
-            <img src="https://raw.githubusercontent.com/hotheadhacker/awesome-selfhost-docker/main/assets/imgs/docker%2Boss.png" alt="Awesome selfhost docker" class="w-full max-w-2xl mx-auto mb-12 rounded-lg shadow-lg">
-            
-    <h2>Table of Contents</h2>
-    <ul>
-        <li><a href="#productivity">Productivity</a></li>
-        <li><a href="#development">Development</a></li>
-        <li><a href="#media">Media</a></li>
-        <li><a href="#communication">Communication</a></li>
-        <li><a href="#security">Security</a></li>
-        <li><a href="#monitoring">Monitoring</a></li>
-        <li><a href="#file-sharing">File Sharing</a></li>
-        <li><a href="#home-automation">Home Automation</a></li>
-        <li><a href="#analytics">Analytics</a></li>
-        <li><a href="#miscellaneous">Miscellaneous</a></li>
-    </ul>
-
-    <h2 id="productivity">Productivity</h2>
-    <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/nextcloud/docker">Nextcloud</a></td>
-            <td>Productivity platform for file hosting and collaboration</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/laurent22/joplin">Joplin</a></td>
-            <td>Note-taking and to-do application</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/jonaswinkler/paperless-ng">Paperless-ng</a></td>
-            <td>Document management system</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/BookStackApp/BookStack">Bookstack</a></td>
-            <td>Platform for organizing and storing information</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/zadam/trilium">Trilium</a></td>
-            <td>Hierarchical note-taking application</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/hedgedoc/hedgedoc">HedgeDoc</a></td>
-            <td>Collaborative markdown editor</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/wekan/wekan">Wekan</a></td>
-            <td>Open-source Trello-like kanban board</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/jaap-karssenberg/zim-desktop-wiki">Zim</a></td>
-            <td>Desktop wiki & note-taking</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/standardnotes/server">Standard Notes</a></td>
-            <td>Encrypted note-taking app</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/kanboard/kanboard">Kanboard</a></td>
-            <td>Project management software</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/ether/etherpad-lite">Etherpad</a></td>
-            <td>Real-time collaborative document editing</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/ONLYOFFICE/Docker-DocumentServer">OnlyOffice</a></td>
-            <td>Office suite that enables you to manage documents, projects, team, and customer relations in one place</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/xwiki-labs/cryptpad">CryptPad</a></td>
-            <td>Collaboration suite that is end-to-end encrypted</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/outline/outline">Outline</a></td>
-            <td>A modern team knowledge base</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/weewx/weewx">WeeWX</a></td>
-            <td>Weather station software</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/kevinpapst/kimai2">Kimai</a></td>
-            <td>Time-tracking application</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/RestyaPlatform/board">Restyaboard</a></td>
-            <td>Open-source Trello-like kanban board</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/JordanKnott/taskcafe">Taskcafe</a></td>
-            <td>Open-source project management tool</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/mattermost/focalboard">Focalboard</a></td>
-            <td>Open-source project management tool</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/tillywork/tillywork">Tillywork</a></td>
-            <td>Opensource work management solution. Manage your sprints, projects, and sales pipelines in one place</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/hcengineering/platform">Huly</a></td>
-            <td>All-in-One Project Management Platform </td>
-        </tr>
-    </table>
-
-    <h2 id="development">Development</h2>
-    <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://hub.docker.com/r/gitlab/gitlab-ce">GitLab</a></td>
-            <td>DevOps platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/go-gitea/gitea">Gitea</a></td>
-            <td>Lightweight code hosting solution</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/drone/drone">Drone</a></td>
-            <td>Continuous Integration platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/jenkinsci/docker">Jenkins</a></td>
-            <td>Automation server for CI/CD</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/gogs/gogs">Gogs</a></td>
-            <td>Painless self-hosted Git service</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/portainer/portainer">Portainer</a></td>
-            <td>Lightweight management UI for Docker</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/SonarSource/docker-sonarqube">SonarQube</a></td>
-            <td>Continuous inspection of code quality</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/getsentry/onpremise">Sentry</a></td>
-            <td>Error tracking and performance monitoring</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/taigaio/taiga-back">Taiga</a></td>
-            <td>Project management platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/bitnami/bitnami-docker-redmine">Redmine</a></td>
-            <td>Project management web application</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/phacility/phabricator">Phabricator</a></td>
-            <td>Suite of open-source tools for peer code review, task management, and project communication</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/cdr/code-server">Code-Server</a></td>
-            <td>Run VS Code on any machine anywhere</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/eclipse-theia/theia">Theia</a></td>
-            <td>Cloud & desktop IDE framework implemented in TypeScript</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/jupyterhub/jupyterhub">JupyterHub</a></td>
-            <td>Multi-user server for Jupyter notebooks</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/gitbucket/gitbucket">GitBucket</a></td>
-            <td>Git platform powered by Scala</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/GerritCodeReview/gerrit">Gerrit</a></td>
-            <td>Web-based code review system</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/fossil-scm/fossil">Fossil</a></td>
-            <td>Distributed version control system</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/sourcegraph/deploy-sourcegraph-docker">Sourcegraph</a></td>
-            <td>Code search and navigation tool</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/hackmdio/codimd">CodiMD</a></td>
-            <td>Real-time collaborative markdown notes</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/Leantime/leantime">Leantime</a></td>
-            <td>Open-source project management system</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/tigerbeetle/tigerbeetle">Tigerbeetle</a></td>
-            <td>The financial transactions database designed for mission critical safety and performance.</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/undb-io/undb">Undb</a></td>
-            <td>No Code Database & BaaS</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/libredb/libredb-studio">LibreDB Studio</a></td>
-            <td>Web-based SQL IDE for PostgreSQL, MySQL, MongoDB, Redis and more, with AI query assistance</td>
-        </tr>
-    </table>
-
-    <h2 id="media">Media</h2>
-    <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/plexinc/pms-docker">Plex</a></td>
-            <td>Media server</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/jellyfin/jellyfin">Jellyfin</a></td>
-            <td>Media system</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/airsonic/airsonic">Airsonic</a></td>
-            <td>Music streaming server</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/photoprism/photoprism">Photoprism</a></td>
-            <td>Personal photo management</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/navidrome/navidrome">Navidrome</a></td>
-            <td>Music server and streamer</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/MediaBrowser/Emby">Emby</a></td>
-            <td>Media server for personal streaming</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/matthuisman/karaoke-forever">Karaoke Eternal</a></td>
-            <td>Host your own karaoke party</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/Radarr/Radarr">Radarr</a></td>
-            <td>Movie collection manager</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/Sonarr/Sonarr">Sonarr</a></td>
-            <td>TV series collection manager</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/Lidarr/Lidarr">Lidarr</a></td>
-            <td>Music collection manager</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/SickChill/SickChill">SickChill</a></td>
-            <td>Automatic Video Library Manager for TV Shows</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/mikebrady/shairport-sync">MyMediaForAlexa</a></td>
-            <td>Stream your own music to Alexa devices</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/koel/koel">Koel</a></td>
-            <td>Personal music streaming server</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/ejurgensen/forked-daapd">Subsonic</a></td>
-            <td>Music server and streamer</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/ampache/ampache">Ampache</a></td>
-            <td>Web-based audio/video streaming application</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/LibreTime/libretime">LibreTime</a></td>
-            <td>Open-source radio management software</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/rembo10/headphones">Headphones</a></td>
-            <td>Automated music downloader for NZB and Torrent</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/beetbox/beets">Beets</a></td>
-            <td>Music library manager and MusicBrainz tagger</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/imputnet/cobalt">Cobalt</a></td>
-            <td>Quick Media Downloader</td>
-        </tr>
-        
-            </table>
-
-    <h2 id="communication">Communication</h2>
-    <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/RocketChat/Rocket.Chat">Rocket.Chat</a></td>
-            <td>Communication platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/matrix-org/synapse">Matrix Synapse</a></td>
-            <td>Matrix reference homeserver</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/jitsi/docker-jitsi-meet">Jitsi Meet</a></td>
-            <td>Video conferencing solution</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/zulip/zulip">Zulip</a></td>
-            <td>Team chat</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/mumble-voip/mumble">Mumble</a></td>
-            <td>Low-latency voice chat</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/mattermost/mattermost-server">Mattermost</a></td>
-            <td>Open-source, self-hostable online chat service</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/vector-im/element-web">Element</a></td>
-            <td>A glossy Matrix collaboration client</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/discourse/discourse_docker">Discourse</a></td>
-            <td>Open-source discussion platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/postalhq/postal">Postal</a></td>
-            <td>Mail delivery platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/Mailu/Mailu">Mailu</a></td>
-            <td>Full-featured mail server</td>
-        </tr>
-    </table>
-
-    <h2 id="security">Security</h2>
-    <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/bitwarden/server">Bitwarden</a></td>
-            <td>Password manager</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/authelia/authelia">Authelia</a></td>
-            <td>Authentication and authorization server</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/keycloak/keycloak">Keycloak</a></td>
-            <td>Identity and access management</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/hashicorp/vault">Vault</a></td>
-            <td>Secrets management</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a></td>
-            <td>Unofficial Bitwarden server</td>
-        </tr>
-    </table>
-
-    <h2 id="monitoring">Monitoring</h2>
-    <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/grafana/grafana">Grafana</a></td>
-            <td>Analytics and monitoring solution</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/prometheus/prometheus">Prometheus</a></td>
-            <td>Monitoring system and time series database</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/netdata/netdata">Netdata</a></td>
-            <td>Real-time performance monitoring</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/louislam/uptime-kuma">Uptime Kuma</a></td>
-            <td>Uptime monitoring tool</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/zabbix/zabbix">Zabbix</a></td>
-            <td>Enterprise-class monitoring solution</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/amir20/dozzle">Dozzle</a></td>
-            <td>Realtime log viewer for docker containers</td>
-        </tr>
-    </table>
-
-    <h2 id="file-sharing">File Sharing</h2>
-    <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/haiwen/seafile">Seafile</a></td>
-            <td>File hosting and collaboration platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/syncthing/syncthing">Syncthing</a></td>
-            <td>Continuous file synchronization</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/owncloud/core">ownCloud</a></td>
-            <td>File hosting software</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/filebrowser/filebrowser">FileBrowser</a></td>
-            <td>Web File Browser</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/pydio/cells">Pydio Cells</a></td>
-            <td>Content collaboration platform</td>
-        </tr>
-    </table>
-
-    <h2 id="home-automation">Home Automation</h2>
-    <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/home-assistant/core">Home Assistant</a></td>
-            <td>Open source home automation</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/openhab/openhab-core">OpenHAB</a></td>
-            <td>Vendor and technology agnostic open source automation software</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/domoticz/domoticz">Domoticz</a></td>
-            <td>Home Automation System</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/node-red/node-red">Node-RED</a></td>
-            <td>Flow-based programming for the Internet of Things</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/esphome/esphome">ESPHome</a></td>
-            <td>System to control your ESP8266/ESP32</td>
-        </tr>
-    </table>
-
-    <h2 id="analytics">Analytics</h2>
-    <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/matomo-org/matomo">Matomo</a></td>
-            <td>Web analytics platform</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/plausible/analytics">Plausible</a></td>
-            <td>Lightweight and privacy-friendly web analytics</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/mikecao/umami">Umami</a></td>
-            <td>Simple, fast, privacy-focused alternative to Google Analytics</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/electerious/Ackee">Ackee</a></td>
-            <td>Self-hosted analytics tool</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/allinurl/goaccess">GoAccess</a></td>
-            <td>Real-time web log analyzer</td>
-        </tr>
-    </table>
-
-    <h2 id="miscellaneous">Miscellaneous</h2>
-    <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/pi-hole/docker-pi-hole">Pi-hole</a></td>
-            <td>Network-wide ad blocking</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/FreshRSS/FreshRSS">FreshRSS</a></td>
-            <td>Self-hosted RSS feed aggregator</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/wallabag/wallabag">Wallabag</a></td>
-            <td>Save and classify articles</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/vabene1111/recipes">Tandoor Recipes</a></td>
-            <td>Recipe manager</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/go-shiori/shiori">Shiori</a></td>
-            <td>Simple bookmark manager</td>
-        </tr>
-    </table>
-
-    <h2>This project is in early development</h2>
-
-    <h2>Star History</h2>
-    <a href="https://star-history.com/#hotheadhacker/awesome-selfhost-docker&Date">
-        <img src="https://api.star-history.com/svg?repos=hotheadhacker/awesome-selfhost-docker&type=Date" alt="Star History Chart">
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Awesome Self-Host Docker home">
+      <svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1d63ed"/><path fill="#fff" d="M7 17h18a8 8 0 0 1-8 7h-3a7 7 0 0 1-7-7Zm2-5h3v3H9zm4 0h3v3h-3zm4 0h3v3h-3zm-4-4h3v3h-3z"/></svg>
+      <span>Awesome Self-Host Docker</span>
     </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#browse">Browse</a>
+      <a href="#sponsors">Sponsors</a>
+      <a href="#community">Community</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn star-btn hide-sm" href="https://github.com/hotheadhacker/awesome-selfhost-docker" target="_blank" rel="noopener" aria-label="Star on GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        Star <span class="count" data-stars>4.1k</span>
+      </a>
+      <button class="btn icon-btn" id="theme" type="button" aria-label="Toggle dark mode">
+        <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
 
-    <script>
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Community-curated · updated 2026-10-12</span>
+      <h1>Self-host <span class="grad">anything</span> with Docker</h1>
+      <p class="lead">195 open-source, self-hosted apps you can deploy with Docker and docker-compose, hand-picked by the community and organised into 10 categories.</p>
+      <form class="search" role="search" action="#browse" onsubmit="return false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <label class="sr-only" for="q">Search projects</label>
+        <input id="q" type="search" name="q" placeholder="Search 195 projects…" autocomplete="off" spellcheck="false">
+        <kbd aria-hidden="true">/</kbd>
+      </form>
+      <div class="hero-ctas">
+        <a class="btn btn-primary btn-lg" href="#browse">Browse the list</a>
+        <a class="btn btn-lg" href="https://github.com/hotheadhacker/awesome-selfhost-docker/edit/main/README.md" target="_blank" rel="noopener">Submit a project</a>
+      </div>
+      <ul class="stats">
+        <li><strong>195</strong><span>projects</span></li>
+        <li><strong>10</strong><span>categories</span></li>
+        <li><strong data-stars>4.1k</strong><span>GitHub stars</span></li>
+        <li><strong data-forks>211</strong><span>forks</span></li>
+      </ul>
+    </div>
+  </section>
 
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-            themeToggleLightIcon.classList.remove('hidden');
-        } else {
-            themeToggleDarkIcon.classList.remove('hidden');
-        }
+  <section class="section" id="sponsors" aria-labelledby="sponsors-h" style="padding-top:16px">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">Sponsors</div><h2 id="sponsors-h">Supported by</h2>
+        <p>Sponsors keep this list free, maintained and growing.</p></div>
+      </div>
+      <div class="sponsors">
+        <div class="panel sponsor-slot">
+          <span class="sponsor-tag">Featured sponsor</span>
+          <a class="sponsor-ad" href="https://gitads.dev/v1/ad-track?source=hotheadhacker/awesome-selfhost-docker@github" target="_blank" rel="noopener sponsored">
+            <img src="https://gitads.dev/v1/ad-serve?source=hotheadhacker/awesome-selfhost-docker@github" alt="Sponsored by GitAds" width="728" height="131" loading="lazy" decoding="async">
+          </a>
+          <p>Sponsored placements are clearly labelled. Every project in the list is chosen on merit.</p>
+        </div>
+        <div class="panel become">
+          <div>
+            <h3>Put your project in front of self-hosters</h3>
+            <p>Reach developers, sysadmins and homelab enthusiasts who use this list to choose their stack.</p>
+          </div>
+          <ul class="perks">
+            <li>Logo and link at the top of the website and README</li>
+            <li><span>Seen by a community of <span data-stars>4.1k</span>+ stargazers</span></li>
+            <li>Support open-source curation</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://github.com/sponsors/hotheadhacker" target="_blank" rel="noopener"><span class="heart" aria-hidden="true">♥</span> Become a sponsor</a>
+            <a class="btn" href="https://github.com/hotheadhacker/awesome-selfhost-docker/issues/new?title=Sponsorship%20inquiry&labels=sponsorship" target="_blank" rel="noopener">Sponsorship inquiry</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        themeToggleBtn.addEventListener('click', function() {
-            themeToggleDarkIcon.classList.toggle('hidden');
-            themeToggleLightIcon.classList.toggle('hidden');
+  <div class="toolbar" id="browse">
+    <div class="wrap">
+      <div class="chips" role="toolbar" aria-label="Filter by category">
+<button class="chip" type="button" data-cat="all" aria-pressed="true">All <span>195</span></button>
+<button class="chip" type="button" data-cat="new" aria-pressed="false">✨ New <span>15</span></button>
+<button class="chip" type="button" data-cat="productivity" aria-pressed="false">📝 Productivity <span>23</span></button>
+<button class="chip" type="button" data-cat="development" aria-pressed="false">🛠️ Development <span>26</span></button>
+<button class="chip" type="button" data-cat="media" aria-pressed="false">🎬 Media <span>26</span></button>
+<button class="chip" type="button" data-cat="communication" aria-pressed="false">💬 Communication <span>22</span></button>
+<button class="chip" type="button" data-cat="security" aria-pressed="false">🔐 Security <span>22</span></button>
+<button class="chip" type="button" data-cat="monitoring" aria-pressed="false">📈 Monitoring <span>22</span></button>
+<button class="chip" type="button" data-cat="file-sharing" aria-pressed="false">📁 File Sharing <span>20</span></button>
+<button class="chip" type="button" data-cat="home-automation" aria-pressed="false">🏠 Home Automation <span>10</span></button>
+<button class="chip" type="button" data-cat="analytics" aria-pressed="false">📊 Analytics <span>11</span></button>
+<button class="chip" type="button" data-cat="miscellaneous" aria-pressed="false">🧩 Miscellaneous <span>13</span></button>
+      </div>
+    </div>
+  </div>
 
-            if (localStorage.getItem('color-theme')) {
-                if (localStorage.getItem('color-theme') === 'light') {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                } else {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                }
-            } else {
-                if (document.documentElement.classList.contains('dark')) {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                } else {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                }
-            }
-        });
-    </script>
-    
+  <div class="wrap">
+    <div class="result-meta">
+      <span id="count" aria-live="polite">Showing all 195 projects</span>
+      <button class="btn" id="random" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
+        Surprise me
+      </button>
+    </div>
+<section class="category" id="productivity" aria-labelledby="productivity-h">
+<header class="category-head"><h2 id="productivity-h"><span class="cat-icon" aria-hidden="true">📝</span>Productivity <small>23</small></h2>
+<p>Notes, documents, wikis, kanban boards and office suites you can run on your own server.</p></header>
+<ul class="grid">
+<li class="card" data-search="nextcloud productivity platform for file hosting and collaboration nextcloud/docker productivity">
+<a class="card-link" href="https://github.com/nextcloud/docker" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/nextcloud.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Nextcloud</h3></div>
+<div class="card-path">nextcloud/docker</div>
+<p>Productivity platform for file hosting and collaboration</p></div></a></li>
+<li class="card" data-search="joplin note-taking and to-do application laurent22/joplin productivity">
+<a class="card-link" href="https://github.com/laurent22/joplin" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/laurent22.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Joplin</h3></div>
+<div class="card-path">laurent22/joplin</div>
+<p>Note-taking and to-do application</p></div></a></li>
+<li class="card" data-search="paperless-ngx document management system paperless-ngx/paperless-ngx productivity">
+<a class="card-link" href="https://github.com/paperless-ngx/paperless-ngx" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/paperless-ngx.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Paperless-ngx</h3></div>
+<div class="card-path">paperless-ngx/paperless-ngx</div>
+<p>Document management system</p></div></a></li>
+<li class="card" data-search="bookstack platform for organizing and storing information bookstackapp/bookstack productivity">
+<a class="card-link" href="https://github.com/BookStackApp/BookStack" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/BookStackApp.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Bookstack</h3></div>
+<div class="card-path">BookStackApp/BookStack</div>
+<p>Platform for organizing and storing information</p></div></a></li>
+<li class="card" data-search="trilium notes hierarchical note-taking application triliumnext/trilium productivity" data-new>
+<a class="card-link" href="https://github.com/TriliumNext/Trilium" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/TriliumNext.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Trilium Notes</h3><span class="badge">New</span></div>
+<div class="card-path">TriliumNext/Trilium</div>
+<p>Hierarchical note-taking application</p></div></a></li>
+<li class="card" data-search="hedgedoc collaborative markdown editor hedgedoc/hedgedoc productivity">
+<a class="card-link" href="https://github.com/hedgedoc/hedgedoc" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/hedgedoc.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>HedgeDoc</h3></div>
+<div class="card-path">hedgedoc/hedgedoc</div>
+<p>Collaborative markdown editor</p></div></a></li>
+<li class="card" data-search="wekan open-source trello-like kanban board wekan/wekan productivity">
+<a class="card-link" href="https://github.com/wekan/wekan" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/wekan.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Wekan</h3></div>
+<div class="card-path">wekan/wekan</div>
+<p>Open-source Trello-like kanban board</p></div></a></li>
+<li class="card" data-search="zim desktop wiki &amp; note-taking jaap-karssenberg/zim-desktop-wiki productivity">
+<a class="card-link" href="https://github.com/jaap-karssenberg/zim-desktop-wiki" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/jaap-karssenberg.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Zim</h3></div>
+<div class="card-path">jaap-karssenberg/zim-desktop-wiki</div>
+<p>Desktop wiki &amp; note-taking</p></div></a></li>
+<li class="card" data-search="standard notes encrypted note-taking app standardnotes/server productivity">
+<a class="card-link" href="https://github.com/standardnotes/server" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/standardnotes.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Standard Notes</h3></div>
+<div class="card-path">standardnotes/server</div>
+<p>Encrypted note-taking app</p></div></a></li>
+<li class="card" data-search="kanboard project management software kanboard/kanboard productivity">
+<a class="card-link" href="https://github.com/kanboard/kanboard" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/kanboard.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Kanboard</h3></div>
+<div class="card-path">kanboard/kanboard</div>
+<p>Project management software</p></div></a></li>
+<li class="card" data-search="etherpad real-time collaborative document editing ether/etherpad-lite productivity">
+<a class="card-link" href="https://github.com/ether/etherpad-lite" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/ether.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Etherpad</h3></div>
+<div class="card-path">ether/etherpad-lite</div>
+<p>Real-time collaborative document editing</p></div></a></li>
+<li class="card" data-search="onlyoffice office suite that enables you to manage documents, projects, team, and customer relations in one place onlyoffice/docker-documentserver productivity">
+<a class="card-link" href="https://github.com/ONLYOFFICE/Docker-DocumentServer" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/ONLYOFFICE.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>OnlyOffice</h3></div>
+<div class="card-path">ONLYOFFICE/Docker-DocumentServer</div>
+<p>Office suite that enables you to manage documents, projects, team, and customer relations in one place</p></div></a></li>
+<li class="card" data-search="cryptpad collaboration suite that is end-to-end encrypted xwiki-labs/cryptpad productivity">
+<a class="card-link" href="https://github.com/xwiki-labs/cryptpad" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/xwiki-labs.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>CryptPad</h3></div>
+<div class="card-path">xwiki-labs/cryptpad</div>
+<p>Collaboration suite that is end-to-end encrypted</p></div></a></li>
+<li class="card" data-search="outline a modern team knowledge base outline/outline productivity">
+<a class="card-link" href="https://github.com/outline/outline" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/outline.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Outline</h3></div>
+<div class="card-path">outline/outline</div>
+<p>A modern team knowledge base</p></div></a></li>
+<li class="card" data-search="weewx weather station software weewx/weewx productivity">
+<a class="card-link" href="https://github.com/weewx/weewx" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/weewx.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>WeeWX</h3></div>
+<div class="card-path">weewx/weewx</div>
+<p>Weather station software</p></div></a></li>
+<li class="card" data-search="kimai time-tracking application kevinpapst/kimai2 productivity">
+<a class="card-link" href="https://github.com/kevinpapst/kimai2" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/kevinpapst.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Kimai</h3></div>
+<div class="card-path">kevinpapst/kimai2</div>
+<p>Time-tracking application</p></div></a></li>
+<li class="card" data-search="restyaboard open-source trello-like kanban board restyaplatform/board productivity">
+<a class="card-link" href="https://github.com/RestyaPlatform/board" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/RestyaPlatform.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Restyaboard</h3></div>
+<div class="card-path">RestyaPlatform/board</div>
+<p>Open-source Trello-like kanban board</p></div></a></li>
+<li class="card" data-search="taskcafe open-source project management tool jordanknott/taskcafe productivity">
+<a class="card-link" href="https://github.com/JordanKnott/taskcafe" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/JordanKnott.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Taskcafe</h3></div>
+<div class="card-path">JordanKnott/taskcafe</div>
+<p>Open-source project management tool</p></div></a></li>
+<li class="card" data-search="focalboard open-source project management tool mattermost/focalboard productivity">
+<a class="card-link" href="https://github.com/mattermost/focalboard" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/mattermost.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Focalboard</h3></div>
+<div class="card-path">mattermost/focalboard</div>
+<p>Open-source project management tool</p></div></a></li>
+<li class="card" data-search="appflowy open-source notion alternative with a focus on privacy and extensibility. appflowy-io/appflowy productivity">
+<a class="card-link" href="https://github.com/AppFlowy-IO/AppFlowy" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/AppFlowy-IO.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>AppFlowy</h3></div>
+<div class="card-path">AppFlowy-IO/AppFlowy</div>
+<p>Open-source Notion alternative with a focus on privacy and extensibility.</p></div></a></li>
+<li class="card" data-search="tillywork opensource work management solution. manage your sprints, projects, and sales pipelines in one place tillywork/tillywork productivity">
+<a class="card-link" href="https://github.com/tillywork/tillywork" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/tillywork.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Tillywork</h3></div>
+<div class="card-path">tillywork/tillywork</div>
+<p>Opensource work management solution. Manage your sprints, projects, and sales pipelines in one place</p></div></a></li>
+<li class="card" data-search="huly all-in-one project management platform hcengineering/platform productivity">
+<a class="card-link" href="https://github.com/hcengineering/platform" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/hcengineering.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Huly</h3></div>
+<div class="card-path">hcengineering/platform</div>
+<p>All-in-One Project Management Platform</p></div></a></li>
+<li class="card" data-search="omnitools self-hosted web-based swiss army knife for everyday tasks. iib0011/omni-tools productivity" data-new>
+<a class="card-link" href="https://github.com/iib0011/omni-tools" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/iib0011.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>OmniTools</h3><span class="badge">New</span></div>
+<div class="card-path">iib0011/omni-tools</div>
+<p>Self-hosted web-based Swiss army knife for everyday tasks.</p></div></a></li>
+</ul></section>
+<section class="category" id="development" aria-labelledby="development-h">
+<header class="category-head"><h2 id="development-h"><span class="cat-icon" aria-hidden="true">🛠️</span>Development <small>26</small></h2>
+<p>Git hosting, CI/CD, IDEs, databases and developer tooling, ready to deploy with Docker.</p></header>
+<ul class="grid">
+<li class="card" data-search="gitlab devops platform gitlab/gitlab-ce development">
+<a class="card-link" href="https://github.com/gitlab/gitlab-ce" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/gitlab.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>GitLab</h3></div>
+<div class="card-path">gitlab/gitlab-ce</div>
+<p>DevOps platform</p></div></a></li>
+<li class="card" data-search="gitea lightweight code hosting solution go-gitea/gitea development">
+<a class="card-link" href="https://github.com/go-gitea/gitea" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/go-gitea.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Gitea</h3></div>
+<div class="card-path">go-gitea/gitea</div>
+<p>Lightweight code hosting solution</p></div></a></li>
+<li class="card" data-search="drone continuous integration platform drone/drone development">
+<a class="card-link" href="https://github.com/drone/drone" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/drone.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Drone</h3></div>
+<div class="card-path">drone/drone</div>
+<p>Continuous Integration platform</p></div></a></li>
+<li class="card" data-search="jenkins automation server for ci/cd jenkinsci/docker development">
+<a class="card-link" href="https://github.com/jenkinsci/docker" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/jenkinsci.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Jenkins</h3></div>
+<div class="card-path">jenkinsci/docker</div>
+<p>Automation server for CI/CD</p></div></a></li>
+<li class="card" data-search="gogs painless self-hosted git service gogs/gogs development">
+<a class="card-link" href="https://github.com/gogs/gogs" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/gogs.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Gogs</h3></div>
+<div class="card-path">gogs/gogs</div>
+<p>Painless self-hosted Git service</p></div></a></li>
+<li class="card" data-search="peon open-source self-hostable docker paas. deploy git apps, compose stacks, databases, and static sites peon-sh/peon development" data-new>
+<a class="card-link" href="https://github.com/Peon-sh/Peon" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Peon-sh.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Peon</h3><span class="badge">New</span></div>
+<div class="card-path">Peon-sh/Peon</div>
+<p>Open-source self-hostable Docker PaaS. Deploy Git apps, Compose stacks, databases, and static sites</p></div></a></li>
+<li class="card" data-search="portainer lightweight management ui for docker portainer/portainer development">
+<a class="card-link" href="https://github.com/portainer/portainer" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/portainer.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Portainer</h3></div>
+<div class="card-path">portainer/portainer</div>
+<p>Lightweight management UI for Docker</p></div></a></li>
+<li class="card" data-search="sonarqube continuous inspection of code quality sonarsource/docker-sonarqube development">
+<a class="card-link" href="https://github.com/SonarSource/docker-sonarqube" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/SonarSource.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>SonarQube</h3></div>
+<div class="card-path">SonarSource/docker-sonarqube</div>
+<p>Continuous inspection of code quality</p></div></a></li>
+<li class="card" data-search="sentry error tracking and performance monitoring getsentry/onpremise development">
+<a class="card-link" href="https://github.com/getsentry/onpremise" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/getsentry.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Sentry</h3></div>
+<div class="card-path">getsentry/onpremise</div>
+<p>Error tracking and performance monitoring</p></div></a></li>
+<li class="card" data-search="taiga project management platform taigaio/taiga-back development">
+<a class="card-link" href="https://github.com/taigaio/taiga-back" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/taigaio.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Taiga</h3></div>
+<div class="card-path">taigaio/taiga-back</div>
+<p>Project management platform</p></div></a></li>
+<li class="card" data-search="redmine project management web application bitnami/bitnami-docker-redmine development">
+<a class="card-link" href="https://github.com/bitnami/bitnami-docker-redmine" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/bitnami.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Redmine</h3></div>
+<div class="card-path">bitnami/bitnami-docker-redmine</div>
+<p>Project management web application</p></div></a></li>
+<li class="card" data-search="phabricator suite of open-source tools for peer code review, task management, and project communication phacility/phabricator development">
+<a class="card-link" href="https://github.com/phacility/phabricator" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/phacility.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Phabricator</h3></div>
+<div class="card-path">phacility/phabricator</div>
+<p>Suite of open-source tools for peer code review, task management, and project communication</p></div></a></li>
+<li class="card" data-search="code-server run vs code on any machine anywhere cdr/code-server development">
+<a class="card-link" href="https://github.com/cdr/code-server" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/cdr.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Code-Server</h3></div>
+<div class="card-path">cdr/code-server</div>
+<p>Run VS Code on any machine anywhere</p></div></a></li>
+<li class="card" data-search="theia cloud &amp; desktop ide framework implemented in typescript eclipse-theia/theia development">
+<a class="card-link" href="https://github.com/eclipse-theia/theia" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/eclipse-theia.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Theia</h3></div>
+<div class="card-path">eclipse-theia/theia</div>
+<p>Cloud &amp; desktop IDE framework implemented in TypeScript</p></div></a></li>
+<li class="card" data-search="jupyterhub multi-user server for jupyter notebooks jupyterhub/jupyterhub development">
+<a class="card-link" href="https://github.com/jupyterhub/jupyterhub" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/jupyterhub.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>JupyterHub</h3></div>
+<div class="card-path">jupyterhub/jupyterhub</div>
+<p>Multi-user server for Jupyter notebooks</p></div></a></li>
+<li class="card" data-search="gitbucket git platform powered by scala gitbucket/gitbucket development">
+<a class="card-link" href="https://github.com/gitbucket/gitbucket" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/gitbucket.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>GitBucket</h3></div>
+<div class="card-path">gitbucket/gitbucket</div>
+<p>Git platform powered by Scala</p></div></a></li>
+<li class="card" data-search="gerrit web-based code review system gerritcodereview/gerrit development">
+<a class="card-link" href="https://github.com/GerritCodeReview/gerrit" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/GerritCodeReview.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Gerrit</h3></div>
+<div class="card-path">GerritCodeReview/gerrit</div>
+<p>Web-based code review system</p></div></a></li>
+<li class="card" data-search="fossil distributed version control system fossil-scm/fossil development">
+<a class="card-link" href="https://github.com/fossil-scm/fossil" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/fossil-scm.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Fossil</h3></div>
+<div class="card-path">fossil-scm/fossil</div>
+<p>Distributed version control system</p></div></a></li>
+<li class="card" data-search="sourcegraph code search and navigation tool sourcegraph/deploy-sourcegraph-docker development">
+<a class="card-link" href="https://github.com/sourcegraph/deploy-sourcegraph-docker" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/sourcegraph.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Sourcegraph</h3></div>
+<div class="card-path">sourcegraph/deploy-sourcegraph-docker</div>
+<p>Code search and navigation tool</p></div></a></li>
+<li class="card" data-search="codimd real-time collaborative markdown notes hackmdio/codimd development">
+<a class="card-link" href="https://github.com/hackmdio/codimd" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/hackmdio.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>CodiMD</h3></div>
+<div class="card-path">hackmdio/codimd</div>
+<p>Real-time collaborative markdown notes</p></div></a></li>
+<li class="card" data-search="leantime open-source project management system leantime/leantime development">
+<a class="card-link" href="https://github.com/Leantime/leantime" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Leantime.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Leantime</h3></div>
+<div class="card-path">Leantime/leantime</div>
+<p>Open-source project management system</p></div></a></li>
+<li class="card" data-search="tigerbeetle the financial transactions database designed for mission critical safety and performance. tigerbeetle/tigerbeetle development">
+<a class="card-link" href="https://github.com/tigerbeetle/tigerbeetle" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/tigerbeetle.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Tigerbeetle</h3></div>
+<div class="card-path">tigerbeetle/tigerbeetle</div>
+<p>The financial transactions database designed for mission critical safety and performance.</p></div></a></li>
+<li class="card" data-search="undb no code database &amp; baas undb-io/undb development">
+<a class="card-link" href="https://github.com/undb-io/undb" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/undb-io.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Undb</h3></div>
+<div class="card-path">undb-io/undb</div>
+<p>No Code Database &amp; BaaS</p></div></a></li>
+<li class="card" data-search="webhook debugger, logger &amp; api mocking suite self-hosted webhook debugging and api mocking suite with live inspection, replay, forwarding, and signature verification ar27111994/webhook-debugger-logger development" data-new>
+<a class="card-link" href="https://github.com/ar27111994/webhook-debugger-logger" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/ar27111994.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Webhook Debugger, Logger &amp; API Mocking Suite</h3><span class="badge">New</span></div>
+<div class="card-path">ar27111994/webhook-debugger-logger</div>
+<p>Self-hosted webhook debugging and API mocking suite with live inspection, replay, forwarding, and signature verification</p></div></a></li>
+<li class="card" data-search="laradock full php development environment based on docker (nginx, php, mysql, redis and more) laradock/laradock development" data-new>
+<a class="card-link" href="https://github.com/laradock/laradock" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/laradock.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Laradock</h3><span class="badge">New</span></div>
+<div class="card-path">laradock/laradock</div>
+<p>Full PHP development environment based on Docker (Nginx, PHP, MySQL, Redis and more)</p></div></a></li>
+<li class="card" data-search="libredb studio web-based sql ide for postgresql, mysql, mongodb, redis and more, with ai query assistance libredb/libredb-studio development" data-new>
+<a class="card-link" href="https://github.com/libredb/libredb-studio" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/libredb.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>LibreDB Studio</h3><span class="badge">New</span></div>
+<div class="card-path">libredb/libredb-studio</div>
+<p>Web-based SQL IDE for PostgreSQL, MySQL, MongoDB, Redis and more, with AI query assistance</p></div></a></li>
+</ul></section>
+<section class="category" id="media" aria-labelledby="media-h">
+<header class="category-head"><h2 id="media-h"><span class="cat-icon" aria-hidden="true">🎬</span>Media <small>26</small></h2>
+<p>Media servers, music streaming, photo libraries, downloaders and the *arr stack.</p></header>
+<ul class="grid">
+<li class="card" data-search="plex media server plexinc/pms-docker media">
+<a class="card-link" href="https://github.com/plexinc/pms-docker" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/plexinc.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Plex</h3></div>
+<div class="card-path">plexinc/pms-docker</div>
+<p>Media server</p></div></a></li>
+<li class="card" data-search="jellyfin media system jellyfin/jellyfin media">
+<a class="card-link" href="https://github.com/jellyfin/jellyfin" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/jellyfin.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Jellyfin</h3></div>
+<div class="card-path">jellyfin/jellyfin</div>
+<p>Media system</p></div></a></li>
+<li class="card" data-search="airsonic music streaming server airsonic/airsonic media">
+<a class="card-link" href="https://github.com/airsonic/airsonic" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/airsonic.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Airsonic</h3></div>
+<div class="card-path">airsonic/airsonic</div>
+<p>Music streaming server</p></div></a></li>
+<li class="card" data-search="photoprism personal photo management photoprism/photoprism media">
+<a class="card-link" href="https://github.com/photoprism/photoprism" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/photoprism.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Photoprism</h3></div>
+<div class="card-path">photoprism/photoprism</div>
+<p>Personal photo management</p></div></a></li>
+<li class="card" data-search="navidrome music server and streamer navidrome/navidrome media">
+<a class="card-link" href="https://github.com/navidrome/navidrome" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/navidrome.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Navidrome</h3></div>
+<div class="card-path">navidrome/navidrome</div>
+<p>Music server and streamer</p></div></a></li>
+<li class="card" data-search="emby media server for personal streaming mediabrowser/emby media">
+<a class="card-link" href="https://github.com/MediaBrowser/Emby" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/MediaBrowser.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Emby</h3></div>
+<div class="card-path">MediaBrowser/Emby</div>
+<p>Media server for personal streaming</p></div></a></li>
+<li class="card" data-search="karaoke eternal host your own karaoke party matthuisman/karaoke-forever media">
+<a class="card-link" href="https://github.com/matthuisman/karaoke-forever" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/matthuisman.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Karaoke Eternal</h3></div>
+<div class="card-path">matthuisman/karaoke-forever</div>
+<p>Host your own karaoke party</p></div></a></li>
+<li class="card" data-search="radarr movie collection manager radarr/radarr media">
+<a class="card-link" href="https://github.com/Radarr/Radarr" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Radarr.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Radarr</h3></div>
+<div class="card-path">Radarr/Radarr</div>
+<p>Movie collection manager</p></div></a></li>
+<li class="card" data-search="sonarr tv series collection manager sonarr/sonarr media">
+<a class="card-link" href="https://github.com/Sonarr/Sonarr" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Sonarr.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Sonarr</h3></div>
+<div class="card-path">Sonarr/Sonarr</div>
+<p>TV series collection manager</p></div></a></li>
+<li class="card" data-search="lidarr music collection manager lidarr/lidarr media">
+<a class="card-link" href="https://github.com/Lidarr/Lidarr" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Lidarr.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Lidarr</h3></div>
+<div class="card-path">Lidarr/Lidarr</div>
+<p>Music collection manager</p></div></a></li>
+<li class="card" data-search="sickchill automatic video library manager for tv shows sickchill/sickchill media">
+<a class="card-link" href="https://github.com/SickChill/SickChill" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/SickChill.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>SickChill</h3></div>
+<div class="card-path">SickChill/SickChill</div>
+<p>Automatic Video Library Manager for TV Shows</p></div></a></li>
+<li class="card" data-search="mymediaforalexa stream your own music to alexa devices mikebrady/shairport-sync media">
+<a class="card-link" href="https://github.com/mikebrady/shairport-sync" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/mikebrady.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>MyMediaForAlexa</h3></div>
+<div class="card-path">mikebrady/shairport-sync</div>
+<p>Stream your own music to Alexa devices</p></div></a></li>
+<li class="card" data-search="koel personal music streaming server koel/koel media">
+<a class="card-link" href="https://github.com/koel/koel" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/koel.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Koel</h3></div>
+<div class="card-path">koel/koel</div>
+<p>Personal music streaming server</p></div></a></li>
+<li class="card" data-search="subsonic music server and streamer ejurgensen/forked-daapd media">
+<a class="card-link" href="https://github.com/ejurgensen/forked-daapd" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/ejurgensen.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Subsonic</h3></div>
+<div class="card-path">ejurgensen/forked-daapd</div>
+<p>Music server and streamer</p></div></a></li>
+<li class="card" data-search="ampache web-based audio/video streaming application ampache/ampache media">
+<a class="card-link" href="https://github.com/ampache/ampache" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/ampache.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Ampache</h3></div>
+<div class="card-path">ampache/ampache</div>
+<p>Web-based audio/video streaming application</p></div></a></li>
+<li class="card" data-search="libretime open-source radio management software libretime/libretime media">
+<a class="card-link" href="https://github.com/LibreTime/libretime" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/LibreTime.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>LibreTime</h3></div>
+<div class="card-path">LibreTime/libretime</div>
+<p>Open-source radio management software</p></div></a></li>
+<li class="card" data-search="headphones automated music downloader for nzb and torrent rembo10/headphones media">
+<a class="card-link" href="https://github.com/rembo10/headphones" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/rembo10.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Headphones</h3></div>
+<div class="card-path">rembo10/headphones</div>
+<p>Automated music downloader for NZB and Torrent</p></div></a></li>
+<li class="card" data-search="beets music library manager and musicbrainz tagger beetbox/beets media">
+<a class="card-link" href="https://github.com/beetbox/beets" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/beetbox.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Beets</h3></div>
+<div class="card-path">beetbox/beets</div>
+<p>Music library manager and MusicBrainz tagger</p></div></a></li>
+<li class="card" data-search="mopidy extensible music server mopidy/mopidy media">
+<a class="card-link" href="https://github.com/mopidy/mopidy" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/mopidy.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Mopidy</h3></div>
+<div class="card-path">mopidy/mopidy</div>
+<p>Extensible music server</p></div></a></li>
+<li class="card" data-search="piwigo photo gallery software for the web piwigo/piwigo media">
+<a class="card-link" href="https://github.com/Piwigo/Piwigo" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Piwigo.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Piwigo</h3></div>
+<div class="card-path">Piwigo/Piwigo</div>
+<p>Photo gallery software for the web</p></div></a></li>
+<li class="card" data-search="prowlarr an indexer manager/proxy built on *arr to integrate with various media software like sonarr, radarr, and lidarr. supports multiple indexers and automation. prowlarr/prowlarr media">
+<a class="card-link" href="https://github.com/Prowlarr/Prowlarr" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Prowlarr.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Prowlarr</h3></div>
+<div class="card-path">Prowlarr/Prowlarr</div>
+<p>An indexer manager/proxy built on *Arr to integrate with various media software like Sonarr, Radarr, and Lidarr. Supports multiple indexers and automation.</p></div></a></li>
+<li class="card" data-search="cobalt quick media downloader imputnet/cobalt media">
+<a class="card-link" href="https://github.com/imputnet/cobalt" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/imputnet.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Cobalt</h3></div>
+<div class="card-path">imputnet/cobalt</div>
+<p>Quick Media Downloader</p></div></a></li>
+<li class="card" data-search="audiobookshelf self-hosted audiobook and podcast server with a web player and mobile apps. advplyr/audiobookshelf media">
+<a class="card-link" href="https://github.com/advplyr/audiobookshelf" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/advplyr.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Audiobookshelf</h3></div>
+<div class="card-path">advplyr/audiobookshelf</div>
+<p>Self-hosted audiobook and podcast server with a web player and mobile apps.</p></div></a></li>
+<li class="card" data-search="suggestarr companion tool for overseerr and jellyfin that provides media recommendations. giuseppe99barchetta/suggestarr media">
+<a class="card-link" href="https://github.com/giuseppe99barchetta/SuggestArr" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/giuseppe99barchetta.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>SuggestArr</h3></div>
+<div class="card-path">giuseppe99barchetta/SuggestArr</div>
+<p>Companion tool for Overseerr and Jellyfin that provides media recommendations.</p></div></a></li>
+<li class="card" data-search="subarr coordination layer beside bazarr and subgen: calibrated audio-language detection, library-wide subtitle coverage, and a queue ui for whisper transcription. coaxk/subarr media" data-new>
+<a class="card-link" href="https://github.com/coaxk/subarr" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/coaxk.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>subarr</h3><span class="badge">New</span></div>
+<div class="card-path">coaxk/subarr</div>
+<p>Coordination layer beside Bazarr and subgen: calibrated audio-language detection, library-wide subtitle coverage, and a queue UI for Whisper transcription.</p></div></a></li>
+<li class="card" data-search="telegram media downloader self-hosted daemon that automatically downloads media from telegram channels, groups, and forum topics. docker-native with multi-arch support. rfsbraz/telegram-downloader media" data-new>
+<a class="card-link" href="https://github.com/rfsbraz/telegram-downloader" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/rfsbraz.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Telegram Media Downloader</h3><span class="badge">New</span></div>
+<div class="card-path">rfsbraz/telegram-downloader</div>
+<p>Self-hosted daemon that automatically downloads media from Telegram channels, groups, and forum topics. Docker-native with multi-arch support.</p></div></a></li>
+</ul></section>
+<section class="category" id="communication" aria-labelledby="communication-h">
+<header class="category-head"><h2 id="communication-h"><span class="cat-icon" aria-hidden="true">💬</span>Communication <small>22</small></h2>
+<p>Chat, video calls, email servers and federated social networks.</p></header>
+<ul class="grid">
+<li class="card" data-search="rocket.chat communication platform rocketchat/rocket.chat communication">
+<a class="card-link" href="https://github.com/RocketChat/Rocket.Chat" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/RocketChat.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Rocket.Chat</h3></div>
+<div class="card-path">RocketChat/Rocket.Chat</div>
+<p>Communication platform</p></div></a></li>
+<li class="card" data-search="matrix synapse matrix reference homeserver matrix-org/synapse communication">
+<a class="card-link" href="https://github.com/matrix-org/synapse" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/matrix-org.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Matrix Synapse</h3></div>
+<div class="card-path">matrix-org/synapse</div>
+<p>Matrix reference homeserver</p></div></a></li>
+<li class="card" data-search="jitsi meet video conferencing solution jitsi/docker-jitsi-meet communication">
+<a class="card-link" href="https://github.com/jitsi/docker-jitsi-meet" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/jitsi.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Jitsi Meet</h3></div>
+<div class="card-path">jitsi/docker-jitsi-meet</div>
+<p>Video conferencing solution</p></div></a></li>
+<li class="card" data-search="zulip team chat zulip/zulip communication">
+<a class="card-link" href="https://github.com/zulip/zulip" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/zulip.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Zulip</h3></div>
+<div class="card-path">zulip/zulip</div>
+<p>Team chat</p></div></a></li>
+<li class="card" data-search="mumble low-latency voice chat mumble-voip/mumble communication">
+<a class="card-link" href="https://github.com/mumble-voip/mumble" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/mumble-voip.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Mumble</h3></div>
+<div class="card-path">mumble-voip/mumble</div>
+<p>Low-latency voice chat</p></div></a></li>
+<li class="card" data-search="mattermost open-source, self-hostable online chat service mattermost/mattermost-server communication">
+<a class="card-link" href="https://github.com/mattermost/mattermost-server" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/mattermost.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Mattermost</h3></div>
+<div class="card-path">mattermost/mattermost-server</div>
+<p>Open-source, self-hostable online chat service</p></div></a></li>
+<li class="card" data-search="element a glossy matrix collaboration client vector-im/element-web communication">
+<a class="card-link" href="https://github.com/vector-im/element-web" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/vector-im.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Element</h3></div>
+<div class="card-path">vector-im/element-web</div>
+<p>A glossy Matrix collaboration client</p></div></a></li>
+<li class="card" data-search="discourse open-source discussion platform discourse/discourse_docker communication">
+<a class="card-link" href="https://github.com/discourse/discourse_docker" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/discourse.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Discourse</h3></div>
+<div class="card-path">discourse/discourse_docker</div>
+<p>Open-source discussion platform</p></div></a></li>
+<li class="card" data-search="postal mail delivery platform postalhq/postal communication">
+<a class="card-link" href="https://github.com/postalhq/postal" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/postalhq.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Postal</h3></div>
+<div class="card-path">postalhq/postal</div>
+<p>Mail delivery platform</p></div></a></li>
+<li class="card" data-search="mailu full-featured mail server mailu/mailu communication">
+<a class="card-link" href="https://github.com/Mailu/Mailu" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Mailu.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Mailu</h3></div>
+<div class="card-path">Mailu/Mailu</div>
+<p>Full-featured mail server</p></div></a></li>
+<li class="card" data-search="matterbridge bridge between various chat protocols 42wim/matterbridge communication">
+<a class="card-link" href="https://github.com/42wim/matterbridge" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/42wim.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Matterbridge</h3></div>
+<div class="card-path">42wim/matterbridge</div>
+<p>Bridge between various chat protocols</p></div></a></li>
+<li class="card" data-search="misskey decentralized social media platform syuilo/misskey communication">
+<a class="card-link" href="https://github.com/syuilo/misskey" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/syuilo.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Misskey</h3></div>
+<div class="card-path">syuilo/misskey</div>
+<p>Decentralized social media platform</p></div></a></li>
+<li class="card" data-search="openpost self-hosted social publishing and scheduling platform with docker compose support getopenpost/openpost communication" data-new>
+<a class="card-link" href="https://github.com/getopenpost/openpost" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/getopenpost.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>OpenPost</h3><span class="badge">New</span></div>
+<div class="card-path">getopenpost/openpost</div>
+<p>Self-hosted social publishing and scheduling platform with Docker Compose support</p></div></a></li>
+<li class="card" data-search="friendica decentralized social network friendica/friendica communication">
+<a class="card-link" href="https://github.com/friendica/friendica" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/friendica.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Friendica</h3></div>
+<div class="card-path">friendica/friendica</div>
+<p>Decentralized social network</p></div></a></li>
+<li class="card" data-search="hubzilla decentralized publishing platform redmatrix/hubzilla communication">
+<a class="card-link" href="https://github.com/redmatrix/hubzilla" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/redmatrix.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Hubzilla</h3></div>
+<div class="card-path">redmatrix/hubzilla</div>
+<p>Decentralized publishing platform</p></div></a></li>
+<li class="card" data-search="gnu social decentralized social network gnusocial/gnusocial communication">
+<a class="card-link" href="https://github.com/gnusocial/gnusocial" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/gnusocial.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>GNU social</h3></div>
+<div class="card-path">gnusocial/gnusocial</div>
+<p>Decentralized social network</p></div></a></li>
+<li class="card" data-search="diaspora distributed social networking service diaspora/diaspora communication">
+<a class="card-link" href="https://github.com/diaspora/diaspora" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/diaspora.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Diaspora</h3></div>
+<div class="card-path">diaspora/diaspora</div>
+<p>Distributed social networking service</p></div></a></li>
+<li class="card" data-search="pleroma lightweight social networking server pleroma/pleroma communication">
+<a class="card-link" href="https://github.com/pleroma/pleroma" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/pleroma.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Pleroma</h3></div>
+<div class="card-path">pleroma/pleroma</div>
+<p>Lightweight social networking server</p></div></a></li>
+<li class="card" data-search="movim decentralized social platform movim/movim communication">
+<a class="card-link" href="https://github.com/movim/movim" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/movim.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Movim</h3></div>
+<div class="card-path">movim/movim</div>
+<p>Decentralized social platform</p></div></a></li>
+<li class="card" data-search="scuttlebutt decentralized social network ssbc/patchwork communication">
+<a class="card-link" href="https://github.com/ssbc/patchwork" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/ssbc.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Scuttlebutt</h3></div>
+<div class="card-path">ssbc/patchwork</div>
+<p>Decentralized social network</p></div></a></li>
+<li class="card" data-search="threema web secure messaging app threema-ch/threema-web communication">
+<a class="card-link" href="https://github.com/threema-ch/threema-web" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/threema-ch.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Threema Web</h3></div>
+<div class="card-path">threema-ch/threema-web</div>
+<p>Secure messaging app</p></div></a></li>
+<li class="card" data-search="peersuite decentralized p2p workspace openconstruct/peersuite communication" data-new>
+<a class="card-link" href="https://github.com/openconstruct/Peersuite" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/openconstruct.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Peersuite</h3><span class="badge">New</span></div>
+<div class="card-path">openconstruct/Peersuite</div>
+<p>Decentralized p2p workspace</p></div></a></li>
+</ul></section>
+<section class="category" id="security" aria-labelledby="security-h">
+<header class="category-head"><h2 id="security-h"><span class="cat-icon" aria-hidden="true">🔐</span>Security <small>22</small></h2>
+<p>Password managers, identity and access, VPNs, firewalls and intrusion detection.</p></header>
+<ul class="grid">
+<li class="card" data-search="bunkerweb next-generation, open-source web application firewall (waf) bunkerity/bunkerweb security" data-new>
+<a class="card-link" href="https://github.com/bunkerity/bunkerweb" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/bunkerity.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>BunkerWeb</h3><span class="badge">New</span></div>
+<div class="card-path">bunkerity/bunkerweb</div>
+<p>Next-generation, open-source Web Application Firewall (WAF)</p></div></a></li>
+<li class="card" data-search="bitwarden password manager bitwarden/server security">
+<a class="card-link" href="https://github.com/bitwarden/server" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/bitwarden.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Bitwarden</h3></div>
+<div class="card-path">bitwarden/server</div>
+<p>Password manager</p></div></a></li>
+<li class="card" data-search="authelia authentication and authorization server authelia/authelia security">
+<a class="card-link" href="https://github.com/authelia/authelia" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/authelia.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Authelia</h3></div>
+<div class="card-path">authelia/authelia</div>
+<p>Authentication and authorization server</p></div></a></li>
+<li class="card" data-search="keycloak identity and access management keycloak/keycloak security">
+<a class="card-link" href="https://github.com/keycloak/keycloak" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/keycloak.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Keycloak</h3></div>
+<div class="card-path">keycloak/keycloak</div>
+<p>Identity and access management</p></div></a></li>
+<li class="card" data-search="vault secrets management hashicorp/vault security">
+<a class="card-link" href="https://github.com/hashicorp/vault" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/hashicorp.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Vault</h3></div>
+<div class="card-path">hashicorp/vault</div>
+<p>Secrets management</p></div></a></li>
+<li class="card" data-search="vaultwarden unofficial bitwarden server dani-garcia/vaultwarden security">
+<a class="card-link" href="https://github.com/dani-garcia/vaultwarden" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/dani-garcia.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Vaultwarden</h3></div>
+<div class="card-path">dani-garcia/vaultwarden</div>
+<p>Unofficial Bitwarden server</p></div></a></li>
+<li class="card" data-search="fail2ban intrusion prevention software framework fail2ban/fail2ban security">
+<a class="card-link" href="https://github.com/fail2ban/fail2ban" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/fail2ban.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Fail2ban</h3></div>
+<div class="card-path">fail2ban/fail2ban</div>
+<p>Intrusion prevention software framework</p></div></a></li>
+<li class="card" data-search="ossec open source host-based intrusion detection system ossec/ossec-hids security">
+<a class="card-link" href="https://github.com/ossec/ossec-hids" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/ossec.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>OSSEC</h3></div>
+<div class="card-path">ossec/ossec-hids</div>
+<p>Open Source Host-based Intrusion Detection System</p></div></a></li>
+<li class="card" data-search="clamav open-source antivirus engine cisco-talos/clamav security">
+<a class="card-link" href="https://github.com/Cisco-Talos/clamav" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Cisco-Talos.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>ClamAV</h3></div>
+<div class="card-path">Cisco-Talos/clamav</div>
+<p>Open-source antivirus engine</p></div></a></li>
+<li class="card" data-search="openvpn open-source vpn solution kylemanna/docker-openvpn security">
+<a class="card-link" href="https://github.com/kylemanna/docker-openvpn" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/kylemanna.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>OpenVPN</h3></div>
+<div class="card-path">kylemanna/docker-openvpn</div>
+<p>Open-source VPN solution</p></div></a></li>
+<li class="card" data-search="wireguard fast and modern vpn solution linuxserver/docker-wireguard security">
+<a class="card-link" href="https://github.com/linuxserver/docker-wireguard" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/linuxserver.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>WireGuard</h3></div>
+<div class="card-path">linuxserver/docker-wireguard</div>
+<p>Fast and modern VPN solution</p></div></a></li>
+<li class="card" data-search="bibavpn self-hosted socks5 and http connect tunnel over tls and websocket for single-vps deployments eljaja/bibavpn security" data-new>
+<a class="card-link" href="https://github.com/Eljaja/BibaVPN" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Eljaja.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>BibaVPN</h3><span class="badge">New</span></div>
+<div class="card-path">Eljaja/BibaVPN</div>
+<p>Self-hosted SOCKS5 and HTTP CONNECT tunnel over TLS and WebSocket for single-VPS deployments</p></div></a></li>
+<li class="card" data-search="crowdsec collaborative security engine crowdsecurity/crowdsec security">
+<a class="card-link" href="https://github.com/crowdsecurity/crowdsec" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/crowdsecurity.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>CrowdSec</h3></div>
+<div class="card-path">crowdsecurity/crowdsec</div>
+<p>Collaborative security engine</p></div></a></li>
+<li class="card" data-search="modsecurity open-source web application firewall spiderlabs/modsecurity security">
+<a class="card-link" href="https://github.com/SpiderLabs/ModSecurity" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/SpiderLabs.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>ModSecurity</h3></div>
+<div class="card-path">SpiderLabs/ModSecurity</div>
+<p>Open-source web application firewall</p></div></a></li>
+<li class="card" data-search="suricata network threat detection engine oisf/suricata security">
+<a class="card-link" href="https://github.com/OISF/suricata" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/OISF.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Suricata</h3></div>
+<div class="card-path">OISF/suricata</div>
+<p>Network threat detection engine</p></div></a></li>
+<li class="card" data-search="snort network intrusion detection system snort3/snort3 security">
+<a class="card-link" href="https://github.com/snort3/snort3" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/snort3.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Snort</h3></div>
+<div class="card-path">snort3/snort3</div>
+<p>Network intrusion detection system</p></div></a></li>
+<li class="card" data-search="wazuh security monitoring and siem wazuh/wazuh security">
+<a class="card-link" href="https://github.com/wazuh/wazuh" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/wazuh.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Wazuh</h3></div>
+<div class="card-path">wazuh/wazuh</div>
+<p>Security monitoring and SIEM</p></div></a></li>
+<li class="card" data-search="openscap security compliance solutions openscap/openscap security">
+<a class="card-link" href="https://github.com/OpenSCAP/openscap" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/OpenSCAP.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>OpenSCAP</h3></div>
+<div class="card-path">OpenSCAP/openscap</div>
+<p>Security compliance solutions</p></div></a></li>
+<li class="card" data-search="rspamd fast, free and open-source spam filtering system rspamd/rspamd security">
+<a class="card-link" href="https://github.com/rspamd/rspamd" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/rspamd.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Rspamd</h3></div>
+<div class="card-path">rspamd/rspamd</div>
+<p>Fast, free and open-source spam filtering system</p></div></a></li>
+<li class="card" data-search="onecli credential vault for ai agents — rust http gateway injects api keys transparently so agents never handle raw secrets onecli/onecli security" data-new>
+<a class="card-link" href="https://github.com/onecli/onecli" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/onecli.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>OneCLI</h3><span class="badge">New</span></div>
+<div class="card-path">onecli/onecli</div>
+<p>Credential vault for AI agents — Rust HTTP gateway injects API keys transparently so agents never handle raw secrets</p></div></a></li>
+<li class="card" data-search="spamassassin open-source anti-spam platform apache/spamassassin security">
+<a class="card-link" href="https://github.com/apache/spamassassin" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/apache.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>SpamAssassin</h3></div>
+<div class="card-path">apache/spamassassin</div>
+<p>Open-source anti-spam platform</p></div></a></li>
+<li class="card" data-search="graylog log management platform graylog2/graylog2-server security">
+<a class="card-link" href="https://github.com/Graylog2/graylog2-server" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Graylog2.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Graylog</h3></div>
+<div class="card-path">Graylog2/graylog2-server</div>
+<p>Log management platform</p></div></a></li>
+</ul></section>
+<section class="category" id="monitoring" aria-labelledby="monitoring-h">
+<header class="category-head"><h2 id="monitoring-h"><span class="cat-icon" aria-hidden="true">📈</span>Monitoring <small>22</small></h2>
+<p>Metrics, uptime, logs and observability for your infrastructure.</p></header>
+<ul class="grid">
+<li class="card" data-search="grafana analytics and monitoring solution grafana/grafana monitoring">
+<a class="card-link" href="https://github.com/grafana/grafana" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/grafana.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Grafana</h3></div>
+<div class="card-path">grafana/grafana</div>
+<p>Analytics and monitoring solution</p></div></a></li>
+<li class="card" data-search="prometheus monitoring system and time series database prometheus/prometheus monitoring">
+<a class="card-link" href="https://github.com/prometheus/prometheus" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/prometheus.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Prometheus</h3></div>
+<div class="card-path">prometheus/prometheus</div>
+<p>Monitoring system and time series database</p></div></a></li>
+<li class="card" data-search="netdata real-time performance monitoring netdata/netdata monitoring">
+<a class="card-link" href="https://github.com/netdata/netdata" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/netdata.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Netdata</h3></div>
+<div class="card-path">netdata/netdata</div>
+<p>Real-time performance monitoring</p></div></a></li>
+<li class="card" data-search="uptime kuma uptime monitoring tool louislam/uptime-kuma monitoring">
+<a class="card-link" href="https://github.com/louislam/uptime-kuma" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/louislam.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Uptime Kuma</h3></div>
+<div class="card-path">louislam/uptime-kuma</div>
+<p>Uptime monitoring tool</p></div></a></li>
+<li class="card" data-search="zabbix enterprise-class monitoring solution zabbix/zabbix monitoring">
+<a class="card-link" href="https://github.com/zabbix/zabbix" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/zabbix.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Zabbix</h3></div>
+<div class="card-path">zabbix/zabbix</div>
+<p>Enterprise-class monitoring solution</p></div></a></li>
+<li class="card" data-search="influxdb time series database influxdata/influxdb monitoring">
+<a class="card-link" href="https://github.com/influxdata/influxdb" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/influxdata.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>InfluxDB</h3></div>
+<div class="card-path">influxdata/influxdb</div>
+<p>Time series database</p></div></a></li>
+<li class="card" data-search="telegraf server agent for collecting and reporting metrics influxdata/telegraf monitoring">
+<a class="card-link" href="https://github.com/influxdata/telegraf" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/influxdata.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Telegraf</h3></div>
+<div class="card-path">influxdata/telegraf</div>
+<p>Server agent for collecting and reporting metrics</p></div></a></li>
+<li class="card" data-search="cacti network monitoring and graphing tool cacti/cacti monitoring">
+<a class="card-link" href="https://github.com/Cacti/cacti" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Cacti.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Cacti</h3></div>
+<div class="card-path">Cacti/cacti</div>
+<p>Network monitoring and graphing tool</p></div></a></li>
+<li class="card" data-search="nagios it infrastructure monitoring nagiosenterprises/nagioscore monitoring">
+<a class="card-link" href="https://github.com/NagiosEnterprises/nagioscore" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/NagiosEnterprises.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Nagios</h3></div>
+<div class="card-path">NagiosEnterprises/nagioscore</div>
+<p>IT infrastructure monitoring</p></div></a></li>
+<li class="card" data-search="checkmk monitoring system for it infrastructure tribe29/checkmk monitoring">
+<a class="card-link" href="https://github.com/tribe29/checkmk" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/tribe29.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Checkmk</h3></div>
+<div class="card-path">tribe29/checkmk</div>
+<p>Monitoring system for IT infrastructure</p></div></a></li>
+<li class="card" data-search="librenms network monitoring system librenms/librenms monitoring">
+<a class="card-link" href="https://github.com/librenms/librenms" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/librenms.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>LibreNMS</h3></div>
+<div class="card-path">librenms/librenms</div>
+<p>Network monitoring system</p></div></a></li>
+<li class="card" data-search="icinga monitoring system for it infrastructure icinga/icinga2 monitoring">
+<a class="card-link" href="https://github.com/Icinga/icinga2" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Icinga.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Icinga</h3></div>
+<div class="card-path">Icinga/icinga2</div>
+<p>Monitoring system for IT infrastructure</p></div></a></li>
+<li class="card" data-search="monit small open source utility for managing and monitoring unix systems monit/monit monitoring">
+<a class="card-link" href="https://github.com/monit/monit" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/monit.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Monit</h3></div>
+<div class="card-path">monit/monit</div>
+<p>Small Open Source utility for managing and monitoring Unix systems</p></div></a></li>
+<li class="card" data-search="glances cross-platform monitoring tool nicolargo/glances monitoring">
+<a class="card-link" href="https://github.com/nicolargo/glances" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/nicolargo.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Glances</h3></div>
+<div class="card-path">nicolargo/glances</div>
+<p>Cross-platform monitoring tool</p></div></a></li>
+<li class="card" data-search="cortex horizontally scalable, highly available, multi-tenant, long term storage for prometheus cortexproject/cortex monitoring">
+<a class="card-link" href="https://github.com/cortexproject/cortex" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/cortexproject.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Cortex</h3></div>
+<div class="card-path">cortexproject/cortex</div>
+<p>Horizontally scalable, highly available, multi-tenant, long term storage for Prometheus</p></div></a></li>
+<li class="card" data-search="victoriametrics fast, cost-effective and scalable monitoring solution and time series database victoriametrics/victoriametrics monitoring">
+<a class="card-link" href="https://github.com/VictoriaMetrics/VictoriaMetrics" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/VictoriaMetrics.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>VictoriaMetrics</h3></div>
+<div class="card-path">VictoriaMetrics/VictoriaMetrics</div>
+<p>Fast, cost-effective and scalable monitoring solution and time series database</p></div></a></li>
+<li class="card" data-search="thanos highly available prometheus setup with long term storage capabilities thanos-io/thanos monitoring">
+<a class="card-link" href="https://github.com/thanos-io/thanos" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/thanos-io.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Thanos</h3></div>
+<div class="card-path">thanos-io/thanos</div>
+<p>Highly available Prometheus setup with long term storage capabilities</p></div></a></li>
+<li class="card" data-search="kapacitor open-source framework for processing, monitoring, and alerting on time series data influxdata/kapacitor monitoring">
+<a class="card-link" href="https://github.com/influxdata/kapacitor" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/influxdata.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Kapacitor</h3></div>
+<div class="card-path">influxdata/kapacitor</div>
+<p>Open-source framework for processing, monitoring, and alerting on time series data</p></div></a></li>
+<li class="card" data-search="bosun monitoring and alerting system by stack exchange bosun-monitor/bosun monitoring">
+<a class="card-link" href="https://github.com/bosun-monitor/bosun" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/bosun-monitor.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Bosun</h3></div>
+<div class="card-path">bosun-monitor/bosun</div>
+<p>Monitoring and alerting system by Stack Exchange</p></div></a></li>
+<li class="card" data-search="cerebro web admin tool for elasticsearch lmenezes/cerebro monitoring">
+<a class="card-link" href="https://github.com/lmenezes/cerebro" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/lmenezes.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Cerebro</h3></div>
+<div class="card-path">lmenezes/cerebro</div>
+<p>Web admin tool for Elasticsearch</p></div></a></li>
+<li class="card" data-search="dozzle realtime log viewer for docker containers amir20/dozzle monitoring">
+<a class="card-link" href="https://github.com/amir20/dozzle" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/amir20.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Dozzle</h3></div>
+<div class="card-path">amir20/dozzle</div>
+<p>Realtime log viewer for docker containers</p></div></a></li>
+<li class="card" data-search="kubestellar console multi-cluster kubernetes dashboard with real-time observability kubestellar/console monitoring" data-new>
+<a class="card-link" href="https://github.com/kubestellar/console" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/kubestellar.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>KubeStellar Console</h3><span class="badge">New</span></div>
+<div class="card-path">kubestellar/console</div>
+<p>Multi-cluster Kubernetes dashboard with real-time observability</p></div></a></li>
+</ul></section>
+<section class="category" id="file-sharing" aria-labelledby="file-sharing-h">
+<header class="category-head"><h2 id="file-sharing-h"><span class="cat-icon" aria-hidden="true">📁</span>File Sharing <small>20</small></h2>
+<p>File sync, cloud storage, object storage and NAS software.</p></header>
+<ul class="grid">
+<li class="card" data-search="seafile file hosting and collaboration platform haiwen/seafile file sharing">
+<a class="card-link" href="https://github.com/haiwen/seafile" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/haiwen.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Seafile</h3></div>
+<div class="card-path">haiwen/seafile</div>
+<p>File hosting and collaboration platform</p></div></a></li>
+<li class="card" data-search="syncthing continuous file synchronization syncthing/syncthing file sharing">
+<a class="card-link" href="https://github.com/syncthing/syncthing" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/syncthing.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Syncthing</h3></div>
+<div class="card-path">syncthing/syncthing</div>
+<p>Continuous file synchronization</p></div></a></li>
+<li class="card" data-search="owncloud file hosting software owncloud/core file sharing">
+<a class="card-link" href="https://github.com/owncloud/core" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/owncloud.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>ownCloud</h3></div>
+<div class="card-path">owncloud/core</div>
+<p>File hosting software</p></div></a></li>
+<li class="card" data-search="filebrowser web file browser filebrowser/filebrowser file sharing">
+<a class="card-link" href="https://github.com/filebrowser/filebrowser" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/filebrowser.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>FileBrowser</h3></div>
+<div class="card-path">filebrowser/filebrowser</div>
+<p>Web File Browser</p></div></a></li>
+<li class="card" data-search="pydio cells content collaboration platform pydio/cells file sharing">
+<a class="card-link" href="https://github.com/pydio/cells" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/pydio.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Pydio Cells</h3></div>
+<div class="card-path">pydio/cells</div>
+<p>Content collaboration platform</p></div></a></li>
+<li class="card" data-search="minio high-performance object storage minio/minio file sharing">
+<a class="card-link" href="https://github.com/minio/minio" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/minio.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Minio</h3></div>
+<div class="card-path">minio/minio</div>
+<p>High-performance object storage</p></div></a></li>
+<li class="card" data-search="nextcloud productivity platform for file hosting and collaboration nextcloud/docker file sharing">
+<a class="card-link" href="https://github.com/nextcloud/docker" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/nextcloud.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Nextcloud</h3></div>
+<div class="card-path">nextcloud/docker</div>
+<p>Productivity platform for file hosting and collaboration</p></div></a></li>
+<li class="card" data-search="cozy personal cloud server cozy/cozy-stack file sharing">
+<a class="card-link" href="https://github.com/cozy/cozy-stack" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/cozy.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Cozy</h3></div>
+<div class="card-path">cozy/cozy-stack</div>
+<p>Personal cloud server</p></div></a></li>
+<li class="card" data-search="kinto minimalist json storage service kinto/kinto file sharing">
+<a class="card-link" href="https://github.com/Kinto/kinto" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Kinto.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Kinto</h3></div>
+<div class="card-path">Kinto/kinto</div>
+<p>Minimalist JSON storage service</p></div></a></li>
+<li class="card" data-search="projectsend clients-oriented file uploading platform projectsend/projectsend file sharing">
+<a class="card-link" href="https://github.com/projectsend/projectsend" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/projectsend.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>ProjectSend</h3></div>
+<div class="card-path">projectsend/projectsend</div>
+<p>Clients-oriented file uploading platform</p></div></a></li>
+<li class="card" data-search="caddy fast, multi-platform web server with automatic https caddyserver/caddy file sharing">
+<a class="card-link" href="https://github.com/caddyserver/caddy" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/caddyserver.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Caddy</h3></div>
+<div class="card-path">caddyserver/caddy</div>
+<p>Fast, multi-platform web server with automatic HTTPS</p></div></a></li>
+<li class="card" data-search="samba free software re-implementation of the smb/cifs networking protocol samba-team/samba file sharing">
+<a class="card-link" href="https://github.com/samba-team/samba" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/samba-team.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Samba</h3></div>
+<div class="card-path">samba-team/samba</div>
+<p>Free software re-implementation of the SMB/CIFS networking protocol</p></div></a></li>
+<li class="card" data-search="resilio sync fast, reliable, and simple file sync and share solution resilio/sync file sharing">
+<a class="card-link" href="https://github.com/Resilio/sync" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Resilio.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Resilio Sync</h3></div>
+<div class="card-path">Resilio/sync</div>
+<p>Fast, reliable, and simple file sync and share solution</p></div></a></li>
+<li class="card" data-search="zenko open-source multi-cloud data controller scality/zenko file sharing">
+<a class="card-link" href="https://github.com/scality/Zenko" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/scality.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Zenko</h3></div>
+<div class="card-path">scality/Zenko</div>
+<p>Open-source multi-cloud data controller</p></div></a></li>
+<li class="card" data-search="seaweedfs distributed file system to store and serve billions of files fast chrislusf/seaweedfs file sharing">
+<a class="card-link" href="https://github.com/chrislusf/seaweedfs" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/chrislusf.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>SeaweedFS</h3></div>
+<div class="card-path">chrislusf/seaweedfs</div>
+<p>Distributed file system to store and serve billions of files fast</p></div></a></li>
+<li class="card" data-search="ceph distributed object, block, and file storage platform ceph/ceph file sharing">
+<a class="card-link" href="https://github.com/ceph/ceph" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/ceph.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Ceph</h3></div>
+<div class="card-path">ceph/ceph</div>
+<p>Distributed object, block, and file storage platform</p></div></a></li>
+<li class="card" data-search="glusterfs scale-out network-attached storage file system gluster/glusterfs file sharing">
+<a class="card-link" href="https://github.com/gluster/glusterfs" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/gluster.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>GlusterFS</h3></div>
+<div class="card-path">gluster/glusterfs</div>
+<p>Scale-out network-attached storage file system</p></div></a></li>
+<li class="card" data-search="openmediavault next generation network attached storage solution based on debian linux openmediavault/openmediavault file sharing">
+<a class="card-link" href="https://github.com/openmediavault/openmediavault" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/openmediavault.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>OpenMediaVault</h3></div>
+<div class="card-path">openmediavault/openmediavault</div>
+<p>Next generation network attached storage solution based on Debian Linux</p></div></a></li>
+<li class="card" data-search="xigmanas open-source nas (network-attached storage) distribution based on freebsd xigmanas/xigmanas file sharing">
+<a class="card-link" href="https://github.com/xigmanas/xigmanas" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/xigmanas.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>XigmaNAS</h3></div>
+<div class="card-path">xigmanas/xigmanas</div>
+<p>Open-source NAS (Network-Attached Storage) distribution based on FreeBSD</p></div></a></li>
+<li class="card" data-search="freenas open-source network-attached storage operating system based on freebsd freenas/freenas file sharing">
+<a class="card-link" href="https://github.com/freenas/freenas" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/freenas.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>FreeNAS</h3></div>
+<div class="card-path">freenas/freenas</div>
+<p>Open-source network-attached storage operating system based on FreeBSD</p></div></a></li>
+</ul></section>
+<section class="category" id="home-automation" aria-labelledby="home-automation-h">
+<header class="category-head"><h2 id="home-automation-h"><span class="cat-icon" aria-hidden="true">🏠</span>Home Automation <small>10</small></h2>
+<p>Smart-home hubs and IoT automation platforms.</p></header>
+<ul class="grid">
+<li class="card" data-search="home assistant open source home automation home-assistant/core home automation">
+<a class="card-link" href="https://github.com/home-assistant/core" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/home-assistant.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Home Assistant</h3></div>
+<div class="card-path">home-assistant/core</div>
+<p>Open source home automation</p></div></a></li>
+<li class="card" data-search="openhab vendor and technology agnostic open source automation software openhab/openhab-core home automation">
+<a class="card-link" href="https://github.com/openhab/openhab-core" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/openhab.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>OpenHAB</h3></div>
+<div class="card-path">openhab/openhab-core</div>
+<p>Vendor and technology agnostic open source automation software</p></div></a></li>
+<li class="card" data-search="domoticz home automation system domoticz/domoticz home automation">
+<a class="card-link" href="https://github.com/domoticz/domoticz" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/domoticz.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Domoticz</h3></div>
+<div class="card-path">domoticz/domoticz</div>
+<p>Home Automation System</p></div></a></li>
+<li class="card" data-search="node-red flow-based programming for the internet of things node-red/node-red home automation">
+<a class="card-link" href="https://github.com/node-red/node-red" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/node-red.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Node-RED</h3></div>
+<div class="card-path">node-red/node-red</div>
+<p>Flow-based programming for the Internet of Things</p></div></a></li>
+<li class="card" data-search="esphome system to control your esp8266/esp32 esphome/esphome home automation">
+<a class="card-link" href="https://github.com/esphome/esphome" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/esphome.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>ESPHome</h3></div>
+<div class="card-path">esphome/esphome</div>
+<p>System to control your ESP8266/ESP32</p></div></a></li>
+<li class="card" data-search="homebridge homekit support for the impatient homebridge/homebridge home automation">
+<a class="card-link" href="https://github.com/homebridge/homebridge" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/homebridge.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Homebridge</h3></div>
+<div class="card-path">homebridge/homebridge</div>
+<p>HomeKit support for the impatient</p></div></a></li>
+<li class="card" data-search="iobroker integration platform for the internet of things iobroker/iobroker home automation">
+<a class="card-link" href="https://github.com/ioBroker/ioBroker" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/ioBroker.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>ioBroker</h3></div>
+<div class="card-path">ioBroker/ioBroker</div>
+<p>Integration platform for the Internet of Things</p></div></a></li>
+<li class="card" data-search="gladys home assistant for smart living gladysassistant/gladys home automation">
+<a class="card-link" href="https://github.com/GladysAssistant/Gladys" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/GladysAssistant.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Gladys</h3></div>
+<div class="card-path">GladysAssistant/Gladys</div>
+<p>Home Assistant for smart living</p></div></a></li>
+<li class="card" data-search="jeedom home automation platform jeedom/core home automation">
+<a class="card-link" href="https://github.com/jeedom/core" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/jeedom.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Jeedom</h3></div>
+<div class="card-path">jeedom/core</div>
+<p>Home automation platform</p></div></a></li>
+<li class="card" data-search="openmotics home automation system openmotics/frontend home automation">
+<a class="card-link" href="https://github.com/openmotics/frontend" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/openmotics.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>OpenMotics</h3></div>
+<div class="card-path">openmotics/frontend</div>
+<p>Home automation system</p></div></a></li>
+</ul></section>
+<section class="category" id="analytics" aria-labelledby="analytics-h">
+<header class="category-head"><h2 id="analytics-h"><span class="cat-icon" aria-hidden="true">📊</span>Analytics <small>11</small></h2>
+<p>Privacy-friendly web analytics and business intelligence.</p></header>
+<ul class="grid">
+<li class="card" data-search="matomo web analytics platform matomo-org/matomo analytics">
+<a class="card-link" href="https://github.com/matomo-org/matomo" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/matomo-org.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Matomo</h3></div>
+<div class="card-path">matomo-org/matomo</div>
+<p>Web analytics platform</p></div></a></li>
+<li class="card" data-search="plausible lightweight and privacy-friendly web analytics plausible/analytics analytics">
+<a class="card-link" href="https://github.com/plausible/analytics" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/plausible.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Plausible</h3></div>
+<div class="card-path">plausible/analytics</div>
+<p>Lightweight and privacy-friendly web analytics</p></div></a></li>
+<li class="card" data-search="umami simple, fast, privacy-focused alternative to google analytics mikecao/umami analytics">
+<a class="card-link" href="https://github.com/mikecao/umami" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/mikecao.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Umami</h3></div>
+<div class="card-path">mikecao/umami</div>
+<p>Simple, fast, privacy-focused alternative to Google Analytics</p></div></a></li>
+<li class="card" data-search="ackee self-hosted analytics tool electerious/ackee analytics">
+<a class="card-link" href="https://github.com/electerious/Ackee" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/electerious.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Ackee</h3></div>
+<div class="card-path">electerious/Ackee</div>
+<p>Self-hosted analytics tool</p></div></a></li>
+<li class="card" data-search="goaccess real-time web log analyzer allinurl/goaccess analytics">
+<a class="card-link" href="https://github.com/allinurl/goaccess" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/allinurl.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>GoAccess</h3></div>
+<div class="card-path">allinurl/goaccess</div>
+<p>Real-time web log analyzer</p></div></a></li>
+<li class="card" data-search="metabase business intelligence and analytics metabase/metabase analytics">
+<a class="card-link" href="https://github.com/metabase/metabase" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/metabase.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Metabase</h3></div>
+<div class="card-path">metabase/metabase</div>
+<p>Business intelligence and analytics</p></div></a></li>
+<li class="card" data-search="redash make sense of your data getredash/redash analytics">
+<a class="card-link" href="https://github.com/getredash/redash" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/getredash.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Redash</h3></div>
+<div class="card-path">getredash/redash</div>
+<p>Make sense of your data</p></div></a></li>
+<li class="card" data-search="countly product analytics platform countly/countly-server analytics">
+<a class="card-link" href="https://github.com/Countly/countly-server" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/Countly.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Countly</h3></div>
+<div class="card-path">Countly/countly-server</div>
+<p>Product analytics platform</p></div></a></li>
+<li class="card" data-search="posthog open-source product analytics posthog/posthog analytics">
+<a class="card-link" href="https://github.com/PostHog/posthog" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/PostHog.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>PostHog</h3></div>
+<div class="card-path">PostHog/posthog</div>
+<p>Open-source product analytics</p></div></a></li>
+<li class="card" data-search="fathom simple, privacy-focused website analytics usefathom/fathom analytics">
+<a class="card-link" href="https://github.com/usefathom/fathom" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/usefathom.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Fathom</h3></div>
+<div class="card-path">usefathom/fathom</div>
+<p>Simple, privacy-focused website analytics</p></div></a></li>
+<li class="card" data-search="vince self hosted alternative to google analytics vinceanalytics/vince analytics">
+<a class="card-link" href="https://github.com/vinceanalytics/vince" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/vinceanalytics.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Vince</h3></div>
+<div class="card-path">vinceanalytics/vince</div>
+<p>Self Hosted Alternative To Google Analytics</p></div></a></li>
+</ul></section>
+<section class="category" id="miscellaneous" aria-labelledby="miscellaneous-h">
+<header class="category-head"><h2 id="miscellaneous-h"><span class="cat-icon" aria-hidden="true">🧩</span>Miscellaneous <small>13</small></h2>
+<p>Ad blocking, RSS, bookmarks, recipes, finance and other handy self-hosted apps.</p></header>
+<ul class="grid">
+<li class="card" data-search="pi-hole network-wide ad blocking pi-hole/docker-pi-hole miscellaneous">
+<a class="card-link" href="https://github.com/pi-hole/docker-pi-hole" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/pi-hole.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Pi-hole</h3></div>
+<div class="card-path">pi-hole/docker-pi-hole</div>
+<p>Network-wide ad blocking</p></div></a></li>
+<li class="card" data-search="freshrss self-hosted rss feed aggregator freshrss/freshrss miscellaneous">
+<a class="card-link" href="https://github.com/FreshRSS/FreshRSS" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/FreshRSS.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>FreshRSS</h3></div>
+<div class="card-path">FreshRSS/FreshRSS</div>
+<p>Self-hosted RSS feed aggregator</p></div></a></li>
+<li class="card" data-search="wallabag save and classify articles wallabag/wallabag miscellaneous">
+<a class="card-link" href="https://github.com/wallabag/wallabag" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/wallabag.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Wallabag</h3></div>
+<div class="card-path">wallabag/wallabag</div>
+<p>Save and classify articles</p></div></a></li>
+<li class="card" data-search="tandoor recipes recipe manager vabene1111/recipes miscellaneous">
+<a class="card-link" href="https://github.com/vabene1111/recipes" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/vabene1111.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Tandoor Recipes</h3></div>
+<div class="card-path">vabene1111/recipes</div>
+<p>Recipe manager</p></div></a></li>
+<li class="card" data-search="shiori simple bookmark manager go-shiori/shiori miscellaneous">
+<a class="card-link" href="https://github.com/go-shiori/shiori" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/go-shiori.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Shiori</h3></div>
+<div class="card-path">go-shiori/shiori</div>
+<p>Simple bookmark manager</p></div></a></li>
+<li class="card" data-search="speedtest self-hosted speed test librespeed/speedtest miscellaneous">
+<a class="card-link" href="https://github.com/librespeed/speedtest" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/librespeed.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Speedtest</h3></div>
+<div class="card-path">librespeed/speedtest</div>
+<p>Self-hosted speed test</p></div></a></li>
+<li class="card" data-search="papermerge document management system ciur/papermerge miscellaneous">
+<a class="card-link" href="https://github.com/ciur/papermerge" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/ciur.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Papermerge</h3></div>
+<div class="card-path">ciur/papermerge</div>
+<p>Document management system</p></div></a></li>
+<li class="card" data-search="calibre-web web app for browsing, reading, and downloading ebooks janeczku/calibre-web miscellaneous">
+<a class="card-link" href="https://github.com/janeczku/calibre-web" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/janeczku.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Calibre-web</h3></div>
+<div class="card-path">janeczku/calibre-web</div>
+<p>Web app for browsing, reading, and downloading eBooks</p></div></a></li>
+<li class="card" data-search="firefly iii personal finances manager firefly-iii/firefly-iii miscellaneous">
+<a class="card-link" href="https://github.com/firefly-iii/firefly-iii" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/firefly-iii.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Firefly III</h3></div>
+<div class="card-path">firefly-iii/firefly-iii</div>
+<p>Personal finances manager</p></div></a></li>
+<li class="card" data-search="homer a dead simple static homepage for your server bastienwirtz/homer miscellaneous">
+<a class="card-link" href="https://github.com/bastienwirtz/homer" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/bastienwirtz.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Homer</h3></div>
+<div class="card-path">bastienwirtz/homer</div>
+<p>A dead simple static homepage for your server</p></div></a></li>
+<li class="card" data-search="astuto customer feedback tool to collect, manage and prioritize feedback from your users astuto/astuto miscellaneous">
+<a class="card-link" href="https://github.com/astuto/astuto" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/astuto.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Astuto</h3></div>
+<div class="card-path">astuto/astuto</div>
+<p>Customer feedback tool to collect, manage and prioritize feedback from your users</p></div></a></li>
+<li class="card" data-search="quackback open source feedback platform with voting boards, roadmaps, and changelogs quackbackio/quackback miscellaneous" data-new>
+<a class="card-link" href="https://github.com/QuackbackIO/quackback" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/QuackbackIO.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Quackback</h3><span class="badge">New</span></div>
+<div class="card-path">QuackbackIO/quackback</div>
+<p>Open source feedback platform with voting boards, roadmaps, and changelogs</p></div></a></li>
+<li class="card" data-search="wordpress run wordpress, mariadb and phpmyadmin in docker gscloud/docker_wordpress miscellaneous">
+<a class="card-link" href="https://github.com/GSCloud/docker_wordpress" target="_blank" rel="noopener">
+<img class="avatar" src="https://github.com/GSCloud.png?size=80" alt="" width="40" height="40" loading="lazy" decoding="async"><div class="card-body"><div class="card-title"><h3>Wordpress</h3></div>
+<div class="card-path">GSCloud/docker_wordpress</div>
+<p>Run WordPress, MariaDB and phpMyAdmin in Docker</p></div></a></li>
+</ul></section>
+    <div class="empty" id="empty" hidden>
+      <h3>No projects match your search</h3>
+      <p>Know a great self-hosted app that belongs here? Add it to the list.</p>
+      <a class="btn btn-primary" href="https://github.com/hotheadhacker/awesome-selfhost-docker/edit/main/README.md" target="_blank" rel="noopener">Suggest a project</a>
+    </div>
+  </div>
+
+  <section class="section" id="community" aria-labelledby="community-h">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">Community</div><h2 id="community-h">Built by the community</h2>
+        <p>Every entry was contributed and reviewed by people who self-host.</p></div>
+      </div>
+      <div class="community">
+        <div class="panel contrib">
+          <h3>Contributors</h3>
+          <p>Thank you to everyone who has added or improved a project.</p>
+          <a href="https://github.com/hotheadhacker/awesome-selfhost-docker/graphs/contributors" target="_blank" rel="noopener">
+            <img src="https://contrib.rocks/image?repo=hotheadhacker/awesome-selfhost-docker&amp;max=120" alt="Avatars of contributors to Awesome Self-Host Docker" width="800" height="200" loading="lazy" decoding="async">
+          </a>
+        </div>
+        <div class="panel history">
+          <h3>Star history</h3>
+          <p>Growth of the list on GitHub.</p>
+          <a href="https://star-history.com/#hotheadhacker/awesome-selfhost-docker&amp;Date" target="_blank" rel="noopener">
+            <img src="https://api.star-history.com/svg?repos=hotheadhacker/awesome-selfhost-docker&amp;type=Date" alt="Star history chart for Awesome Self-Host Docker" width="800" height="533" loading="lazy" decoding="async">
+          </a>
+        </div>
+      </div>
+      <div class="cta-band">
+        <div><h3>Know an app that belongs here?</h3><p>Open a pull request that adds one row to README.md.</p></div>
+        <a class="btn btn-lg" href="https://github.com/hotheadhacker/awesome-selfhost-docker/edit/main/README.md" target="_blank" rel="noopener">Contribute on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="section-head"><div><div class="kicker">FAQ</div><h2 id="faq-h">Frequently asked questions</h2></div></div>
+      <div class="faq">
+<details><summary>What is Awesome Self-Host Docker?</summary><p>A community-curated list of 195 open-source applications you can self-host with Docker and docker-compose, organised into 10 categories.</p></details>
+<details><summary>Do all of these projects run in Docker?</summary><p>Yes. Every project is open source and provides an official or well-maintained Docker image or docker-compose setup.</p></details>
+<details><summary>How do I add a project?</summary><p>Open a pull request on GitHub that adds one row to the matching table in README.md. Projects must be open source, Docker-deployable, maintained and have some community adoption.</p></details>
+<details><summary>How can I sponsor the list?</summary><p>Sponsor the maintainer on GitHub Sponsors, or open a sponsorship inquiry on GitHub to place your project in front of thousands of self-hosters.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Awesome Self-Host Docker · Open source on <a href="https://github.com/hotheadhacker/awesome-selfhost-docker" target="_blank" rel="noopener">GitHub</a></span>
+    <nav aria-label="Footer">
+      <a href="#browse">Browse</a>
+      <a href="https://github.com/hotheadhacker/awesome-selfhost-docker/edit/main/README.md" target="_blank" rel="noopener">Submit a project</a>
+      <a href="https://github.com/sponsors/hotheadhacker" target="_blank" rel="noopener">Sponsor</a>
+      <a href="https://github.com/hotheadhacker/awesome-selfhost-docker/issues" target="_blank" rel="noopener">Report an issue</a>
+    </nav>
+  </div>
+</footer>
+
+<button class="btn icon-btn to-top" id="to-top" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var input = document.getElementById("q");
+  var count = document.getElementById("count");
+  var empty = document.getElementById("empty");
+  var browse = document.getElementById("browse");
+  var sections = Array.prototype.slice.call(document.querySelectorAll(".category"));
+  var chips = Array.prototype.slice.call(document.querySelectorAll(".chip"));
+  var total = document.querySelectorAll(".card").length;
+  var category = "all";
+
+  function store(key, value) { try { localStorage.setItem(key, value); } catch (e) {} }
+
+  // Theme
+  document.getElementById("theme").addEventListener("click", function () {
+    var current = root.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    var next = current === "dark" ? "light" : "dark";
+    root.dataset.theme = next;
+    store("theme", next);
+  });
+
+  // Search + category filter
+  function apply(updateUrl) {
+    var terms = input.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    var shown = 0;
+    sections.forEach(function (section) {
+      var inCategory = category === "all" || category === "new" || section.id === category;
+      var visible = 0;
+      var cards = section.querySelectorAll(".card");
+      for (var i = 0; i < cards.length; i++) {
+        var card = cards[i];
+        var ok = inCategory && (category !== "new" || card.hasAttribute("data-new")) &&
+          terms.every(function (t) { return card.dataset.search.indexOf(t) !== -1; });
+        card.hidden = !ok;
+        if (ok) visible++;
+      }
+      section.hidden = visible === 0;
+      shown += visible;
+    });
+    count.textContent = shown === total ? "Showing all " + total + " projects" : "Showing " + shown + " of " + total + " projects";
+    empty.hidden = shown > 0;
+    if (updateUrl) {
+      var params = new URLSearchParams();
+      if (input.value.trim()) params.set("q", input.value.trim());
+      if (category !== "all") params.set("c", category);
+      var qs = params.toString();
+      history.replaceState(null, "", qs ? "?" + qs + location.hash : location.pathname + location.hash);
+    }
+  }
+
+  function setCategory(cat) {
+    category = cat;
+    chips.forEach(function (chip) { chip.setAttribute("aria-pressed", String(chip.dataset.cat === cat)); });
+    apply(true);
+  }
+
+  var timer;
+  input.addEventListener("input", function () {
+    clearTimeout(timer);
+    timer = setTimeout(function () { apply(true); }, 60);
+  });
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") { e.preventDefault(); browse.scrollIntoView(); }
+    if (e.key === "Escape") { input.value = ""; apply(true); input.blur(); }
+  });
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      setCategory(chip.dataset.cat);
+      if (browse.getBoundingClientRect().top > 80 || window.scrollY > browse.offsetTop) browse.scrollIntoView();
+    });
+  });
+  document.addEventListener("keydown", function (e) {
+    var tag = (e.target.tagName || "").toLowerCase();
+    if (e.key === "/" && tag !== "input" && tag !== "textarea" && !e.metaKey && !e.ctrlKey) {
+      e.preventDefault();
+      input.focus();
+      input.select();
+    }
+  });
+
+  // Restore state from the URL (?q=...&c=...)
+  var params = new URLSearchParams(location.search);
+  if (params.get("q")) input.value = params.get("q");
+  var initial = params.get("c");
+  if (initial && chips.some(function (c) { return c.dataset.cat === initial; })) setCategory(initial);
+  else if (params.get("q")) apply(false);
+
+  // Surprise me
+  document.getElementById("random").addEventListener("click", function () {
+    var visible = Array.prototype.filter.call(document.querySelectorAll(".card"), function (c) { return !c.hidden && !c.closest("[hidden]"); });
+    if (!visible.length) return;
+    var pick = visible[Math.floor(Math.random() * visible.length)];
+    document.querySelectorAll(".card.pulse").forEach(function (c) { c.classList.remove("pulse"); });
+    pick.scrollIntoView({ block: "center" });
+    pick.classList.add("pulse");
+    pick.querySelector("a").focus({ preventScroll: true });
+    setTimeout(function () { pick.classList.remove("pulse"); }, 1700);
+  });
+
+  // Back to top
+  var toTop = document.getElementById("to-top");
+  var ticking = false;
+  addEventListener("scroll", function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () { toTop.classList.toggle("show", window.scrollY > 900); ticking = false; });
+  }, { passive: true });
+  toTop.addEventListener("click", function () { scrollTo({ top: 0 }); });
+
+  // Live GitHub stats (cached for the session)
+  function compact(n) { return n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, "") + "k" : String(n); }
+  function paint(d) {
+    document.querySelectorAll("[data-stars]").forEach(function (el) { el.textContent = compact(d.stars); });
+    document.querySelectorAll("[data-forks]").forEach(function (el) { el.textContent = compact(d.forks); });
+  }
+  var cached = null;
+  try { cached = JSON.parse(sessionStorage.getItem("repo-stats")); } catch (e) {}
+  if (cached) paint(cached);
+  else if (window.fetch) {
+    fetch("https://api.github.com/repos/hotheadhacker/awesome-selfhost-docker").then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+      if (!j) return;
+      var d = { stars: j.stargazers_count, forks: j.forks_count };
+      paint(d);
+      try { sessionStorage.setItem("repo-stats", JSON.stringify(d)); } catch (e) {}
+    }).catch(function () {});
+  }
+})();
+</script>
 </body>
 </html>
-

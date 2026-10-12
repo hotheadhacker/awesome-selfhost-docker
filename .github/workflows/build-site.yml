@@ -1,0 +1,32 @@
+name: Build website
+
+on:
+  push:
+    branches: [main]
+    paths: [README.md, scripts/**]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 scripts/build_site.py
+      - name: Commit regenerated site
+        run: |
+          if git diff --quiet -- index.html sitemap.xml robots.txt; then
+            echo "Site is up to date"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html sitemap.xml robots.txt
+          git commit -m "Rebuild website from README"
+          git push

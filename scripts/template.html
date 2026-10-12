@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awesome Self-Host Docker – %%TOTAL%%+ Open-Source Self-Hosted Apps for Docker</title>
+<meta name="description" content="%%DESCRIPTION%%">
+<meta name="keywords" content="self-hosted, selfhosted, docker, docker-compose, open source, homelab, awesome list, self-hosting, alternatives">
+<link rel="canonical" href="%%SITE_URL%%">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f7f8fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0f17" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Awesome Self-Host Docker">
+<meta property="og:title" content="Awesome Self-Host Docker – %%TOTAL%%+ open-source apps you can self-host">
+<meta property="og:description" content="%%DESCRIPTION%%">
+<meta property="og:url" content="%%SITE_URL%%">
+<meta property="og:image" content="%%SITE_URL%%assets/imgs/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="600">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Awesome Self-Host Docker">
+<meta name="twitter:description" content="%%DESCRIPTION%%">
+<meta name="twitter:image" content="%%SITE_URL%%assets/imgs/og.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231d63ed'/%3E%3Cpath fill='%23fff' d='M7 17h18a8 8 0 0 1-8 7h-3a7 7 0 0 1-7-7Zm2-5h3v3H9zm4 0h3v3h-3zm4 0h3v3h-3zm-4-4h3v3h-3z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://avatars.githubusercontent.com" crossorigin>
+<link rel="dns-prefetch" href="https://github.com">
+<script>
+  try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">%%JSONLD%%</script>
+<style>
+:root {
+  --bg: #f7f8fb; --surface: #ffffff; --surface-2: #f1f3f8; --text: #0f172a; --muted: #5b6577;
+  --border: #e3e7ef; --accent: #1d63ed; --accent-ink: #ffffff; --accent-soft: #e8f0fe;
+  --new: #0f9d58; --new-soft: #e6f6ee; --shadow: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px -12px rgba(15,23,42,.12);
+  --glow: rgba(29,99,237,.16); --radius: 14px; --header-h: 60px;
+  --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b0f17; --surface: #121826; --surface-2: #182032; --text: #e7ebf3; --muted: #97a2b6;
+    --border: #232c3e; --accent: #5b93ff; --accent-ink: #0b0f17; --accent-soft: #1a2950;
+    --new: #3ccf8e; --new-soft: #12301f; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px -14px rgba(0,0,0,.6);
+    --glow: rgba(91,147,255,.18);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b0f17; --surface: #121826; --surface-2: #182032; --text: #e7ebf3; --muted: #97a2b6;
+  --border: #232c3e; --accent: #5b93ff; --accent-ink: #0b0f17; --accent-soft: #1a2950;
+  --new: #3ccf8e; --new-soft: #12301f; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px -14px rgba(0,0,0,.6);
+  --glow: rgba(91,147,255,.18);
+}
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 64px); -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 var(--font); -webkit-font-smoothing: antialiased; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+@media (min-width: 720px) { .wrap { padding: 0 28px; } }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--accent); color: var(--accent-ink); padding: 8px 14px; border-radius: 8px; z-index: 100; }
+.skip:focus { left: 8px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+
+/* Header */
+.site-header { position: sticky; top: 0; z-index: 50; height: var(--header-h); background: color-mix(in srgb, var(--bg) 82%, transparent); backdrop-filter: saturate(160%) blur(12px); -webkit-backdrop-filter: saturate(160%) blur(12px); border-bottom: 1px solid var(--border); }
+.site-header .wrap { height: 100%; display: flex; align-items: center; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text); letter-spacing: -.01em; white-space: nowrap; }
+.brand:hover { text-decoration: none; }
+.logo { width: 30px; height: 30px; flex: none; }
+.nav { display: none; gap: 4px; margin-left: 12px; }
+.nav a { color: var(--muted); font-size: 14px; font-weight: 500; padding: 6px 10px; border-radius: 8px; }
+.nav a:hover { color: var(--text); background: var(--surface-2); text-decoration: none; }
+@media (min-width: 860px) { .nav { display: flex; } }
+.header-actions { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 38px; padding: 0 14px; border-radius: 10px; font: 600 14px/1 var(--font); border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; white-space: nowrap; transition: border-color .15s, background .15s, transform .15s; }
+.btn:hover { text-decoration: none; border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); }
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn-primary:hover { background: color-mix(in srgb, var(--accent) 88%, #000); }
+.btn-lg { height: 46px; padding: 0 20px; font-size: 15px; border-radius: 12px; }
+.btn svg { width: 16px; height: 16px; flex: none; }
+.icon-btn { width: 38px; padding: 0; }
+.star-btn .count { padding-left: 8px; margin-left: 2px; border-left: 1px solid var(--border); font-variant-numeric: tabular-nums; }
+.hide-sm { display: none; }
+@media (min-width: 560px) { .hide-sm { display: inline-flex; } }
+.theme-icon-dark { display: none; }
+:root[data-theme="dark"] .theme-icon-dark { display: block; } :root[data-theme="dark"] .theme-icon-light { display: none; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .theme-icon-dark { display: block; } :root:not([data-theme="light"]) .theme-icon-light { display: none; } }
+
+/* Hero */
+.hero { position: relative; overflow: hidden; padding: 64px 0 40px; text-align: center; }
+.hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background:
+  radial-gradient(600px 300px at 50% -40px, var(--glow), transparent 70%),
+  linear-gradient(var(--border) 1px, transparent 1px) 0 0 / 40px 40px,
+  linear-gradient(90deg, var(--border) 1px, transparent 1px) 0 0 / 40px 40px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 80% at 50% 0%, #000 30%, transparent 75%); mask-image: radial-gradient(ellipse 70% 80% at 50% 0%, #000 30%, transparent 75%); opacity: .7; }
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--muted); font-size: 13px; font-weight: 500; }
+.eyebrow .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--new); box-shadow: 0 0 0 3px var(--new-soft); }
+.hero h1 { margin: 20px auto 14px; max-width: 820px; font-size: clamp(34px, 6vw, 60px); line-height: 1.06; letter-spacing: -.035em; font-weight: 800; }
+.hero h1 .grad { background: linear-gradient(100deg, var(--accent), #0db7ed 60%, #22c55e); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lead { margin: 0 auto; max-width: 640px; color: var(--muted); font-size: clamp(16px, 2.2vw, 19px); }
+.search { position: relative; max-width: 640px; margin: 30px auto 0; }
+.search svg { position: absolute; left: 16px; top: 50%; width: 20px; height: 20px; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+.search input { width: 100%; height: 56px; padding: 0 64px 0 48px; border-radius: 14px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font: 500 16px var(--font); box-shadow: var(--shadow); transition: border-color .15s, box-shadow .15s; -webkit-appearance: none; appearance: none; }
+.search input::placeholder { color: var(--muted); }
+.search input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--glow), var(--shadow); }
+.search input::-webkit-search-cancel-button { display: none; }
+kbd { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); font: 600 12px var(--mono); color: var(--muted); border: 1px solid var(--border); border-bottom-width: 2px; border-radius: 6px; padding: 2px 8px; background: var(--surface-2); }
+.hero-ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
+.stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 36px; margin: 40px 0 0; padding: 0; list-style: none; }
+.stats li { display: flex; flex-direction: column; align-items: center; }
+.stats strong { font-size: 28px; font-weight: 800; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.stats span { color: var(--muted); font-size: 13px; }
+
+/* Section headings */
+.section { padding: 48px 0; }
+.section-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+.section-head h2 { margin: 0; font-size: clamp(24px, 3.4vw, 30px); letter-spacing: -.02em; }
+.section-head p { margin: 4px 0 0; color: var(--muted); }
+.kicker { font: 600 12px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+
+/* Sponsors */
+.sponsors { display: grid; gap: 16px; }
+@media (min-width: 900px) { .sponsors { grid-template-columns: 1.35fr 1fr; } }
+.panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); }
+.panel h3 { margin: 0 0 6px; font-size: 18px; }
+.panel p { margin: 0; color: var(--muted); }
+.sponsor-slot { display: flex; flex-direction: column; gap: 14px; }
+.sponsor-tag { align-self: flex-start; font: 600 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; }
+.sponsor-ad { display: block; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); background: var(--surface-2); aspect-ratio: 728 / 131; }
+.sponsor-ad img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.become { border-style: dashed; border-width: 1.5px; background: linear-gradient(160deg, var(--accent-soft), var(--surface) 55%); display: flex; flex-direction: column; gap: 14px; }
+.perks { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; font-size: 14px; }
+.perks li { display: flex; gap: 10px; align-items: flex-start; }
+.perks li::before { content: ""; flex: none; width: 18px; height: 18px; margin-top: 2px; border-radius: 50%; background: var(--accent-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%231d63ed'%3E%3Cpath d='M8.1 13.4 4.7 10l-1.2 1.2 4.6 4.6 9.4-9.4-1.2-1.2z'/%3E%3C/svg%3E") center / 14px no-repeat; }
+.become .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; }
+.heart { color: #e5487a; }
+
+/* Browse toolbar */
+.toolbar { position: sticky; top: var(--header-h); z-index: 40; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+.toolbar .wrap { display: flex; align-items: center; gap: 12px; padding-top: 10px; padding-bottom: 10px; }
+.chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; flex: 1; padding: 2px; mask-image: linear-gradient(90deg, #000 92%, transparent); -webkit-mask-image: linear-gradient(90deg, #000 92%, transparent); }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font: 500 14px var(--font); cursor: pointer; transition: background .15s, border-color .15s, color .15s; }
+.chip span { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.chip:hover { border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); }
+.chip[aria-pressed="true"] { background: var(--text); border-color: var(--text); color: var(--bg); }
+.chip[aria-pressed="true"] span { color: inherit; opacity: .7; }
+.result-meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 22px 0 4px; color: var(--muted); font-size: 14px; }
+
+/* Categories & cards */
+.category { padding: 26px 0 10px; content-visibility: auto; contain-intrinsic-size: auto 900px; }
+.category-head h2 { display: flex; align-items: center; gap: 10px; margin: 0; font-size: 22px; letter-spacing: -.015em; }
+.category-head h2 small { font: 600 12px var(--mono); color: var(--muted); background: var(--surface-2); border: 1px solid var(--border); border-radius: 999px; padding: 2px 8px; }
+.category-head p { margin: 4px 0 16px; color: var(--muted); font-size: 15px; }
+.cat-icon { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--surface); border: 1px solid var(--border); font-size: 17px; }
+.grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+.card-link { display: flex; gap: 14px; height: 100%; padding: 16px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); color: var(--text); transition: border-color .15s, transform .15s, box-shadow .15s; }
+.card-link:hover { text-decoration: none; border-color: color-mix(in srgb, var(--accent) 55%, var(--border)); transform: translateY(-2px); box-shadow: var(--shadow); }
+.avatar { flex: none; width: 40px; height: 40px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--border); object-fit: cover; }
+.card-body { min-width: 0; flex: 1; }
+.card-title { display: flex; align-items: center; gap: 8px; }
+.card-title h3 { margin: 0; font-size: 16px; line-height: 1.3; letter-spacing: -.01em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.card-link:hover h3 { color: var(--accent); }
+.badge { flex: none; font: 700 10px var(--mono); letter-spacing: .05em; text-transform: uppercase; color: var(--new); background: var(--new-soft); border-radius: 999px; padding: 2px 7px; }
+.card-path { font: 12px var(--mono); color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: 1px; }
+.card p { margin: 8px 0 0; font-size: 14px; line-height: 1.5; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.card.pulse .card-link { animation: pulse 1.6s ease-out; border-color: var(--accent); }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 var(--glow); } 30% { box-shadow: 0 0 0 10px var(--glow); } 100% { box-shadow: 0 0 0 0 transparent; } }
+.empty { text-align: center; padding: 56px 16px; border: 1.5px dashed var(--border); border-radius: var(--radius); margin: 24px 0; }
+.empty h3 { margin: 0 0 6px; }
+.empty p { margin: 0 0 18px; color: var(--muted); }
+
+/* Community */
+.community { display: grid; gap: 16px; }
+@media (min-width: 900px) { .community { grid-template-columns: 1fr 1fr; } }
+.contrib img, .history img { display: block; width: 100%; height: auto; border-radius: 10px; margin-top: 16px; background: #fff; }
+.cta-band { margin-top: 16px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 26px; border-radius: var(--radius); background: linear-gradient(120deg, var(--accent), #0db7ed); color: #fff; }
+.cta-band h3 { margin: 0 0 4px; font-size: 22px; letter-spacing: -.02em; }
+.cta-band p { margin: 0; opacity: .9; }
+.cta-band .btn { background: #fff; color: #0f172a; border-color: #fff; }
+
+/* FAQ */
+.faq { display: grid; gap: 10px; max-width: 860px; }
+.faq details { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 0 18px; }
+.faq summary { cursor: pointer; padding: 16px 0; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--muted); font-size: 20px; line-height: 1; transition: transform .2s; }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { margin: 0 0 16px; color: var(--muted); }
+
+/* Footer */
+footer { border-top: 1px solid var(--border); margin-top: 32px; padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+footer a { color: var(--muted); } footer a:hover { color: var(--text); }
+footer nav { display: flex; flex-wrap: wrap; gap: 18px; }
+
+.to-top { position: fixed; right: 16px; bottom: 16px; z-index: 45; width: 44px; height: 44px; border-radius: 12px; box-shadow: var(--shadow); opacity: 0; pointer-events: none; transform: translateY(8px); transition: opacity .2s, transform .2s; }
+.to-top.show { opacity: 1; pointer-events: auto; transform: none; }
+</style>
+</head>
+<body>
+<a class="skip" href="#browse">Skip to the list</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Awesome Self-Host Docker home">
+      <svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1d63ed"/><path fill="#fff" d="M7 17h18a8 8 0 0 1-8 7h-3a7 7 0 0 1-7-7Zm2-5h3v3H9zm4 0h3v3h-3zm4 0h3v3h-3zm-4-4h3v3h-3z"/></svg>
+      <span>Awesome Self-Host Docker</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#browse">Browse</a>
+      <a href="#sponsors">Sponsors</a>
+      <a href="#community">Community</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn star-btn hide-sm" href="%%REPO_URL%%" target="_blank" rel="noopener" aria-label="Star on GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        Star <span class="count" data-stars>%%STARS%%</span>
+      </a>
+      <button class="btn icon-btn" id="theme" type="button" aria-label="Toggle dark mode">
+        <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Community-curated · updated %%TODAY%%</span>
+      <h1>Self-host <span class="grad">anything</span> with Docker</h1>
+      <p class="lead">%%TOTAL%% open-source, self-hosted apps you can deploy with Docker and docker-compose, hand-picked by the community and organised into %%CATEGORY_COUNT%% categories.</p>
+      <form class="search" role="search" action="#browse" onsubmit="return false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <label class="sr-only" for="q">Search projects</label>
+        <input id="q" type="search" name="q" placeholder="Search %%TOTAL%% projects…" autocomplete="off" spellcheck="false">
+        <kbd aria-hidden="true">/</kbd>
+      </form>
+      <div class="hero-ctas">
+        <a class="btn btn-primary btn-lg" href="#browse">Browse the list</a>
+        <a class="btn btn-lg" href="%%SUBMIT_URL%%" target="_blank" rel="noopener">Submit a project</a>
+      </div>
+      <ul class="stats">
+        <li><strong>%%TOTAL%%</strong><span>projects</span></li>
+        <li><strong>%%CATEGORY_COUNT%%</strong><span>categories</span></li>
+        <li><strong data-stars>%%STARS%%</strong><span>GitHub stars</span></li>
+        <li><strong data-forks>%%FORKS%%</strong><span>forks</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="sponsors" aria-labelledby="sponsors-h" style="padding-top:16px">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">Sponsors</div><h2 id="sponsors-h">Supported by</h2>
+        <p>Sponsors keep this list free, maintained and growing.</p></div>
+      </div>
+      <div class="sponsors">
+        <div class="panel sponsor-slot">
+          <span class="sponsor-tag">Featured sponsor</span>
+          <a class="sponsor-ad" href="%%GITADS_LINK%%" target="_blank" rel="noopener sponsored">
+            <img src="%%GITADS_IMG%%" alt="Sponsored by GitAds" width="728" height="131" loading="lazy" decoding="async">
+          </a>
+          <p>Sponsored placements are clearly labelled. Every project in the list is chosen on merit.</p>
+        </div>
+        <div class="panel become">
+          <div>
+            <h3>Put your project in front of self-hosters</h3>
+            <p>Reach developers, sysadmins and homelab enthusiasts who use this list to choose their stack.</p>
+          </div>
+          <ul class="perks">
+            <li>Logo and link at the top of the website and README</li>
+            <li><span>Seen by a community of <span data-stars>%%STARS%%</span>+ stargazers</span></li>
+            <li>Support open-source curation</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary" href="%%SPONSOR_URL%%" target="_blank" rel="noopener"><span class="heart" aria-hidden="true">♥</span> Become a sponsor</a>
+            <a class="btn" href="%%SPONSOR_INQUIRY_URL%%" target="_blank" rel="noopener">Sponsorship inquiry</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="toolbar" id="browse">
+    <div class="wrap">
+      <div class="chips" role="toolbar" aria-label="Filter by category">
+%%CHIPS%%
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="result-meta">
+      <span id="count" aria-live="polite">Showing all %%TOTAL%% projects</span>
+      <button class="btn" id="random" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
+        Surprise me
+      </button>
+    </div>
+%%SECTIONS%%
+    <div class="empty" id="empty" hidden>
+      <h3>No projects match your search</h3>
+      <p>Know a great self-hosted app that belongs here? Add it to the list.</p>
+      <a class="btn btn-primary" href="%%SUBMIT_URL%%" target="_blank" rel="noopener">Suggest a project</a>
+    </div>
+  </div>
+
+  <section class="section" id="community" aria-labelledby="community-h">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">Community</div><h2 id="community-h">Built by the community</h2>
+        <p>Every entry was contributed and reviewed by people who self-host.</p></div>
+      </div>
+      <div class="community">
+        <div class="panel contrib">
+          <h3>Contributors</h3>
+          <p>Thank you to everyone who has added or improved a project.</p>
+          <a href="%%REPO_URL%%/graphs/contributors" target="_blank" rel="noopener">
+            <img src="https://contrib.rocks/image?repo=%%REPO%%&amp;max=120" alt="Avatars of contributors to Awesome Self-Host Docker" width="800" height="200" loading="lazy" decoding="async">
+          </a>
+        </div>
+        <div class="panel history">
+          <h3>Star history</h3>
+          <p>Growth of the list on GitHub.</p>
+          <a href="https://star-history.com/#%%REPO%%&amp;Date" target="_blank" rel="noopener">
+            <img src="https://api.star-history.com/svg?repos=%%REPO%%&amp;type=Date" alt="Star history chart for Awesome Self-Host Docker" width="800" height="533" loading="lazy" decoding="async">
+          </a>
+        </div>
+      </div>
+      <div class="cta-band">
+        <div><h3>Know an app that belongs here?</h3><p>Open a pull request that adds one row to README.md.</p></div>
+        <a class="btn btn-lg" href="%%SUBMIT_URL%%" target="_blank" rel="noopener">Contribute on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="section-head"><div><div class="kicker">FAQ</div><h2 id="faq-h">Frequently asked questions</h2></div></div>
+      <div class="faq">
+%%FAQ%%
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© %%YEAR%% Awesome Self-Host Docker · Open source on <a href="%%REPO_URL%%" target="_blank" rel="noopener">GitHub</a></span>
+    <nav aria-label="Footer">
+      <a href="#browse">Browse</a>
+      <a href="%%SUBMIT_URL%%" target="_blank" rel="noopener">Submit a project</a>
+      <a href="%%SPONSOR_URL%%" target="_blank" rel="noopener">Sponsor</a>
+      <a href="%%REPO_URL%%/issues" target="_blank" rel="noopener">Report an issue</a>
+    </nav>
+  </div>
+</footer>
+
+<button class="btn icon-btn to-top" id="to-top" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var input = document.getElementById("q");
+  var count = document.getElementById("count");
+  var empty = document.getElementById("empty");
+  var browse = document.getElementById("browse");
+  var sections = Array.prototype.slice.call(document.querySelectorAll(".category"));
+  var chips = Array.prototype.slice.call(document.querySelectorAll(".chip"));
+  var total = document.querySelectorAll(".card").length;
+  var category = "all";
+
+  function store(key, value) { try { localStorage.setItem(key, value); } catch (e) {} }
+
+  // Theme
+  document.getElementById("theme").addEventListener("click", function () {
+    var current = root.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    var next = current === "dark" ? "light" : "dark";
+    root.dataset.theme = next;
+    store("theme", next);
+  });
+
+  // Search + category filter
+  function apply(updateUrl) {
+    var terms = input.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    var shown = 0;
+    sections.forEach(function (section) {
+      var inCategory = category === "all" || category === "new" || section.id === category;
+      var visible = 0;
+      var cards = section.querySelectorAll(".card");
+      for (var i = 0; i < cards.length; i++) {
+        var card = cards[i];
+        var ok = inCategory && (category !== "new" || card.hasAttribute("data-new")) &&
+          terms.every(function (t) { return card.dataset.search.indexOf(t) !== -1; });
+        card.hidden = !ok;
+        if (ok) visible++;
+      }
+      section.hidden = visible === 0;
+      shown += visible;
+    });
+    count.textContent = shown === total ? "Showing all " + total + " projects" : "Showing " + shown + " of " + total + " projects";
+    empty.hidden = shown > 0;
+    if (updateUrl) {
+      var params = new URLSearchParams();
+      if (input.value.trim()) params.set("q", input.value.trim());
+      if (category !== "all") params.set("c", category);
+      var qs = params.toString();
+      history.replaceState(null, "", qs ? "?" + qs + location.hash : location.pathname + location.hash);
+    }
+  }
+
+  function setCategory(cat) {
+    category = cat;
+    chips.forEach(function (chip) { chip.setAttribute("aria-pressed", String(chip.dataset.cat === cat)); });
+    apply(true);
+  }
+
+  var timer;
+  input.addEventListener("input", function () {
+    clearTimeout(timer);
+    timer = setTimeout(function () { apply(true); }, 60);
+  });
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") { e.preventDefault(); browse.scrollIntoView(); }
+    if (e.key === "Escape") { input.value = ""; apply(true); input.blur(); }
+  });
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      setCategory(chip.dataset.cat);
+      if (browse.getBoundingClientRect().top > 80 || window.scrollY > browse.offsetTop) browse.scrollIntoView();
+    });
+  });
+  document.addEventListener("keydown", function (e) {
+    var tag = (e.target.tagName || "").toLowerCase();
+    if (e.key === "/" && tag !== "input" && tag !== "textarea" && !e.metaKey && !e.ctrlKey) {
+      e.preventDefault();
+      input.focus();
+      input.select();
+    }
+  });
+
+  // Restore state from the URL (?q=...&c=...)
+  var params = new URLSearchParams(location.search);
+  if (params.get("q")) input.value = params.get("q");
+  var initial = params.get("c");
+  if (initial && chips.some(function (c) { return c.dataset.cat === initial; })) setCategory(initial);
+  else if (params.get("q")) apply(false);
+
+  // Surprise me
+  document.getElementById("random").addEventListener("click", function () {
+    var visible = Array.prototype.filter.call(document.querySelectorAll(".card"), function (c) { return !c.hidden && !c.closest("[hidden]"); });
+    if (!visible.length) return;
+    var pick = visible[Math.floor(Math.random() * visible.length)];
+    document.querySelectorAll(".card.pulse").forEach(function (c) { c.classList.remove("pulse"); });
+    pick.scrollIntoView({ block: "center" });
+    pick.classList.add("pulse");
+    pick.querySelector("a").focus({ preventScroll: true });
+    setTimeout(function () { pick.classList.remove("pulse"); }, 1700);
+  });
+
+  // Back to top
+  var toTop = document.getElementById("to-top");
+  var ticking = false;
+  addEventListener("scroll", function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () { toTop.classList.toggle("show", window.scrollY > 900); ticking = false; });
+  }, { passive: true });
+  toTop.addEventListener("click", function () { scrollTo({ top: 0 }); });
+
+  // Live GitHub stats (cached for the session)
+  function compact(n) { return n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, "") + "k" : String(n); }
+  function paint(d) {
+    document.querySelectorAll("[data-stars]").forEach(function (el) { el.textContent = compact(d.stars); });
+    document.querySelectorAll("[data-forks]").forEach(function (el) { el.textContent = compact(d.forks); });
+  }
+  var cached = null;
+  try { cached = JSON.parse(sessionStorage.getItem("repo-stats")); } catch (e) {}
+  if (cached) paint(cached);
+  else if (window.fetch) {
+    fetch("https://api.github.com/repos/%%REPO%%").then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+      if (!j) return;
+      var d = { stars: j.stargazers_count, forks: j.forks_count };
+      paint(d);
+      try { sessionStorage.setItem("repo-stats", JSON.stringify(d)); } catch (e) {}
+    }).catch(function () {});
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://awesome-selfhost-docker.vercel.app/sitemap.xml
