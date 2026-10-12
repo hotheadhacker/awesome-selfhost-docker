@@ -134,8 +134,15 @@ kbd { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); fo
 .panel p { margin: 0; color: var(--muted); }
 .sponsor-slot { display: flex; flex-direction: column; gap: 14px; }
 .sponsor-tag { align-self: flex-start; font: 600 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; }
-.sponsor-ad { display: block; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); background: var(--surface-2); aspect-ratio: 728 / 131; }
-.sponsor-ad img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.sponsor-ad { display: grid; place-items: center; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: #fff; padding: 18px 24px; transition: border-color .15s, box-shadow .15s; }
+.sponsor-ad:hover { border-color: color-mix(in srgb, var(--accent) 55%, var(--border)); box-shadow: var(--shadow); }
+.sponsor-ad img { display: block; width: 100%; max-width: 420px; height: auto; aspect-ratio: 700 / 235; }
+.sponsor-ad .on-dark { display: none; }
+:root[data-theme="dark"] .sponsor-ad { background: #000; } :root[data-theme="dark"] .sponsor-ad .on-dark { display: block; } :root[data-theme="dark"] .sponsor-ad .on-light { display: none; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sponsor-ad { background: #000; } :root:not([data-theme="light"]) .sponsor-ad .on-dark { display: block; } :root:not([data-theme="light"]) .sponsor-ad .on-light { display: none; } }
+.sponsor-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; color: var(--muted); font-size: 13px; }
+.sponsor-meta strong { color: var(--text); }
+.sponsor-slot .actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .become { border-style: dashed; border-width: 1.5px; background: linear-gradient(160deg, var(--accent-soft), var(--surface) 55%); display: flex; flex-direction: column; gap: 14px; }
 .perks { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; font-size: 14px; }
 .perks li { display: flex; gap: 10px; align-items: flex-start; }
@@ -268,10 +275,24 @@ footer nav { display: flex; flex-wrap: wrap; gap: 18px; }
       <div class="sponsors">
         <div class="panel sponsor-slot">
           <span class="sponsor-tag">Featured sponsor</span>
-          <a class="sponsor-ad" href="%%GITADS_LINK%%" target="_blank" rel="noopener sponsored">
-            <img src="%%GITADS_IMG%%" alt="Sponsored by GitAds" width="728" height="131" loading="lazy" decoding="async">
+          <a class="sponsor-ad" href="%%SPONSOR_SITE%%" target="_blank" rel="noopener sponsored" aria-label="Mercury Agent">
+            <img class="on-light" src="assets/sponsors/mercury-agent-light.jpg" alt="Mercury Agent" width="700" height="235" decoding="async">
+            <img class="on-dark" src="assets/sponsors/mercury-agent-dark.jpg" alt="Mercury Agent" width="700" height="235" loading="lazy" decoding="async">
           </a>
-          <p>Sponsored placements are clearly labelled. Every project in the list is chosen on merit.</p>
+          <div>
+            <h3>Mercury Agent: the soul-driven AI agent, loyal only to you</h3>
+            <p>Open-source AI agent that runs 24/7 on your own machine. It remembers what matters, asks before it acts, and works with any model from your terminal, browser, Telegram, Discord, Slack or Signal.</p>
+          </div>
+          <div class="sponsor-meta">
+            <span>★ <strong>3.3k+</strong> stars</span><span>MIT licensed</span><span>Self-hosted</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="%%SPONSOR_SITE%%" target="_blank" rel="noopener sponsored">Visit mercuryagent.sh</a>
+            <a class="btn" href="https://github.com/cosmicstack-labs/mercury-agent" target="_blank" rel="noopener sponsored">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+              View on GitHub
+            </a>
+          </div>
         </div>
         <div class="panel become">
           <div>

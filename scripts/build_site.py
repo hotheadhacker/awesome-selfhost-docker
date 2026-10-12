@@ -24,8 +24,7 @@ REPO_URL = f"https://github.com/{REPO}"
 SPONSOR_URL = "https://github.com/sponsors/hotheadhacker"
 SPONSOR_INQUIRY_URL = f"{REPO_URL}/issues/new?title=Sponsorship%20inquiry&labels=sponsorship"
 SUBMIT_URL = f"{REPO_URL}/edit/main/README.md"
-GITADS_IMG = f"https://gitads.dev/v1/ad-serve?source={REPO}@github"
-GITADS_LINK = f"https://gitads.dev/v1/ad-track?source={REPO}@github"
+SPONSOR_SITE = "https://mercuryagent.sh/?utm_source=awesome-selfhost-docker&utm_medium=sponsor"
 NEW_WINDOW_DAYS = 365
 FALLBACK_STATS = {"stars": 4089, "forks": 211}
 
@@ -184,8 +183,7 @@ def render(sections, stats):
         "%%SPONSOR_URL%%": SPONSOR_URL,
         "%%SPONSOR_INQUIRY_URL%%": SPONSOR_INQUIRY_URL,
         "%%SUBMIT_URL%%": SUBMIT_URL,
-        "%%GITADS_IMG%%": esc(GITADS_IMG),
-        "%%GITADS_LINK%%": esc(GITADS_LINK),
+        "%%SPONSOR_SITE%%": esc(SPONSOR_SITE),
         "%%TOTAL%%": str(total),
         "%%CATEGORY_COUNT%%": str(len(sections)),
         "%%STARS%%": compact(stats["stars"]),
