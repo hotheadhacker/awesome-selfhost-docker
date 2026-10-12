@@ -151,6 +151,7 @@
 | [ClamAV](https://github.com/Cisco-Talos/clamav) | Open-source antivirus engine |
 | [OpenVPN](https://github.com/kylemanna/docker-openvpn) | Open-source VPN solution |
 | [WireGuard](https://github.com/linuxserver/docker-wireguard) | Fast and modern VPN solution |
+| [BibaVPN](https://github.com/Eljaja/BibaVPN) | Self-hosted SOCKS5 and HTTP CONNECT tunnel over TLS and WebSocket for single-VPS deployments |
 | [CrowdSec](https://github.com/crowdsecurity/crowdsec) | Collaborative security engine |
 | [ModSecurity](https://github.com/SpiderLabs/ModSecurity) | Open-source web application firewall |
 | [Suricata](https://github.com/OISF/suricata) | Network threat detection engine |
