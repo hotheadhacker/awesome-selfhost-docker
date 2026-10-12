@@ -55,6 +55,7 @@
 }
 *, *::before, *::after { box-sizing: border-box; }
 [hidden] { display: none !important; }
+.theme-switching *, .theme-switching *::before, .theme-switching *::after { transition: none !important; }
 html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 64px); -webkit-text-size-adjust: 100%; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }
 body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 var(--font); -webkit-font-smoothing: antialiased; }
@@ -410,8 +411,10 @@ footer nav { display: flex; flex-wrap: wrap; gap: 18px; }
   document.getElementById("theme").addEventListener("click", function () {
     var current = root.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     var next = current === "dark" ? "light" : "dark";
+    root.classList.add("theme-switching");
     root.dataset.theme = next;
     store("theme", next);
+    requestAnimationFrame(function () { requestAnimationFrame(function () { root.classList.remove("theme-switching"); }); });
   });
 
   // Search + category filter

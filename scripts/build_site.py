@@ -29,16 +29,28 @@ NEW_WINDOW_DAYS = 365
 FALLBACK_STATS = {"stars": 4089, "forks": 211}
 
 CATEGORIES = {
-    "Productivity": ("📝", "Notes, documents, wikis, kanban boards and office suites you can run on your own server."),
-    "Development": ("🛠️", "Git hosting, CI/CD, IDEs, databases and developer tooling, ready to deploy with Docker."),
-    "Media": ("🎬", "Media servers, music streaming, photo libraries, downloaders and the *arr stack."),
-    "Communication": ("💬", "Chat, video calls, email servers and federated social networks."),
-    "Security": ("🔐", "Password managers, identity and access, VPNs, firewalls and intrusion detection."),
-    "Monitoring": ("📈", "Metrics, uptime, logs and observability for your infrastructure."),
-    "File Sharing": ("📁", "File sync, cloud storage, object storage and NAS software."),
-    "Home Automation": ("🏠", "Smart-home hubs and IoT automation platforms."),
-    "Analytics": ("📊", "Privacy-friendly web analytics and business intelligence."),
-    "Miscellaneous": ("🧩", "Ad blocking, RSS, bookmarks, recipes, finance and other handy self-hosted apps."),
+    "Productivity": ("📝", "Notes, wikis, kanban boards, office suites, CRMs and document tools you can run on your own server."),
+    "Development": ("🛠️", "Git hosting, CI/CD, deployment platforms, registries, IDEs and developer tooling."),
+    "AI & LLMs": ("🤖", "Run large language models locally, chat with your documents and build AI agents on your own hardware."),
+    "Automation": ("⚙️", "Workflow automation, job orchestration and Zapier-style integrations."),
+    "Backend & Low-Code": ("🧱", "Backend-as-a-service platforms, no-code databases and internal tool builders."),
+    "Media": ("🎬", "Media servers, music streaming, downloaders, requests and the *arr stack."),
+    "Photos": ("📷", "Photo and video libraries, backups and galleries, alternatives to Google Photos."),
+    "Reading & RSS": ("📚", "Ebook, comic and audiobook servers, feed readers and read-it-later apps."),
+    "Communication": ("💬", "Chat, video calls, notifications, forums, helpdesks and federated social networks."),
+    "Email": ("✉️", "Mail servers, webmail, newsletters, aliases and spam filtering."),
+    "Security": ("🔐", "Password managers, identity and SSO, secrets management, firewalls and intrusion detection."),
+    "Networking": ("🌐", "Reverse proxies, DNS and ad blocking, VPNs, mesh networks and tunnels."),
+    "Monitoring": ("📈", "Metrics, uptime, logs, tracing and container update notifications."),
+    "Dashboards": ("🧭", "Start pages and dashboards to organise all your self-hosted services."),
+    "File Sharing": ("📁", "File sync, cloud storage, object storage and quick file sharing."),
+    "Backup": ("💾", "Encrypted, deduplicated backups for your servers, volumes and data."),
+    "Home Automation": ("🏠", "Smart-home hubs, IoT bridges, cameras and NVRs."),
+    "Analytics": ("📊", "Privacy-friendly web analytics, product analytics and business intelligence."),
+    "Finance": ("💰", "Budgeting, personal finance, investment tracking and expense splitting."),
+    "CMS & Blogging": ("✍️", "Content management systems, blogs and publishing platforms."),
+    "Gaming": ("🎮", "Game servers, control panels, ROM libraries and LAN caches."),
+    "Miscellaneous": ("🧩", "Search, bookmarks, recipes, inventory, location tracking and other handy apps."),
 }
 
 ROW_RE = re.compile(r"^\|\s*\[\s*(?P<name>[^\]]+?)\s*\]\((?P<url>[^)]+)\)\s*\|\s*(?P<desc>.*?)\s*\|\s*$")
