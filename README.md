@@ -79,6 +79,7 @@
 | [Undb](https://github.com/undb-io/undb) | No Code Database & BaaS |
 | [Webhook Debugger, Logger & API Mocking Suite](https://github.com/ar27111994/webhook-debugger-logger) | Self-hosted webhook debugging and API mocking suite with live inspection, replay, forwarding, and signature verification |
 | [Laradock](https://github.com/laradock/laradock) | Full PHP development environment based on Docker (Nginx, PHP, MySQL, Redis and more) |
+| [LibreDB Studio](https://github.com/libredb/libredb-studio) | Web-based SQL IDE for PostgreSQL, MySQL, MongoDB, Redis and more, with AI query assistance |
 
 ## Media
 
