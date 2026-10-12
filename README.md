@@ -106,6 +106,7 @@
 | [Cobalt](https://github.com/imputnet/cobalt) | Quick Media Downloader |
 | [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | Self-hosted audiobook and podcast server with a web player and mobile apps.|
 |[ SuggestArr](https://github.com/giuseppe99barchetta/SuggestArr) | Companion tool for Overseerr and Jellyfin that provides media recommendations.|
+| [subarr](https://github.com/coaxk/subarr) | Coordination layer beside Bazarr and subgen: calibrated audio-language detection, library-wide subtitle coverage, and a queue UI for Whisper transcription. |
 
 ## Communication
 
