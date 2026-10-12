@@ -28,7 +28,7 @@
 |---------|-------------|
 | [Nextcloud](https://github.com/nextcloud/docker) | Productivity platform for file hosting and collaboration |
 | [Joplin](https://github.com/laurent22/joplin) | Note-taking and to-do application |
-| [Paperless-ng](https://github.com/jonaswinkler/paperless-ng) | Document management system |
+| [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | Document management system |
 | [Bookstack](https://github.com/BookStackApp/BookStack) | Platform for organizing and storing information |
 | [Trilium](https://github.com/zadam/trilium) | Hierarchical note-taking application |
 | [HedgeDoc](https://github.com/hedgedoc/hedgedoc) | Collaborative markdown editor |
