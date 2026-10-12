@@ -30,7 +30,7 @@
 | [Joplin](https://github.com/laurent22/joplin) | Note-taking and to-do application |
 | [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | Document management system |
 | [Bookstack](https://github.com/BookStackApp/BookStack) | Platform for organizing and storing information |
-| [TriliumNext](https://github.com/TriliumNext/Notes) | Hierarchical note-taking application |
+| [Trilium Notes](https://github.com/TriliumNext/Trilium) | Hierarchical note-taking application |
 | [HedgeDoc](https://github.com/hedgedoc/hedgedoc) | Collaborative markdown editor |
 | [Wekan](https://github.com/wekan/wekan) | Open-source Trello-like kanban board |
 | [Zim](https://github.com/jaap-karssenberg/zim-desktop-wiki) | Desktop wiki & note-taking |
@@ -48,7 +48,7 @@
 | [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | Open-source Notion alternative with a focus on privacy and extensibility.|
 | [Tillywork](https://github.com/tillywork/tillywork) | Opensource work management solution. Manage your sprints, projects, and sales pipelines in one place |
 | [Huly](https://github.com/hcengineering/platform) | All-in-One Project Management Platform |
-| [OmniTools](https://github.com/iib0011/omni-tools)                | Self-hosted web-based Swiss army knife for everyday tasks. |
+| [OmniTools](https://github.com/iib0011/omni-tools) | Self-hosted web-based Swiss army knife for everyday tasks. |
 
 ## Development
 
@@ -108,8 +108,9 @@
 | [Prowlarr](https://github.com/Prowlarr/Prowlarr) | An indexer manager/proxy built on *Arr to integrate with various media software like Sonarr, Radarr, and Lidarr. Supports multiple indexers and automation.|
 | [Cobalt](https://github.com/imputnet/cobalt) | Quick Media Downloader |
 | [Audiobookshelf](https://github.com/advplyr/audiobookshelf) | Self-hosted audiobook and podcast server with a web player and mobile apps.|
-|[ SuggestArr](https://github.com/giuseppe99barchetta/SuggestArr) | Companion tool for Overseerr and Jellyfin that provides media recommendations.|
+| [SuggestArr](https://github.com/giuseppe99barchetta/SuggestArr) | Companion tool for Overseerr and Jellyfin that provides media recommendations.|
 | [subarr](https://github.com/coaxk/subarr) | Coordination layer beside Bazarr and subgen: calibrated audio-language detection, library-wide subtitle coverage, and a queue UI for Whisper transcription. |
+| [Telegram Media Downloader](https://github.com/rfsbraz/telegram-downloader) | Self-hosted daemon that automatically downloads media from Telegram channels, groups, and forum topics. Docker-native with multi-arch support. |
 
 ## Communication
 
@@ -135,10 +136,8 @@
 | [Pleroma](https://github.com/pleroma/pleroma) | Lightweight social networking server |
 | [Movim](https://github.com/movim/movim) | Decentralized social platform |
 | [Scuttlebutt](https://github.com/ssbc/patchwork) | Decentralized social network |
-| [Telegram Media Downloader](https://github.com/rfsbraz/telegram-downloader) | Self-hosted daemon that automatically downloads media from Telegram channels, groups, and forum topics. Docker-native with multi-arch support. |
 | [Threema Web](https://github.com/threema-ch/threema-web) | Secure messaging app |
 | [Peersuite](https://github.com/openconstruct/Peersuite) | Decentralized p2p workspace |
-
 
 ## Security
 
@@ -192,8 +191,8 @@
 | [Bosun](https://github.com/bosun-monitor/bosun) | Monitoring and alerting system by Stack Exchange |
 | [Cerebro](https://github.com/lmenezes/cerebro) | Web admin tool for Elasticsearch |
 | [Dozzle](https://github.com/amir20/dozzle) | Realtime log viewer for docker containers |
-
 | [KubeStellar Console](https://github.com/kubestellar/console) | Multi-cluster Kubernetes dashboard with real-time observability |
+
 ## File Sharing
 
 | Project | Description |
