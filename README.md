@@ -125,6 +125,7 @@
 | [Mailu](https://github.com/Mailu/Mailu) | Full-featured mail server |
 | [Matterbridge](https://github.com/42wim/matterbridge) | Bridge between various chat protocols |
 | [Misskey](https://github.com/syuilo/misskey) | Decentralized social media platform |
+| [OpenPost](https://github.com/getopenpost/openpost) | Self-hosted social publishing and scheduling platform with Docker Compose support |
 | [Friendica](https://github.com/friendica/friendica) | Decentralized social network |
 | [Hubzilla](https://github.com/redmatrix/hubzilla) | Decentralized publishing platform |
 | [GNU social](https://github.com/gnusocial/gnusocial) | Decentralized social network |
