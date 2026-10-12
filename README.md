@@ -156,6 +156,7 @@
 | [Wazuh](https://github.com/wazuh/wazuh) | Security monitoring and SIEM |
 | [OpenSCAP](https://github.com/OpenSCAP/openscap) | Security compliance solutions |
 | [Rspamd](https://github.com/rspamd/rspamd) | Fast, free and open-source spam filtering system |
+| [OneCLI](https://github.com/onecli/onecli) | Credential vault for AI agents — Rust HTTP gateway injects API keys transparently so agents never handle raw secrets |
 | [SpamAssassin](https://github.com/apache/spamassassin) | Open-source anti-spam platform |
 | [Graylog](https://github.com/Graylog2/graylog2-server) | Log management platform |
 
