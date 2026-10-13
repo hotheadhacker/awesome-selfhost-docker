@@ -137,6 +137,8 @@
 |---------|-------------|
 | [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | All-in-one AI app to chat with your documents using any LLM, with agents and RAG |
 | [Khoj](https://github.com/khoj-ai/khoj) | AI second brain that answers from your documents and the web |
+| [Kortix](https://kortix.com) | Open-source AI Operating System you self-host: run a company's agent workforce from one git repo you own, with any model and your own keys |
+
 | [Langflow](https://github.com/langflow-ai/langflow) | Visual builder for AI agents and workflows |
 | [LibreChat](https://github.com/LibreChat-AI/LibreChat) | ChatGPT-style interface for many AI providers with agents, MCP and multi-user support |
 | [LibreTranslate](https://github.com/LibreTranslate/LibreTranslate) | Machine translation API that runs fully offline |
