@@ -390,6 +390,7 @@
 | [SigNoz](https://github.com/SigNoz/signoz) | OpenTelemetry-native observability with logs, traces and metrics |
 | [Speedtest Tracker](https://github.com/alexjustesen/speedtest-tracker) | Track your internet speed over time |
 | [Telegraf](https://github.com/influxdata/telegraf) | Server agent for collecting and reporting metrics |
+| [Telemetry Tracker](https://github.com/Telemetry-Tracker/telemetry-tracker) | Open-source, self-hostable error tracker for side projects and small teams, with grouped errors, source maps and alerts |
 | [Thanos](https://github.com/thanos-io/thanos) | Highly available Prometheus setup with long term storage capabilities |
 | [updates2mqtt](https://github.com/rhizomatics/updates2mqtt) | Monitors running Docker containers for image updates, publishes to MQTT and integrates with Home Assistant |
 | [Uptime Kuma](https://github.com/louislam/uptime-kuma) | Uptime monitoring tool |
