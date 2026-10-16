@@ -493,6 +493,7 @@
 | [PostHog](https://github.com/PostHog/posthog) | Open-source product analytics |
 | [Redash](https://github.com/getredash/redash) | Make sense of your data |
 | [Rybbit](https://github.com/rybbit-io/rybbit) | Privacy-friendly web and product analytics |
+| [Replayowl](https://github.com/replayowl/replayowl) | Self-hosted session replay for websites |
 | [Swetrix](https://github.com/Swetrix/swetrix) | Privacy-focused, cookieless website analytics |
 | [Umami](https://github.com/umami-software/umami) | Simple, fast, privacy-focused alternative to Google Analytics |
 | [Vince](https://github.com/vinceanalytics/vince) | Self Hosted Alternative To Google Analytics |
