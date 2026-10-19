@@ -52,6 +52,7 @@
 | [Etherpad](https://github.com/ether/etherpad) | Real-time collaborative document editing |
 | [Excalidraw](https://github.com/excalidraw/excalidraw) | Virtual whiteboard for hand-drawn style diagrams |
 | [Focalboard](https://github.com/mattermost-community/focalboard) | Open-source project management tool |
+| [Folio Wiki](https://github.com/evergreen-it-dev/folio) | Team wiki where every page is a Markdown file in a Git repository, with real-time editing and a built-in MCP server. |
 | [HedgeDoc](https://github.com/hedgedoc/hedgedoc) | Collaborative markdown editor |
 | [Huly](https://github.com/hcengineering/platform) | All-in-One Project Management Platform |
 | [Joplin](https://github.com/laurent22/joplin) | Note-taking and to-do application |
