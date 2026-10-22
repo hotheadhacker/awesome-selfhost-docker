@@ -171,6 +171,7 @@
 | [Grist](https://github.com/gristlabs/grist-core) | Relational spreadsheet combining the flexibility of a spreadsheet with a database |
 | [Hasura](https://github.com/hasura/graphql-engine) | Instant GraphQL and REST APIs on your databases |
 | [Parse Server](https://github.com/parse-community/parse-server) | Backend framework with a REST/GraphQL API, auth and push notifications |
+| [Rowflare](https://github.com/rowflare/rowflare) | Airtable alternative with grid, kanban, calendar and timeline views, formulas, automations and an MCP server |
 | [Strapi](https://github.com/strapi/strapi) | Headless CMS to build customisable APIs |
 | [Supabase](https://github.com/supabase/supabase) | Postgres development platform with auth, storage, realtime and edge functions |
 | [Teable](https://github.com/teableio/teable) | No-code Postgres database with a spreadsheet interface |
