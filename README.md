@@ -388,6 +388,7 @@
 | [Prometheus](https://github.com/prometheus/prometheus) | Monitoring system and time series database |
 | [Scrutiny](https://github.com/AnalogJ/scrutiny) | Hard drive S.M.A.R.T. monitoring with a web dashboard |
 | [SigNoz](https://github.com/SigNoz/signoz) | OpenTelemetry-native observability with logs, traces and metrics |
+| [SolidPing](https://github.com/fclairamb/solidping) | Uptime monitoring with 40+ check types (HTTP, TCP, DNS, SSL, MQTT, Kafka, gRPC, SNMP), status pages and incidents |
 | [Speedtest Tracker](https://github.com/alexjustesen/speedtest-tracker) | Track your internet speed over time |
 | [Telegraf](https://github.com/influxdata/telegraf) | Server agent for collecting and reporting metrics |
 | [Thanos](https://github.com/thanos-io/thanos) | Highly available Prometheus setup with long term storage capabilities |
