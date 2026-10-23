@@ -544,6 +544,7 @@
 | [Mealie](https://github.com/mealie-recipes/mealie) | Recipe manager and meal planner |
 | [Papermerge](https://github.com/papermerge/papermerge-core) | Document management system |
 | [PrivateBin](https://github.com/PrivateBin/PrivateBin) | Minimalist, zero-knowledge encrypted pastebin |
+| [PrintStash](https://github.com/xiao-villamor/PrintStash) | Self-hosted 3D print file manager with G-code revision history and Moonraker/Klipper send-to-print |
 | [Quackback](https://github.com/QuackbackIO/quackback) | Open source feedback platform with voting boards, roadmaps, and changelogs |
 | [SearXNG](https://github.com/searxng/searxng) | Privacy-respecting metasearch engine |
 | [Shiori](https://github.com/go-shiori/shiori) | Simple bookmark manager |
