@@ -522,6 +522,7 @@
 
 | Project | Description |
 |---------|-------------|
+| [FeatherPanel](https://github.com/MythicalLTD/FeatherPanel) | Game server management panel running each server in Docker via its FeatherWings daemon |
 | [LanCache](https://github.com/lancachenet/monolithic) | LAN party game download cache for Steam, Epic, Battle.net and more |
 | [Minecraft Server](https://github.com/itzg/docker-minecraft-server) | Docker image for Minecraft Java servers with mod and plugin support |
 | [Pelican Panel](https://github.com/pelican/panel) | Game server control panel, the modern successor to Pterodactyl |
