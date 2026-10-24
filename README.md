@@ -136,6 +136,7 @@
 | Project | Description |
 |---------|-------------|
 | [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | All-in-one AI app to chat with your documents using any LLM, with agents and RAG |
+| [Heym](https://github.com/heymrun/heym) | Self-hosted agent workflow runtime with human approvals, MCP tools, execution traces and Docker Compose deployment (MIT + Commons Clause) |
 | [Khoj](https://github.com/khoj-ai/khoj) | AI second brain that answers from your documents and the web |
 | [Langflow](https://github.com/langflow-ai/langflow) | Visual builder for AI agents and workflows |
 | [LibreChat](https://github.com/LibreChat-AI/LibreChat) | ChatGPT-style interface for many AI providers with agents, MCP and multi-user support |
