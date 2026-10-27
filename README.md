@@ -156,6 +156,7 @@
 | [Automatisch](https://github.com/automatisch/automatisch) | Open-source Zapier alternative for automating business workflows |
 | [Huginn](https://github.com/huginn/huginn) | Build agents that monitor the web and act on your behalf |
 | [Kestra](https://github.com/kestra-io/kestra) | Event-driven orchestration platform for data and automation workflows |
+| [RunWisp](https://github.com/runwisp/runwisp) | Cron job scheduler and process supervisor with a web UI, run history, logs and failure alerts |
 | [Semaphore UI](https://github.com/semaphoreui/semaphore) | Web UI for running Ansible, Terraform, OpenTofu and PowerShell |
 | [Windmill](https://github.com/windmill-labs/windmill) | Turn scripts into workflows, UIs and scheduled jobs |
 
