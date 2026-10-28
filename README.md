@@ -170,6 +170,7 @@
 | [Budibase](https://github.com/Budibase/budibase) | Low-code platform for internal tools, forms and workflows |
 | [Grist](https://github.com/gristlabs/grist-core) | Relational spreadsheet combining the flexibility of a spreadsheet with a database |
 | [Hasura](https://github.com/hasura/graphql-engine) | Instant GraphQL and REST APIs on your databases |
+| [Nhost](https://github.com/nhost/nhost) | Backend for agentic apps: Postgres, GraphQL, auth, storage, functions and an MCP server |
 | [Parse Server](https://github.com/parse-community/parse-server) | Backend framework with a REST/GraphQL API, auth and push notifications |
 | [Strapi](https://github.com/strapi/strapi) | Headless CMS to build customisable APIs |
 | [Supabase](https://github.com/supabase/supabase) | Postgres development platform with auth, storage, realtime and edge functions |
