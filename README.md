@@ -69,6 +69,7 @@
 | [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | Document management system |
 | [Plane](https://github.com/makeplane/plane) | Project management tool for issues, sprints and roadmaps |
 | [Rallly](https://github.com/lukevella/rallly) | Schedule group meetings with polls |
+| [Relaticle](https://github.com/relaticle/relaticle) | Open-source CRM with a built-in AI assistant and an MCP server |
 | [SiYuan](https://github.com/siyuan-note/siyuan) | Privacy-first personal knowledge management system |
 | [Standard Notes](https://github.com/standardnotes/server) | Encrypted note-taking app |
 | [Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) | Web-based PDF toolkit to merge, split, convert, OCR and sign PDFs |
