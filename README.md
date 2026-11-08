@@ -505,6 +505,7 @@
 | [Firefly III](https://github.com/firefly-iii/firefly-iii) | Personal finances manager |
 | [Ghostfolio](https://github.com/ghostfolio/ghostfolio) | Wealth management software to track stocks, ETFs and crypto |
 | [I Hate Money](https://github.com/spiral-project/ihatemoney) | Simple shared-budget manager to split expenses with friends |
+| [ManaWG](https://github.com/Abuarchiv/manawg) | App for shared flats: split expenses, cleaning rota, shopping list, calendar and chat, with a Docker Compose stack and a Splitwise import |
 | [Sure](https://github.com/we-promise/sure) | Personal finance and wealth management app, a community fork of Maybe |
 | [Wallos](https://github.com/ellite/Wallos) | Personal subscription tracker to manage recurring expenses |
 
