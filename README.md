@@ -375,6 +375,7 @@
 | [Glances](https://github.com/nicolargo/glances) | Cross-platform monitoring tool |
 | [Grafana](https://github.com/grafana/grafana) | Analytics and monitoring solution |
 | [Healthchecks](https://github.com/healthchecks/healthchecks) | Cron job and background task monitoring with alerts |
+| [HomeLab Monitor](https://github.com/SikamikanikoBG/homelab-monitor) | Single-container homelab dashboard for GPU, Docker, systemd and power costs |
 | [Icinga](https://github.com/Icinga/icinga2) | Monitoring system for IT infrastructure |
 | [InfluxDB](https://github.com/influxdata/influxdb) | Time series database |
 | [Jaeger](https://github.com/jaegertracing/jaeger) | Distributed tracing platform |
