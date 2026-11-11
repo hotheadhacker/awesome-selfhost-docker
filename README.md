@@ -61,6 +61,7 @@
 | [Memos](https://github.com/usememos/memos) | Lightweight, privacy-first note-taking service |
 | [Monica](https://github.com/monicahq/monica) | Personal relationship manager |
 | [Nextcloud](https://github.com/nextcloud/docker) | Productivity platform for file hosting and collaboration |
+| [Nyxiontech PDF Tools](https://github.com/jurecki007/nyxiontech-tools) | Browser-based PDF and image toolkit that runs entirely client-side |
 | [Odoo](https://github.com/odoo/odoo) | Suite of business apps including CRM, accounting and inventory |
 | [OmniTools](https://github.com/iib0011/omni-tools) | Self-hosted web-based Swiss army knife for everyday tasks. |
 | [OnlyOffice](https://github.com/ONLYOFFICE/Docker-DocumentServer) | Office suite that enables you to manage documents, projects, team, and customer relations in one place |
