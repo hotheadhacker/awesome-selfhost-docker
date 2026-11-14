@@ -136,6 +136,7 @@
 | Project | Description |
 |---------|-------------|
 | [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | All-in-one AI app to chat with your documents using any LLM, with agents and RAG |
+| [Huntsman](https://github.com/TulipFarm/huntsman) | Web scraper that turns any page into clean Markdown behind a Firecrawl-compatible API, with a Docker image for amd64 and arm64 |
 | [Khoj](https://github.com/khoj-ai/khoj) | AI second brain that answers from your documents and the web |
 | [Langflow](https://github.com/langflow-ai/langflow) | Visual builder for AI agents and workflows |
 | [LibreChat](https://github.com/LibreChat-AI/LibreChat) | ChatGPT-style interface for many AI providers with agents, MCP and multi-user support |
