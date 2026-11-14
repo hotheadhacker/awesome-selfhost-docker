@@ -114,6 +114,7 @@
 | [LibreDB Studio](https://github.com/libredb/libredb-studio) | Web-based SQL IDE for PostgreSQL, MySQL, MongoDB, Redis and more, with AI query assistance |
 | [Meilisearch](https://github.com/meilisearch/meilisearch) | Lightning-fast search engine API |
 | [OneDev](https://github.com/theonedev/onedev) | Git server with CI/CD, kanban and code search |
+| [Orbi](https://github.com/orbi-build/orbi) | Software factory that turns GitHub Issues into independently reviewed merges and tagged releases |
 | [Penpot](https://github.com/penpot/penpot) | Open-source design and prototyping platform for teams |
 | [Peon](https://github.com/Peon-sh/Peon) | Open-source self-hostable Docker PaaS. Deploy Git apps, Compose stacks, databases, and static sites |
 | [pgAdmin](https://github.com/pgadmin-org/pgadmin4) | Administration and development platform for PostgreSQL |
