@@ -553,6 +553,8 @@
 | [TeslaMate](https://github.com/teslamate-org/teslamate) | Data logger for your Tesla |
 | [Traccar](https://github.com/traccar/traccar) | GPS tracking system for 2000+ device models |
 | [wger](https://github.com/wger-project/wger) | Fitness and workout manager |
+| [Brick Work](https://github.com/Ulef1005/brick-work) | The workbench for your brick collection |
+
 
 # This project is in early development
 ## Star History
