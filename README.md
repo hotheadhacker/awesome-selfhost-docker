@@ -295,6 +295,8 @@
 | [Postal](https://github.com/postalserver/postal) | Mail delivery platform |
 | [Roundcube](https://github.com/roundcube/roundcubemail) | Browser-based IMAP webmail client |
 | [Rspamd](https://github.com/rspamd/rspamd) | Fast, free and open-source spam filtering system |
+| [Senlo](https://github.com/IgorFilippov3/senlo) | Transactional email platform with a visual MJML editor, API and automations on top of your own provider (Resend, Postmark, SES, SMTP) |
+| [SimpleLogin](https://github.com/simple-login/app) | Email alias service to protect your inbox |
 | [SimpleLogin](https://github.com/simple-login/app) | Email alias service to protect your inbox |
 | [SnappyMail](https://github.com/the-djmaze/snappymail) | Fast, modern and secure webmail client |
 | [SpamAssassin](https://github.com/apache/spamassassin) | Open-source anti-spam platform |
