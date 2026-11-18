@@ -354,6 +354,7 @@
 | [Speedtest](https://github.com/librespeed/speedtest) | Self-hosted speed test |
 | [Technitium DNS Server](https://github.com/TechnitiumSoftware/DnsServer) | Authoritative and recursive DNS server with ad blocking and a web console |
 | [Traefik](https://github.com/traefik/traefik) | Cloud-native reverse proxy and load balancer with automatic Docker discovery |
+| [Viya](https://github.com/ringer520/viya-proxy) | Lightweight visual management panel for Caddy with reverse proxy, auto-HTTPS, DDNS, L4 forwarding, and WebDAV |
 | [wg-easy](https://github.com/wg-easy/wg-easy) | The easiest way to run WireGuard VPN with a web-based admin UI |
 | [WireGuard](https://github.com/linuxserver/docker-wireguard) | Fast and modern VPN solution |
 | [Zoraxy](https://github.com/tobychui/zoraxy) | General-purpose HTTP reverse proxy and forwarding tool with a web UI |
