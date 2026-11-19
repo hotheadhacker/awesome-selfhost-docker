@@ -118,6 +118,7 @@
 | [Peon](https://github.com/Peon-sh/Peon) | Open-source self-hostable Docker PaaS. Deploy Git apps, Compose stacks, databases, and static sites |
 | [pgAdmin](https://github.com/pgadmin-org/pgadmin4) | Administration and development platform for PostgreSQL |
 | [Portainer](https://github.com/portainer/portainer) | Lightweight management UI for Docker |
+| [protheus-docker](https://github.com/tmoreiradev/protheus-docker) | Ambiente TOTVS Protheus (AppServer, DBAccess, License Server) em Docker com PostgreSQL, SQL Server ou Oracle |
 | [Redmine](https://github.com/redmine/redmine) | Project management web application |
 | [Sentry](https://github.com/getsentry/self-hosted) | Error tracking and performance monitoring |
 | [SonarQube](https://github.com/SonarSource/docker-sonarqube) | Continuous inspection of code quality |
