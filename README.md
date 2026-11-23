@@ -136,6 +136,7 @@
 | Project | Description |
 |---------|-------------|
 | [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | All-in-one AI app to chat with your documents using any LLM, with agents and RAG |
+| [ApeRAG](https://github.com/apecloud/ApeRAG) | Self-hosted GraphRAG and hybrid retrieval knowledge base with built-in MCP server (open-source core of [ApeMind](https://apemind.ai/)) |
 | [Khoj](https://github.com/khoj-ai/khoj) | AI second brain that answers from your documents and the web |
 | [Langflow](https://github.com/langflow-ai/langflow) | Visual builder for AI agents and workflows |
 | [LibreChat](https://github.com/LibreChat-AI/LibreChat) | ChatGPT-style interface for many AI providers with agents, MCP and multi-user support |
