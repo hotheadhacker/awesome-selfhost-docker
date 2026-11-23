@@ -113,6 +113,7 @@
 | [Laradock](https://github.com/laradock/laradock) | Full PHP development environment based on Docker (Nginx, PHP, MySQL, Redis and more) |
 | [LibreDB Studio](https://github.com/libredb/libredb-studio) | Web-based SQL IDE for PostgreSQL, MySQL, MongoDB, Redis and more, with AI query assistance |
 | [Meilisearch](https://github.com/meilisearch/meilisearch) | Lightning-fast search engine API |
+| [Noust](https://github.com/Perkybeet/noust) | Deploy and run web apps on your own Linux servers, with health-checked releases and rollback; its central runs as a container and manages them over SSH |
 | [OneDev](https://github.com/theonedev/onedev) | Git server with CI/CD, kanban and code search |
 | [Penpot](https://github.com/penpot/penpot) | Open-source design and prototyping platform for teams |
 | [Peon](https://github.com/Peon-sh/Peon) | Open-source self-hostable Docker PaaS. Deploy Git apps, Compose stacks, databases, and static sites |
